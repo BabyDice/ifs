@@ -1,15 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import HomeView from "../views/HomeView.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
-  {
-    path: "/",
-    name: "home",
-    component: HomeView,
-  },
   {
     path: "/about",
     name: "about",
@@ -22,27 +16,27 @@ const routes = [
   {
     path: "/",
     name: "accueil",
-    component: require("../components/PageAccueil.vue"),
+    component: () => import("../components/PageAccueil.vue"),
   },
   {
     path: "/formation",
     name: "formaion",
-    component: require("../components/PageFomation.vue"),
+    component: () => import("../components/PageFomation.vue"),
   },
   {
     path: "/bureau",
     name: "bureau",
-    component: require("../components/PageBureautique.vue"),
+    component: () => import("../components/PageBureautique.vue"),
   },
   {
     path: "/contact",
     name: "contact",
-    component: require("../components/PageContact.vue"),
+    component: () => import("../components/PageContact.vue"),
   },
   {
     path: "/propos",
     name: "propos",
-    component: require("../components/PagePropos.vue"),
+    component: () => import("../components/PagePropos.vue"),
   },
 ];
 
