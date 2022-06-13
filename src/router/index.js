@@ -19,6 +19,31 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+  {
+    path: "/",
+    name: "accueil",
+    component: require("../components/PageAccueil.vue"),
+  },
+  {
+    path: "/formation",
+    name: "formaion",
+    component: require("../components/PageFomation.vue"),
+  },
+  {
+    path: "/bureau",
+    name: "bureau",
+    component: require("../components/PageBureautique.vue"),
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: require("../components/PageContact.vue"),
+  },
+  {
+    path: "/propos",
+    name: "propos",
+    component: require("../components/PagePropos.vue"),
+  },
 ];
 
 const router = new VueRouter({
