@@ -7,19 +7,13 @@
         <li>
           <router-link :to="{ name: 'accueil' }">Accueil</router-link>
         </li>
-        <!-- <li class="DeroulantFormation">
-          <router-link :to="{ name: 'formation' }">Formation</router-link>
-          <ul class="sous">
-            <li>
-              <router-link :to="{ name: 'bureau' }">Bureautique</router-link>
-            </li>
-          </ul>
-        </li> -->
         <li class="deroulant">
           <router-link :to="{ name: 'formation' }">Formation</router-link>
           <ul class="sous">
             <li>
-              <router-link :to="{ name: 'bureau' }">Bureautique</router-link>
+              <router-link class="sous-element" :to="{ name: 'bureau' }"
+                >Bureautique</router-link
+              >
             </li>
           </ul>
         </li>
@@ -66,11 +60,15 @@ nav {
   list-style: none;
   justify-content: center;
   align-items: center;
-  width: clamp(100%, 40%, 15%);
+  /* width: clamp(15px, 40em, 100px); */
 }
 
 li {
   flex: 2;
+}
+
+.sous-element {
+  font-size: 20px;
 }
 
 nav a:hover {
@@ -113,8 +111,6 @@ nav > ul li:hover .sous {
   content: " ▼";
   font-size: 24px;
 }
-
-@media screen (max-width: 1024px;);
 </style>
 
 <script>
