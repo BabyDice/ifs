@@ -20,8 +20,8 @@ const routes = [
   },
   {
     path: "/formation",
-    name: "formaion",
-    component: () => import("../components/PageFomation.vue"),
+    name: "formation",
+    component: () => import("../components/PageFormation.vue"),
   },
   {
     path: "/bureau",
