@@ -38,6 +38,11 @@ const routes = [
     name: "propos",
     component: () => import("../components/PagePropos.vue"),
   },
+  {
+    path: "*",
+    name: "404",
+    component: () => import("../components/PageNotFound.vue"),
+  },
 ];
 
 const router = new VueRouter({
