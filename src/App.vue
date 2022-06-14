@@ -1,7 +1,8 @@
 <script>
+import PageFooter from "./components/footer/PageFooter.vue";
 import PageNavbar from "./components/navbar/PageNavbar.vue";
 export default {
-  components: { PageNavbar },
+  components: { PageFooter, PageNavbar },
 };
 </script>
 
@@ -14,7 +15,9 @@ export default {
       <router-link to="/propos">A propos</router-link>
       <router-link to="/contact">Contact</router-link>
     </nav> -->
+
     <router-view />
+    <PageFooter />
   </div>
 </template>
 
