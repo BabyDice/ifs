@@ -26,12 +26,15 @@ footer {
 .footer__main {
   display: flex;
   justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  height: 100%;
+  gap: 100px;
+  text-align: center;
 }
 
 .footer__main__child {
-  /* margin: auto; */
-  display: flex;
-  margin: auto;
+  flex: 3;
 }
 </style>
 
