@@ -35,7 +35,6 @@ $mainColor: #dd214c;
     &__children {
       flex: 2;
       margin: 20px;
-      display: inline-block;
 
       &__title {
         color: white;
@@ -62,5 +61,5 @@ $mainColor: #dd214c;
 </style>
 
 <script>
-  export default {  };
+export default {};
 </script>
