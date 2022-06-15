@@ -7,7 +7,7 @@ const routes = [
   {
     path: "/",
     name: "accueil",
-    component: () => import("../components/PageAccueil.vue"),
+    component: () => import("../views/PageAccueil.vue"),
   },
   {
     path: "/about",
@@ -21,27 +21,27 @@ const routes = [
   {
     path: "/formation",
     name: "formation",
-    component: () => import("../components/PageFomation.vue"),
+    component: () => import("../views/PageFormation.vue"),
   },
   {
     path: "/bureau",
     name: "bureau",
-    component: () => import("../components/PageBureautique.vue"),
+    component: () => import("../views/PageBureautique.vue"),
   },
   {
     path: "/contact",
     name: "contact",
-    component: () => import("../components/PageContact.vue"),
+    component: () => import("../views/PageContact.vue"),
   },
   {
     path: "/propos",
     name: "propos",
-    component: () => import("../components/PagePropos.vue"),
+    component: () => import("../views/PagePropos.vue"),
   },
   {
-    path: "*",
+    path: "/404",
     name: "404",
-    component: () => import("../components/PageNotFound.vue"),
+    component: () => import("../views/PageNfound.vue"),
   },
 ];
 
