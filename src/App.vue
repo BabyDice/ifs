@@ -1,12 +1,23 @@
+<script>
+import PageFooter from "./components/footer/PageFooter.vue";
+import PageNavbar from "./components/navbar/PageNavbar.vue";
+export default {
+  components: { PageFooter, PageNavbar },
+};
+</script>
+
 <template>
   <div id="app">
-    <nav>
+    <PageNavbar />
+    <!-- <nav>
       <router-link to="/">Accueil</router-link> |
       <router-link to="/formation">Formation</router-link>
       <router-link to="/propos">A propos</router-link>
       <router-link to="/contact">Contact</router-link>
-    </nav>
+    </nav> -->
+
     <router-view />
+    <PageFooter />
   </div>
 </template>
 

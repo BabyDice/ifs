@@ -22,6 +22,7 @@ const routes = [
     path: "/formation",
     name: "formation",
     component: () => import("@/views/FormationView.vue"),
+
   },
   {
     path: "/bureau",
