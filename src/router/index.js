@@ -39,7 +39,7 @@ const routes = [
     component: () => import("../views/PagePropos.vue"),
   },
   {
-    path: "/404",
+    path: "/*",
     name: "404",
     component: () => import("../views/PageNfound.vue"),
   },
