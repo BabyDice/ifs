@@ -18,7 +18,11 @@
 
 <style lang="scss">
 /* Declarations Couleurs */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 $mainColor: #dd214c;
+$fontfamilyMedium: "Poppins", sans-serif;
+$fontfamilyRegular: "Poppins", sans-serif;
 
 .footer {
   width: 100%;
@@ -38,12 +42,15 @@ $mainColor: #dd214c;
 
       &__title {
         color: white;
+        font-size: 20px;
+        font-family: $fontfamilyMedium;
       }
 
       &__liste {
         color: white;
+        font-family: $fontfamilyRegular;
         // background-color: blue;
-        width: 50%;
+        width: 30%;
         margin: auto;
         display: flex;
         justify-content: start;
@@ -55,6 +62,28 @@ $mainColor: #dd214c;
         height: 96px;
         margin: 5px;
       }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    &__main {
+      display: flex;
+      align-items: start;
+      background-color: $mainColor;
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 495px) {
+    &__main {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: $mainColor;
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+      height: 100vh;
     }
   }
 }
