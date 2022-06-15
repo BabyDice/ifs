@@ -1,14 +1,7 @@
-<script>
-import PageFooter from "./components/footer/PageFooter.vue";
-import PageNavbar from "./components/navbar/PageNavbar.vue";
-export default {
-  components: { PageFooter, PageNavbar },
-};
-</script>
+<script></script>
 
 <template>
   <div id="app">
-    <PageNavbar />
     <!-- <nav>
       <router-link to="/">Accueil</router-link> |
       <router-link to="/formation">Formation</router-link>
@@ -17,7 +10,6 @@ export default {
     </nav> -->
 
     <router-view />
-    <PageFooter />
   </div>
 </template>
 
