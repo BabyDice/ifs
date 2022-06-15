@@ -1,5 +1,5 @@
 <template>
-  <div>Formation</div>
+  <div>Formation bureautique</div>
 </template>
 <script>
 export default {};

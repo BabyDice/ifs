@@ -5,11 +5,6 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "accueil",
-    component: () => import("../components/PageAccueil.vue"),
-  },
-  {
     path: "/about",
     name: "about",
     // route level code-splitting
@@ -19,24 +14,29 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
   {
+    path: "/",
+    name: "accueil",
+    component: () => import("../views/AccueilView.vue"),
+  },
+  {
     path: "/formation",
     name: "formation",
-    component: () => import("../components/PageFomation.vue"),
+    component: () => import("../views/FormationView.vue"),
   },
   {
     path: "/bureau",
     name: "bureau",
-    component: () => import("../components/PageBureautique.vue"),
+    component: () => import("../views/BureautiqueView.vue"),
   },
   {
     path: "/contact",
     name: "contact",
-    component: () => import("../components/PageContact.vue"),
+    component: () => import("../views/ContactView.vue"),
   },
   {
     path: "/propos",
     name: "propos",
-    component: () => import("../components/PagePropos.vue"),
+    component: () => import("../views/ProposView.vue"),
   },
 ];
 
