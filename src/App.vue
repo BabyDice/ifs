@@ -1,11 +1,14 @@
+<script></script>
+
 <template>
   <div id="app">
-    <nav>
+    <!-- <nav>
       <router-link to="/">Accueil</router-link> |
       <router-link to="/formation">Formation</router-link>
       <router-link to="/propos">A propos</router-link>
       <router-link to="/contact">Contact</router-link>
-    </nav>
+    </nav> -->
+
     <router-view />
   </div>
 </template>

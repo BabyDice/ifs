@@ -2,5 +2,5 @@
   <div>Vous etes sur la page A propos</div>
 </template>
 <script>
-export default {};
+export default { name: "ProposView" };
 </script>
