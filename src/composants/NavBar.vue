@@ -33,7 +33,7 @@ $fontfamilyRegular: "Poppins", sans-serif;
 
 .nav {
   width: 100%;
-  height: 200px;
+  height: 180px;
   background-color: chocolate;
   border-radius: 0 0 20px 20px;
   background: rgba(255, 255, 255, 0.25);
@@ -62,7 +62,7 @@ $fontfamilyRegular: "Poppins", sans-serif;
 
   @media screen and (max-width: 495px) {
     .nav {
-      height: 100vh;
+      height: 200px;
       background-color: aqua !important;
 
       &__main {
