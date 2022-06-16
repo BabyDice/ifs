@@ -49,7 +49,6 @@ $fontfamilyRegular: "Poppins", sans-serif;
       &__liste {
         color: white;
         font-family: $fontfamilyRegular;
-        // background-color: blue;
         width: 30%;
         margin: auto;
         display: flex;
@@ -65,25 +64,29 @@ $fontfamilyRegular: "Poppins", sans-serif;
     }
   }
 
-  @media screen and (max-width: 900px) {
-    &__main {
-      display: flex;
-      align-items: start;
-      background-color: $mainColor;
-      border-radius: 20px 20px 0 0;
-      width: 100%;
-      height: 100%;
-    }
-  }
   @media screen and (max-width: 495px) {
     &__main {
-      display: flex;
       align-items: center;
       flex-direction: column;
       background-color: $mainColor;
-      border-radius: 20px 20px 0 0;
-      width: 100%;
       height: 100vh;
+
+      &__children__liste {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__main {
+      align-items: center;
+      flex-direction: column;
+      background-color: $mainColor;
+      height: 100vh;
+
+      &__children__liste {
+        width: 100%;
+      }
     }
   }
 }
