@@ -88,5 +88,5 @@ $fontfamilyRegular: "Poppins", sans-serif;
 </style>
 
 <script>
-export default {};
+export default { name: "NavBar" };
 </script>
