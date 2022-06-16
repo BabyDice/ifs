@@ -33,7 +33,7 @@ $fontfamilyRegular: "Poppins", sans-serif;
 
 .nav {
   width: 100%;
-  height: 158px;
+  height: 200px;
   background-color: chocolate;
   border-radius: 0 0 20px 20px;
   background: rgba(255, 255, 255, 0.25);
@@ -51,7 +51,8 @@ $fontfamilyRegular: "Poppins", sans-serif;
       // background-color: aquamarine;
       height: 100%;
       list-style: none;
-      gap: 24px;
+      gap: 14px;
+      margin: 14px;
 
       &__flex {
         flex: 2;
