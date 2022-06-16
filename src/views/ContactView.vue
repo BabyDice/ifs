@@ -34,8 +34,8 @@
             <label>Message : </label>
             <textarea></textarea>
           </div>
-          <input type="submit" value="envoyer" name="envoyer" id="envoyer" />
-          <input type="reset" value="reset" name="reset" id="reset" />
+          <input type="submit" value="Envoyer" name="envoyer" id="envoyer" />
+          <input type="reset" value="Annuler" name="reset" id="reset" />
         </fieldset>
       </form>
     </div>
