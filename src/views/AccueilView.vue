@@ -1,7 +1,7 @@
 <template>
   <div>
-    <app-footer></app-footer>
     Vous etes sur la page Accueil
+    <app-footer></app-footer>
   </div>
 </template>
 
