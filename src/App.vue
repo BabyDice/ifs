@@ -27,6 +27,7 @@ export default {
 }
 
 #app {
+  background-image: url("@/assets/background-cloud/top.png");
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

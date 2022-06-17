@@ -16,11 +16,11 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 /* Declarations Couleurs */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-$mainColor: #dd214c;
+@import "../_variablesscss";
 $fontfamilyMedium: "Poppins", sans-serif;
 $fontfamilyRegular: "Poppins", sans-serif;
 
