@@ -10,10 +10,11 @@
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
+        class="contact__main__frame"
       >
       </iframe>
       <form class="contact__main__forms">
-        <fieldset>
+        <fieldset class="contact__main__forms__field">
           <div class="contact__main__forms__children">
             <label>Nom : </label>
             <input
@@ -42,7 +43,53 @@
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+$mainColor: #dd214c;
+$fontfamilyMedium: "Poppins", sans-serif;
+$fontfamilyRegular: "Poppins", sans-serif;
+.contact {
+  width: 100%;
+  height: 100vh;
+
+  h1 {
+    margin: 2% auto 2%;
+    font-family: $fontfamilyMedium;
+  }
+
+  &__main {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+
+    &__forms {
+      display: flex;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      bottom: 20px;
+      height: 90%;
+
+      &__field {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        height: 100%;
+        background-color: #f8f8f8;
+      }
+    }
+
+    &__frame {
+      border-radius: 20px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+}
+</style>
 <script>
 export default { name: "ContactView" };
 </script>
