@@ -1,6 +1,11 @@
 <template>
-  <div>Vous etes sur la page Accueill</div>
+  <div>Vous etes sur la page Accueil</div>
 </template>
+
+<style></style>
+
 <script>
-export default {};
+export default {
+  name: "AccueilView",
+};
 </script>

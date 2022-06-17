@@ -2,5 +2,5 @@
   <div>Formation bureautique</div>
 </template>
 <script>
-export default {};
+export default { name: "BureautiqueView" };
 </script>

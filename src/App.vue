@@ -1,12 +1,21 @@
+<script>
+import Footer from "@/composants/NavFooter.vue";
+import Nav from "@/composants/NavBar.vue";
+export default {
+  name: "App",
+  components: {
+    "app-footer": Footer,
+    "app-nav": Nav,
+  },
+};
+</script>
+
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Accueil</router-link> |
-      <router-link to="/formation">Formation</router-link>
-      <router-link to="/propos">A propos</router-link>
-      <router-link to="/contact">Contact</router-link>
-    </nav>
+    <app-nav></app-nav>
+
     <router-view />
+    <app-footer></app-footer>
   </div>
 </template>
 

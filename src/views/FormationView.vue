@@ -2,5 +2,5 @@
   <div>Vous ete ici Formation</div>
 </template>
 <script>
-export default {};
+export default { name: "FormationView" };
 </script>
