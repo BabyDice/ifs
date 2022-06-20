@@ -81,6 +81,8 @@
     height: 100%;
     display: flex;
     padding: 5%;
+    justify-content: center;
+    align-items: center;
 
     iframe {
       border-radius: 20px;
@@ -169,13 +171,14 @@
 
   @media (min-width: 768px) {
     .container {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 
   @media (min-width: 1024px) {
     .container {
       grid-template-columns: repeat(2, 1fr);
+      background-color: red;
     }
   }
 }
