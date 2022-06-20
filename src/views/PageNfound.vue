@@ -21,7 +21,6 @@ body {
   background-size: 280%;
   position: fixed;
   background-position: 240%;
-  // background-color: greenyellow;
   background-image: url("@/assets/Camoulax/fond1.png");
 
   @media (min-width: $tablette-screen) {
