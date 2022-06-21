@@ -1,5 +1,6 @@
 <template>
   <div class="contact">
+    <NavFooter />
     <h1>Contact</h1>
     <form action="#" method="post" class="container">
       <div class="container__box1">
@@ -77,8 +78,6 @@
   }
 
   &__frme {
-    width: 100%;
-    height: 100%;
     display: flex;
     padding: 5%;
     justify-content: center;
@@ -181,12 +180,12 @@
       grid-template-columns: repeat(2, 1fr);
       position: absolute;
       right: 8vw;
-      top: 30vh;
+      top: 40vh;
       z-index: 2;
       background-color: #f8f8f8;
       border-radius: 20px;
       width: 65%;
-      height: 40vh;
+      height: 50vh;
       margin: auto;
       border: 1px solid black;
 
@@ -236,17 +235,21 @@
       height: 100%;
       background-color: #f8f8f8;
 
+      &__infos {
+        display: none;
+      }
+
       &__frme {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
+        // position: absolute;
+        // z-index: 0;
+        // top: 0;
         width: 100%;
-        height: 100%;
+        // background-color: red;
+        margin-top: 10%;
 
         iframe {
-          width: 100%;
-          height: 50%;
+          width: 1780px;
+          height: 550px;
         }
       }
     }
