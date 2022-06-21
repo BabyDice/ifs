@@ -160,6 +160,7 @@
         color: rgb(136, 77, 77);
         font-weight: bold;
         font-family: $fontfamilyRegular;
+        cursor: pointer;
       }
     }
   }
@@ -178,7 +179,76 @@
   @media (min-width: 1024px) {
     .container {
       grid-template-columns: repeat(2, 1fr);
-      background-color: red;
+      position: absolute;
+      right: 8vw;
+      top: 30vh;
+      z-index: 2;
+      background-color: #f8f8f8;
+      border-radius: 20px;
+      width: 65%;
+      height: 40vh;
+      margin: auto;
+      border: 1px solid black;
+
+      &__box1,
+      &__box2 {
+        height: initial;
+        margin-top: 10%;
+        label {
+          color: black;
+          font-family: $fontfamilyMedium;
+        }
+
+        input {
+          border: none;
+          border-radius: 20px;
+          background: rgba(210, 210, 210, 0.2);
+          width: 80%;
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+          color: black;
+          font-weight: bold;
+          font-family: $fontfamilyRegular;
+        }
+
+        textarea {
+          display: flex;
+          height: 18vh;
+          width: 80%;
+          border-radius: 20px;
+          border: none;
+          padding: 5%;
+        }
+      }
+
+      &__inpt {
+        position: absolute;
+        flex-direction: row;
+        // background-color: red;
+        width: 90%;
+        margin: auto;
+        height: auto;
+        bottom: 2vh;
+        left: 3vw;
+      }
+    }
+    .contact {
+      width: 100%;
+      height: 100%;
+      background-color: #f8f8f8;
+
+      &__frme {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+
+        iframe {
+          width: 100%;
+          height: 50%;
+        }
+      }
     }
   }
 }
