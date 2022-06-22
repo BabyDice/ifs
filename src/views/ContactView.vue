@@ -178,14 +178,15 @@
   @media (min-width: 1024px) {
     .container {
       grid-template-columns: repeat(2, 1fr);
-      position: absolute;
+      position: static;
+
       right: 8vw;
       top: 40vh;
       z-index: 2;
       background-color: #f8f8f8;
       border-radius: 20px;
-      width: 65%;
-      height: 50vh;
+      width: 90%;
+      height: 80vh;
       margin: auto;
       border: 1px solid black;
 
@@ -193,6 +194,7 @@
       &__box2 {
         height: initial;
         margin-top: 10%;
+        width: 100%;
         label {
           color: black;
           font-family: $fontfamilyMedium;
@@ -211,7 +213,7 @@
 
         textarea {
           display: flex;
-          height: 18vh;
+          height: 21vh;
           width: 80%;
           border-radius: 20px;
           border: none;
@@ -222,12 +224,12 @@
       &__inpt {
         position: absolute;
         flex-direction: row;
-        // background-color: red;
-        width: 90%;
+        background-color: red;
+        width: 80%;
         margin: auto;
         height: auto;
-        bottom: 2vh;
-        left: 3vw;
+        bottom: 0;
+        left: 180px;
       }
     }
     .contact {
