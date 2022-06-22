@@ -1,12 +1,20 @@
+<script>
+import NavFooter from "@/composants/NavFooter.vue";
+import Nav from "@/composants/NavBar.vue";
+export default {
+  name: "App",
+  components: {
+    NavFooter,
+    Nav,
+  },
+};
+</script>
+
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Accueil</router-link> |
-      <router-link to="/formation">Formation</router-link>
-      <router-link to="/propos">A propos</router-link>
-      <router-link to="/contact">Contact</router-link>
-    </nav>
+    <Nav />
     <router-view />
+    <NavFooter />
   </div>
 </template>
 
@@ -33,7 +41,7 @@ nav {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #dd214c;
     }
   }
 }

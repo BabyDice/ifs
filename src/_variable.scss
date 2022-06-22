@@ -1,0 +1,37 @@
+@mixin padGap {
+  padding: 14px;
+  gap: 14px;
+}
+
+@mixin newPadGap {
+  padding: 54px;
+  gap: 54px;
+}
+
+@mixin centre {
+  text-align: center;
+  align-items: center;
+}
+
+@mixin bloxCentre {
+  text-align: center;
+  align-items: center;
+}
+
+@mixin iconTxt {
+  flex-flow: row-wrap;
+}
+
+@mixin logo {
+  width: 4.5vh;
+  height: 4.5vh;
+}
+
+@mixin horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+$mainColor: #dd214c;
+$fontfamilyMedium: "Poppins", sans-serif;
+$fontfamilyRegular: "Poppins", sans-serif;
