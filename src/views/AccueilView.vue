@@ -368,7 +368,7 @@ h2 {
         }
 
         100% {
-          transform: translateX(-1064px);
+          transform: translateX(-1080px);
         }
       }
 
@@ -376,55 +376,72 @@ h2 {
         display: flex;
         flex-direction: row;
         height: 20vh;
-        width: 100%;
-        // border: #dd214c solid 2px;
+        width: 100vh;
+        border: #dd214c solid 2px;
 
         &__trak {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          gap: 16px;
+          gap: 14px;
           width: 100%;
-          // border: royalblue solid 2px;
+          border: royalblue solid 2px;
 
           &__slide {
             animation: scroll 10s linear infinite;
-            height: 250px;
-            width: 250px;
-            position: relative;
+            height: 10vh;
+            width: 121px;
+            // position: relative;
             background: center left 200%;
+            border: lime 4px solid;
           }
 
           & :nth-child(1) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
+            height: 10vh;
+            width: 100vw;
           }
 
           & :nth-child(2) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
+            height: 10vh;
+            width: 100vw;
           }
 
           & :nth-child(3) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
+            height: 10vh;
+            width: 100vw;
           }
 
           & :nth-child(4) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
+            height: 10vh;
+            width: 100vw;
           }
 
           & :nth-child(5) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
+            height: 10vh;
+            width: 100vw;
           }
 
           & :nth-child(6) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
+            height: 10vh;
+            width: 100vw;
           }
 
           & :nth-child(7) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
+            height: 10vh;
+            width: 100vw;
           }
 
           & :nth-child(8) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
+            height: 10vh;
+            width: 100vw;
           }
         }
       }
