@@ -1,6 +1,17 @@
 <template>
-  <div>Formation bureautique</div>
+  <div class="bureau">
+    <VuelidateForm />
+    <EmailJsForm />
+  </div>
 </template>
 <script>
-export default {};
+import VuelidateForm from "@/components/VuelidateForm.vue";
+import EmailJsForm from "@/components/EmailJsForm.vue";
+export default {
+  name: "bureauView",
+  components: {
+    VuelidateForm,
+    EmailJsForm,
+  },
+};
 </script>
