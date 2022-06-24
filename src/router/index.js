@@ -18,11 +18,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "@/views/AboutView.vue"),
   },
-  {
-    path: "/",
-    name: "accueil",
-    component: () => import("@/views/AccueilView.vue"),
-  },
+
   {
     path: "/formation",
     name: "formation",
@@ -43,11 +39,7 @@ const routes = [
     name: "propos",
     component: () => import("../views/PagePropos.vue"),
   },
-  {
-    path: "/*",
-    name: "404",
-    component: () => import("../views/PageNfound.vue"),
-  },
+
   {
     path: "*",
     name: "404",
