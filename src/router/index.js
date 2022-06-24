@@ -48,6 +48,11 @@ const routes = [
     name: "404",
     component: () => import("../views/PageNfound.vue"),
   },
+  {
+    path: "*",
+    name: "404",
+    component: () => import("@/views/PageNfound.vue"),
+  },
 ];
 
 const router = new VueRouter({
