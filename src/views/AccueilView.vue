@@ -398,50 +398,34 @@ h2 {
 
           & :nth-child(1) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
           }
 
           & :nth-child(2) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
           }
 
           & :nth-child(3) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
           }
 
           & :nth-child(4) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
           }
 
           & :nth-child(5) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
           }
 
           & :nth-child(6) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
           }
 
           & :nth-child(7) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
           }
 
           & :nth-child(8) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
           }
         }
       }
