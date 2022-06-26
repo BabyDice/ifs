@@ -113,6 +113,7 @@
             <div class="container__track2__slider__trak__slide"></div>
             <div class="container__track2__slider__trak__slide"></div>
             <div class="container__track2__slider__trak__slide"></div>
+            <div class="container__track2__slider__trak__slide"></div>
           </div>
         </div>
       </aside>
@@ -368,7 +369,7 @@ h2 {
         }
 
         100% {
-          transform: translateX(-1080px);
+          transform: translateX(-1350px);
         }
       }
 
@@ -397,34 +398,6 @@ h2 {
           }
 
           & :nth-child(1) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-          }
-
-          & :nth-child(2) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-          }
-
-          & :nth-child(3) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-          }
-
-          & :nth-child(4) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-          }
-
-          & :nth-child(5) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-          }
-
-          & :nth-child(6) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-          }
-
-          & :nth-child(7) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-          }
-
-          & :nth-child(8) {
             background-image: url("../assets/visuel_acceuil/smile.svg");
           }
         }
