@@ -19,6 +19,17 @@
       <aside class="container__track2">
         <div class="container__track2__bloxNpic">
           <div class="container__track2__bloxNpic__blox">
+            <span class="container__track2__bloxNpic__blox__visu">
+              <img
+                src="../assets/visuel_formation/colleagues-working-together-on-project.jpg"
+                alt=""
+              />
+            </span>
+            <h2>
+              Vous souhaitez acquérir des compétences et améliorer votre
+              développement ?
+            </h2>
+            <hr />
             <p>
               Je construis toutes les formations sur mesure en fonction de vos
               besoins pour vous accompagner dans votre projet professionnel ou
@@ -27,35 +38,96 @@
               formation entièrement personnalisé en fonction de vos acquis et de
               vos objectifs.
             </p>
+            <button
+              type="submit"
+              class="container__track2__bloxNpic__blox__butt"
+            >
+              Contactez - Moi
+            </button>
           </div>
         </div>
         <button type="submit" class="container__track2__button">
-          En Savoir Plus
+          Cathalogue Formation
         </button>
       </aside>
       <aside class="container__track2">
         <div class="container__track2__bloxNpic">
-          <div class="container__track2__bloxNpic__blox">
+          <div class="container__track2__bloxNpic__blox2">
+            <h2>Public Ciblé</h2>
+            <hr />
             <p>
-              On sait depuis longtemps que travailler avec du texte lisible et
-              contenant du sens est source de distractions, et empêche de se
-              concentrer sur la mise en page elle-même. L'avantage du Lorem
-              Ipsum sur un texte générique comme 'Du texte. Du texte. D
+              Quiconque souhaitant approfondir ses connaissances. Ainsi que
+              quiconque doit utiliser Word, Excel, Powerpoint, dans un contexte
+              professionnel ou personnel.
             </p>
+            <h2>Comment financer votre formation ?</h2>
+            <hr />
+            <h2>Méthodes pédagogiques</h2>
+            <hr />
+            <p>
+              Apports théoriques Ateliers pratiques à hauteur de 80% du temps de
+              la formation
+            </p>
+            <div>
+              <p>
+                Que vous soyez salarié, entrepreneur ou demandeur d’emploi,
+                plusieurs dispositifs vous permettent d’accéder à la formation.
+              </p>
+              <p>
+                En effet, Informatique Formation Sécurité est : enregistré en
+                tant qu'organisme de formation professionnelle sous le numéro 84
+                73 0197573 auprès de la DREETS de la région Auvergne-Rhône-Alpes
+                (cet enregistrement ne vaut pas agrément de l'Etat).
+              </p>
+            </div>
           </div>
         </div>
 
         <h2>Il Nous font Confiance</h2>
         <div class="container__track2__slider">
           <div class="container__track2__slider__trak">
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__slider__trak__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
           </div>
         </div>
       </aside>
@@ -64,7 +136,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import "../_variable.scss";
+@import "@/_variable.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
@@ -158,6 +230,9 @@ h2 {
       @include padGap;
 
       &__blox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(17.4px);
         background: rgba(203, 203, 203, 0.73);
@@ -165,11 +240,88 @@ h2 {
         -webkit-backdrop-filter: blur(17.4px);
         border: 1px solid rgba(203, 203, 203, 0.36);
         width: 90%;
-        height: 60vh;
+        height: 100vh;
         margin-top: 2vh;
         @include padGap;
         @include bloxCentre;
         font-family: $fontfamilyRegular;
+
+        &__visu {
+          display: flex;
+          align-self: center;
+          border-radius: 16px;
+          justify-content: flex-start;
+          height: 30vh;
+          width: 65vw;
+
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: 16px;
+            align-self: flex-start;
+          }
+        }
+
+        h2 {
+          font-weight: bold;
+          color: $mainColor;
+          @include centre;
+          font-family: $fontfamilyRegular;
+        }
+
+        hr {
+          height: 3px;
+          width: 90%;
+          background: $mainColor;
+          border: $mainColor;
+        }
+
+        &__butt {
+          background-color: $mainColor;
+          color: white;
+          width: 70%;
+          border-radius: 16px;
+          @include padGap;
+          @include centre;
+        }
+      }
+
+      &__blox2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(17.4px);
+        background: rgba(203, 203, 203, 0.73);
+        border-radius: 16px;
+        -webkit-backdrop-filter: blur(17.4px);
+        border: 1px solid rgba(203, 203, 203, 0.36);
+        width: 90%;
+        height: 100vh;
+        margin-top: 2vh;
+        @include padGap;
+        @include bloxCentre;
+        font-family: $fontfamilyRegular;
+
+        h2 {
+          font-weight: bold;
+          color: $mainColor;
+          @include centre;
+          font-family: $fontfamilyRegular;
+        }
+
+        hr {
+          height: 3px;
+          width: 90%;
+          background: $mainColor;
+          border: $mainColor;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
       }
     }
 
@@ -201,7 +353,6 @@ h2 {
     flex-direction: column;
     // border: 3px solid red;
     height: 100%;
-    width: 100%;
     @include padGap;
 
     &__track {
@@ -211,16 +362,38 @@ h2 {
       @include centre;
 
       &__item {
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: column;
+        @include centre;
 
         &__content {
           display: flex;
           flex-direction: row;
           justify-content: space-around;
           font-family: $fontfamilyRegular;
+          // border: solid 2px green;
+          width: 50%;
+        }
+
+        &__image {
+          // border: solid 2px yellow;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-around;
+          @include padGap;
           width: 100%;
+
+          img {
+            width: 10vw;
+            height: 10vh;
+            border: solide 2px red($color: #000000);
+          }
+
+          & :nth-child(3) {
+            width: 10vw;
+            height: 7vh;
+          }
         }
       }
     }
@@ -234,29 +407,125 @@ h2 {
       @include padGap;
       @include centre;
 
+      &__image2 {
+        // border: solid 2px yellow;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: nowrap;
+        margin-top: 4vh;
+        width: 100%;
+        @include padGap;
+      }
+
       &__bloxNpic {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        @include padGap;
 
         &__blox {
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           justify-content: space-around;
           box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
           backdrop-filter: blur(17.4px);
           background: rgba(203, 203, 203, 0.73);
           border-radius: 16px;
           -webkit-backdrop-filter: blur(17.4px);
-          border: 1px solid rgba(203, 203, 203, 0.36);
-          width: 50%;
-          height: 20vh;
+          border: 1px solid $mainColor;
+          width: 90%;
+          height: 100vh;
           margin-top: 2vh;
           @include padGap;
-          @include centre;
+          @include bloxCentre;
           font-family: $fontfamilyRegular;
-          border: solid #dd214c 2px;
+
+          &__visu {
+            display: flex;
+            align-self: center;
+            border-radius: 16px;
+            justify-content: flex-start;
+            height: 30vh;
+            width: 65vw;
+
+            img {
+              height: 100%;
+              width: 100%;
+              border-radius: 16px;
+              align-self: flex-start;
+            }
+          }
+
+          h2 {
+            font-weight: bold;
+            color: $mainColor;
+            @include centre;
+            font-family: $fontfamilyRegular;
+          }
+
+          hr {
+            height: 3px;
+            width: 90%;
+            background: $mainColor;
+            border: $mainColor;
+          }
+
+          &__butt {
+            background-color: $mainColor;
+            color: white;
+            width: 70%;
+            border-radius: 16px;
+            @include padGap;
+            @include centre;
+          }
         }
+
+        &__blox2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(17.4px);
+          background: rgba(203, 203, 203, 0.73);
+          border-radius: 16px;
+          -webkit-backdrop-filter: blur(17.4px);
+          border: 1px solid $mainColor;
+          width: 90%;
+          height: 100vh;
+          margin-top: 2vh;
+          @include padGap;
+          @include bloxCentre;
+          font-family: $fontfamilyRegular;
+
+          h2 {
+            font-weight: bold;
+            color: $mainColor;
+            @include centre;
+            font-family: $fontfamilyRegular;
+          }
+
+          hr {
+            height: 3px;
+            width: 90%;
+            background: $mainColor;
+            border: $mainColor;
+          }
+
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+        }
+      }
+
+      &__button {
+        background-color: $mainColor;
+        color: white;
+        width: 90%;
+        border-radius: 16px;
+        margin-top: 2vh;
+        @include padGap;
+        @include centre;
       }
 
       @keyframes scroll {
@@ -273,8 +542,9 @@ h2 {
         display: flex;
         flex-direction: row;
         height: 20vh;
-        width: 100vh;
-        border: #dd214c solid 2px;
+        width: 100%;
+        // border: #dd214c solid 2px;
+        overflow: hidden;
 
         &__trak {
           display: flex;
@@ -282,7 +552,7 @@ h2 {
           justify-content: space-between;
           gap: 14px;
           width: 100%;
-          border: royalblue solid 2px;
+          // border: royalblue solid 2px;
 
           &__slide {
             animation: scroll 10s linear infinite;
@@ -290,55 +560,7 @@ h2 {
             width: 121px;
             // position: relative;
             background: center left 200%;
-            border: lime 4px solid;
-          }
-
-          & :nth-child(1) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
-          }
-
-          & :nth-child(2) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
-          }
-
-          & :nth-child(3) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
-          }
-
-          & :nth-child(4) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
-          }
-
-          & :nth-child(5) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
-          }
-
-          & :nth-child(6) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
-          }
-
-          & :nth-child(7) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
-          }
-
-          & :nth-child(8) {
-            background-image: url("../assets/visuel_acceuil/smile.svg");
-            height: 10vh;
-            width: 100vw;
+            // border: lime 4px solid;
           }
         }
       }
