@@ -25,10 +25,30 @@
 </template>
 <!-- ______________________________________SCSS__________________________________________ -->
 <style lang="scss" scoped>
+@import "../variables";
 .container {
-  background-image: url(http://localhost:8080/img/cube.a0c446fb.png);
+  background-image: url("../assets/Camoulax/composant/cube.png");
   height: 720px;
   width: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (min-width: $tablette-screen) {
+    background-image: url("../assets/Camoulax/composant/cube.png");
+    height: 272px;
+    width: 722px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 24px;
+    margin-top: 93px;
+    border-radius: 20px;
+  }
 
   &__img {
     height: 47vh;
@@ -41,6 +61,12 @@
       margin: auto;
       border-radius: 20px;
       border: 3px solid #dd214c;
+      @media (min-width: $tablette-screen) {
+        height: 66%;
+        margin: auto;
+        border-radius: 20px;
+        border: 3px solid #dd214c;
+      }
     }
   }
 
@@ -51,11 +77,24 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    @media (min-width: $tablette-screen) {
+      height: 26vh;
+      width: 290%;
+      display: flex;
+      justify-content: right;
+      align-items: end;
+    }
     h1 {
       text-align: center;
       font-size: 1.8rem;
       color: #dd214c;
       font-family: Poppins;
+      @media (min-width: $tablette-screen) {
+        text-align: center;
+        font-size: 1.8rem;
+        color: #dd214c;
+        font-family: Poppins;
+      }
     }
     p {
       font-size: 1rem;
@@ -63,6 +102,15 @@
       font-family: Poppins;
       margin: auto;
       width: 94%;
+      @media (min-width: $tablette-screen) {
+        font-size: 0.8rem;
+        color: #000000;
+        font-family: Poppins;
+        margin: auto;
+        width: 103%;
+        text-align: start;
+        margin-left: 71px;
+      }
     }
   }
   &__botn {
