@@ -4,15 +4,23 @@
       <div class="form__group" :class="{ 'form-group--error': $v.name.$error }">
         <label class="form__group__label">Name</label>
         <input class="form__group__input" v-model.trim="$v.name.$model" />
-        <label class="form__label">Mail</label>
+        <label class="form__group__label">Mail</label>
         <input class="form__group__input" v-model.trim="$v.mail.$model" />
-        <div class="form__msg">
-          <label class="form__msg__label">Message</label>
-          <textarea
-            class="form__msg__input"
-            v-model.trim="$v.msg.$model"
-          ></textarea>
-        </div>
+        <button
+          class="button"
+          type="submit"
+          :disabled="submitStatus === 'PENDING'"
+        >
+          Envoyer
+        </button>
+      </div>
+      <div class="form__group" :class="{ 'form-group--error': $v.name.$error }">
+        <label class="form__msg__label">Message</label>
+        <textarea
+          class="form__msg__input"
+          v-model.trim="$v.msg.$model"
+        ></textarea>
+        <button class="button" type="reset">Annuler</button>
       </div>
       <!-- <div class="error" v-if="!$v.name.required">Votre nom est attendu</div>
       <div class="error" v-if="!$v.name.minLength">
@@ -30,14 +38,7 @@
         Votre Message doit contenir {{ $v.msg.$params.minLength.min }} lettres
         minimum.
       </div> -->
-      <button
-        class="button"
-        type="submit"
-        :disabled="submitStatus === 'PENDING'"
-      >
-        Envoyer
-      </button>
-      <button class="button" type="reset">Annuler</button>
+
       <p class="typo__p" v-if="submitStatus === 'OK'">
         Merci pour votre envoie!
       </p>
@@ -51,27 +52,29 @@
 
 <style lang="scss">
 .formulaire {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
   .form {
-    display: flex;
-    flex-direction: column;
-    // margin: auto;
-    width: 80%;
-    height: 100%;
     border: 1px solid black;
     border-radius: 20px;
-    background-color: #d2d2d2;
+    display: flex;
+    gap: 25%;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 550px;
+    margin: auto;
 
     &__group {
-      display: flex;
+      background-color: red;
       flex-direction: column;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 24px;
 
-      &__input {
-        margin: auto;
-      }
+      // &__label {
+      // }
     }
   }
 }
