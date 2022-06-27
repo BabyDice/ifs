@@ -86,6 +86,55 @@
 
 <style lang="scss" scoped>
 @import "@/_variablesscss";
+.contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-family: $fontfamilyMedium;
+    font-size: 24px;
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    padding: 50px;
+
+    &__children {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // gap: 20vw;
+
+      &__img-p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          margin-bottom: 5%;
+        }
+
+        p {
+          padding: 5%;
+        }
+      }
+
+      &__frms {
+        width: 50%;
+        height: 100%;
+
+        &__field {
+          border-radius: 15px;
+          background-color: $lastColor;
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: $mobile) {
 }
