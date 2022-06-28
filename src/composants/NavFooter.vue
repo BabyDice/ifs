@@ -1,6 +1,16 @@
+<script>
+import Vue from "vue";
+new Vue({
+  el: "footer",
+  data: {
+    footer: false,
+  },
+});
+</script>
+
 <template>
-  <div class="footer">
-    <footer class="footer__main">
+  <div class="footer" id="footer">
+    <footer class="footer__main" v-show="!footer">
       <div class="footer__main__children">
         <h2 class="footer__main__children__title">Mentions Légales</h2>
       </div>
