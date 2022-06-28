@@ -92,7 +92,7 @@ $fontfamilyRegular: "Poppins", sans-serif;
       align-items: center;
       flex-direction: column;
       background-color: $mainColor;
-      height: 100vh;
+      height: 500px;
 
       &__children__liste {
         width: 100%;
