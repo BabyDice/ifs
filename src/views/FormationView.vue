@@ -146,22 +146,16 @@
               />
             </div>
             <div class="container__track2__wrapper__slider__slide">
+              <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
               <img
-                src="@/assets/visuel_formation/logo//logo_opinel.png"
+                src="@/assets/visuel_formation/logo/logo_challes_les-eaux.png"
                 alt=""
               />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_formation/logo//logo_opinel.png"
-                alt=""
-              />
-            </div>
-            <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_formation/logo//logo_opinel.png"
-                alt=""
-              />
+              <img src="@/assets/visuel_formation/logo/logo_ciat.png" alt="" />
             </div>
           </div>
         </div>
@@ -325,29 +319,6 @@ h2 {
             @include centre;
           }
         }
-
-        h2 {
-          font-weight: bold;
-          color: $mainColor;
-          @include centre;
-          font-family: $fontfamilyRegular;
-        }
-
-        hr {
-          height: 3px;
-          width: 90%;
-          background: $mainColor;
-          border: $mainColor;
-        }
-
-        &__butt {
-          background-color: $mainColor;
-          color: white;
-          width: 70%;
-          border-radius: 16px;
-          @include padGap;
-          @include centre;
-        }
       }
 
       &__blox2 {
@@ -415,7 +386,7 @@ h2 {
       border-radius: $radius-24;
       position: relative;
       box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-
+      @include centre;
       overflow: hidden;
       margin: auto;
 
@@ -442,18 +413,21 @@ h2 {
 
       &__slider {
         margin: 10px;
-        width: calc(150px * 14);
+        width: calc(100px * 28);
         display: flex;
+        justify-content: space-between;
+        @include centre;
         gap: 16px;
-        animation: scroll 20s linear infinite;
+        animation: scroll 60s linear infinite;
 
         &__slide {
-          height: 100px;
-          width: 150px;
+          height: 5vh;
+          width: 100px;
+          @include centre;
 
           img {
-            height: 60px;
-            width: 50px;
+            height: 100%;
+            width: 100%;
           }
         }
       }
@@ -473,18 +447,7 @@ h2 {
   }
 
   .container {
-    display: flex;
-    flex-direction: column;
-    // border: 3px solid red;
-    height: 100%;
-    @include padGap;
-
     &__track {
-      display: flex;
-      flex-direction: row;
-      @include padGap;
-      @include centre;
-
       &__item {
         width: 100vw;
         display: flex;
@@ -502,17 +465,8 @@ h2 {
 
         &__image {
           // border: solid 2px yellow;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-around;
-          @include padGap;
-          width: 100%;
 
-          img {
-            width: 10vw;
-            height: 10vh;
-            border: solide 2px red($color: #000000);
-          }
+          width: 100%;
 
           & :nth-child(3) {
             width: 10vw;
@@ -523,38 +477,10 @@ h2 {
     }
 
     &__track2 {
-      display: flex;
-      flex-direction: column;
       // border: 3px solid royalblue;
-      margin-top: 5vh;
-
-      @include padGap;
-      @include centre;
-
-      &__image2 {
-        // border: solid 2px yellow;
-        display: flex;
-        justify-content: space-around;
-        flex-flow: nowrap;
-        margin-top: 4vh;
-        width: 100%;
-        @include padGap;
-      }
 
       &__bloxNpic {
-        display: flex;
-        justify-content: center;
-        @include padGap;
-
         &__blox {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-          backdrop-filter: blur(17.4px);
-          background: rgba(203, 203, 203, 0.73);
-          border-radius: 16px;
-          -webkit-backdrop-filter: blur(17.4px);
           border: 1px solid $mainColor;
           width: 90%;
           height: 100vh;
@@ -581,152 +507,13 @@ h2 {
           }
 
           &__txt {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
             width: 100%;
             height: 50%;
-            @include bloxCentre;
-            @include padGap;
-
-            h2 {
-              font-weight: bold;
-              color: $mainColor;
-              font-family: $fontfamilyRegular;
-            }
-
-            hr {
-              height: 3px;
-              width: 90%;
-              background: $mainColor;
-              border: $mainColor;
-            }
-
-            &__butt {
-              background-color: $mainColor;
-              color: white;
-              width: 20vw;
-              border-radius: 16px;
-              @include padGap;
-              @include centre;
-            }
           }
         }
 
         &__blox2 {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-          backdrop-filter: blur(17.4px);
-          background: rgba(203, 203, 203, 0.73);
-          border-radius: 16px;
-          -webkit-backdrop-filter: blur(17.4px);
           border: 1px solid $mainColor;
-          width: 90%;
-          height: 100vh;
-          margin-top: 2vh;
-          @include padGap;
-          @include bloxCentre;
-          font-family: $fontfamilyRegular;
-
-          h2 {
-            font-weight: bold;
-            color: $mainColor;
-            @include centre;
-            font-family: $fontfamilyRegular;
-          }
-
-          hr {
-            height: 3px;
-            width: 90%;
-            background: $mainColor;
-            border: $mainColor;
-          }
-
-          div {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-          }
-        }
-      }
-
-      &__button {
-        background-color: $mainColor;
-        color: white;
-        width: 90%;
-        border-radius: 16px;
-        margin-top: 2vh;
-        @include padGap;
-        @include centre;
-      }
-
-      @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-
-        100% {
-          transform: translateX(-1200px);
-        }
-      }
-
-      &__wrapper {
-        display: unset;
-        background: white;
-        width: 90%;
-        height: 80px;
-        border-radius: $radius-24;
-        position: relative;
-        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-
-        overflow: hidden;
-        margin: auto;
-
-        &::before,
-        &::after {
-          display: unset;
-          height: 150px;
-          width: 50px;
-          position: absolute;
-          content: "";
-          @include whiteGradient;
-          z-index: 2;
-        }
-
-        &::before {
-          display: unset;
-          top: 0;
-          left: 0;
-        }
-
-        &::after {
-          display: unset;
-          top: 0;
-          right: 0;
-          transform: rotateZ(180deg);
-        }
-
-        &__slider {
-          display: unset;
-          margin: 10px;
-          width: calc(150px * 14);
-          display: flex;
-          gap: 16px;
-          animation: scroll 20s linear infinite;
-
-          &__slide {
-            display: unset;
-            height: 100px;
-            width: 150px;
-
-            img {
-              display: unset;
-              height: 60px;
-              width: 50px;
-            }
-          }
         }
       }
     }
@@ -742,18 +529,7 @@ h2 {
   }
 
   .container {
-    display: flex;
-    flex-direction: column;
-    // border: 3px solid red;
-    height: 100%;
-    @include padGap;
-
     &__track {
-      display: flex;
-      flex-direction: row;
-      @include padGap;
-      @include centre;
-
       &__item {
         width: 100vw;
         display: flex;
@@ -768,52 +544,12 @@ h2 {
           // border: solid 2px green;
           width: 50%;
         }
-
-        &__image {
-          // border: solid 2px yellow;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-around;
-          @include padGap;
-          width: 100%;
-
-          img {
-            width: 10vw;
-            height: 10vh;
-            border: solide 2px red($color: #000000);
-          }
-
-          & :nth-child(3) {
-            width: 10vw;
-            height: 7vh;
-          }
-        }
       }
     }
 
     &__track2 {
-      display: flex;
-      flex-direction: column;
-      // border: 3px solid royalblue;
-      margin-top: 5vh;
-
-      @include padGap;
-      @include centre;
-
       &__bloxNpic {
-        display: flex;
-        justify-content: center;
-        @include padGap;
-
         &__blox {
-          display: flex;
-          flex-flow: column wrap;
-          justify-content: space-around;
-          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-          backdrop-filter: blur(17.4px);
-          background: rgba(203, 203, 203, 0.73);
-          border-radius: 16px;
-          -webkit-backdrop-filter: blur(17.4px);
           border: 1px solid $mainColor;
           width: 90%;
           height: 70vh;
@@ -832,8 +568,6 @@ h2 {
             @include borderMain;
 
             img {
-              height: 100%;
-              width: 100%;
               border-radius: 16px 0px 0px 16px;
               align-self: flex-start;
             }
@@ -843,143 +577,20 @@ h2 {
             width: 50%;
             height: 70vh;
             @include centre;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
             gap: 16px;
-
-            h2 {
-              font-weight: bold;
-              color: $mainColor;
-              font-family: $fontfamilyRegular;
-            }
-
-            hr {
-              height: 3px;
-              width: 90%;
-              background: $mainColor;
-              border: $mainColor;
-            }
-
-            &__butt {
-              background-color: $mainColor;
-              color: white;
-              width: 20vw;
-              border-radius: 16px;
-              @include padGap;
-              @include centre;
-            }
           }
         }
 
         &__blox2 {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-          backdrop-filter: blur(17.4px);
-          background: rgba(203, 203, 203, 0.73);
-          border-radius: 16px;
           -webkit-backdrop-filter: blur(17.4px);
           @include borderMain;
-          width: 90%;
+
           height: 100vh;
-          margin-top: 2vh;
-          @include padGap;
-          @include bloxCentre;
-          font-family: $fontfamilyRegular;
-
-          h2 {
-            font-weight: bold;
-            color: $mainColor;
-            @include centre;
-            font-family: $fontfamilyRegular;
-          }
-
-          hr {
-            height: 3px;
-            width: 90%;
-            background: $mainColor;
-            border: $mainColor;
-          }
-
-          div {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-          }
         }
       }
 
       &__button {
-        background-color: $mainColor;
-        color: white;
-        width: 90%;
-        border-radius: 16px;
         margin-top: 2vh;
-        @include padGap;
-        @include centre;
-      }
-
-      @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-
-        100% {
-          transform: translateX(-1200px);
-        }
-      }
-
-      &__wrapper {
-        background: white;
-        width: 90%;
-        height: 80px;
-        border-radius: $radius-24;
-        position: relative;
-        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-
-        overflow: hidden;
-        margin: auto;
-
-        &::before,
-        &::after {
-          height: 150px;
-          width: 50px;
-          position: absolute;
-          content: "";
-          @include whiteGradient;
-          z-index: 2;
-        }
-
-        &::before {
-          top: 0;
-          left: 0;
-        }
-
-        &::after {
-          top: 0;
-          right: 0;
-          transform: rotateZ(180deg);
-        }
-
-        &__slider {
-          margin: 10px;
-          width: calc(150px * 14);
-          display: flex;
-          gap: 16px;
-          animation: scroll 20s linear infinite;
-
-          &__slide {
-            height: 100px;
-            width: 150px;
-
-            img {
-              height: 60px;
-              width: 50px;
-            }
-          }
-        }
       }
     }
   }
