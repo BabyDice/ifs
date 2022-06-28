@@ -60,7 +60,11 @@
       </aside>
       <aside class="container__track2">
         <div class="container__track2__bloxNpic">
-          <div class="container__track2__bloxNpic__blox2"></div>
+          <div class="container__track2__bloxNpic__blox2">
+            <img src="@/assets/visuel_bureautique/excel.svg" alt="" />
+            <img src="@/assets/visuel_bureautique/word.svg" alt="" />
+            <img src="@/assets/visuel_bureautique/powerpoint.svg" alt="" />
+          </div>
         </div>
       </aside>
     </section>
@@ -119,17 +123,17 @@ h2 {
       &__image {
         // border: solid 2px yellow;
         display: flex;
-        flex-flow: row wrap;
+        flex-direction: row;
         justify-content: space-around;
+        align-self: center;
         margin-top: 4vh;
         @include padGap;
-        @include centre;
         box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(17.4px);
         background: rgba(203, 203, 203, 0.73);
         border-radius: 16px;
         border: $mainColor solid 1px;
-        width: 30%;
+        width: 40vw;
 
         img {
           width: 40px;
@@ -234,7 +238,7 @@ h2 {
 
       &__blox2 {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
         box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(17.4px);
@@ -242,30 +246,14 @@ h2 {
         border-radius: 16px;
         -webkit-backdrop-filter: blur(17.4px);
         border: 1px solid rgba(203, 203, 203, 0.36);
-        width: 90%;
-        margin-top: 2vh;
         @include padGap;
         @include bloxCentre;
         font-family: $fontfamilyRegular;
+        width: 70vw;
 
-        h2 {
-          font-weight: bold;
-          color: $mainColor;
-          @include centre;
-          font-family: $fontfamilyRegular;
-        }
-
-        hr {
-          height: 3px;
-          width: 90%;
-          background: $mainColor;
-          border: $mainColor;
-        }
-
-        div {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+        img {
+          width: 70px;
+          height: 60px;
         }
       }
     }
@@ -278,70 +266,6 @@ h2 {
       margin-top: 10vh;
       @include padGap;
       @include centre;
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-
-      100% {
-        transform: translateX(-1200px);
-      }
-    }
-
-    &__wrapper {
-      background: white;
-      width: 90%;
-      height: 80px;
-      border-radius: $radius-24;
-      position: relative;
-      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-      @include centre;
-      overflow: hidden;
-      margin: auto;
-
-      &::before,
-      &::after {
-        height: 150px;
-        width: 50px;
-        position: absolute;
-        content: "";
-        @include whiteGradient;
-        z-index: 2;
-      }
-
-      &::before {
-        top: 0;
-        left: 0;
-      }
-
-      &::after {
-        top: 0;
-        right: 0;
-        transform: rotateZ(180deg);
-      }
-
-      &__slider {
-        margin: 10px;
-        width: calc(100px * 28);
-        display: flex;
-        justify-content: space-between;
-        @include centre;
-        gap: 16px;
-        animation: scroll 60s linear infinite;
-
-        &__slide {
-          height: 5vh;
-          width: 100px;
-          @include centre;
-
-          img {
-            height: 100%;
-            width: 100%;
-          }
-        }
-      }
     }
   }
 }
@@ -398,7 +322,7 @@ h2 {
         &__blox {
           border: 1px solid $mainColor;
           width: 90%;
-          height: 100vh;
+          height: 100%;
           margin-top: 2vh;
           gap: 0;
           padding: 0;
@@ -438,6 +362,7 @@ h2 {
 
         &__blox2 {
           border: 1px solid $mainColor;
+          width: 70vw;
         }
       }
 
@@ -446,7 +371,7 @@ h2 {
         color: white;
         width: 90%;
         border-radius: 16px;
-        margin-top: 10vh;
+        margin-top: 5vh;
         @include padGap;
         @include centre;
       }
@@ -487,13 +412,10 @@ h2 {
           display: flex;
           flex-direction: row;
           border: 1px solid $mainColor;
-          width: 90%;
-          height: 70vh;
           margin-top: 2vh;
-          gap: 0;
-          padding: 0;
           @include bloxCentre;
           font-family: $fontfamilyRegular;
+          width: 50%;
 
           &__visu {
             display: flex;
@@ -512,8 +434,6 @@ h2 {
           }
 
           &__txt {
-            width: 50%;
-            height: 70vh;
             @include centre;
             gap: 16px;
           }
@@ -522,13 +442,18 @@ h2 {
         &__blox2 {
           -webkit-backdrop-filter: blur(17.4px);
           @include borderMain;
+          width: 70vw;
 
-          height: 100vh;
+          img {
+            width: 70px;
+            height: 80px;
+          }
         }
       }
 
       &__button {
         margin-top: 2vh;
+        width: 50%;
       }
     }
   }
