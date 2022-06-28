@@ -56,7 +56,7 @@
           </div>
         </div>
         <button type="submit" class="container__track2__button">
-          Cathalogue Formation
+          <router-link to="/bureau">Cathalogue Formation</router-link>
         </button>
       </aside>
       <aside class="container__track2">
@@ -376,6 +376,8 @@ h2 {
       width: 90%;
       border-radius: 16px;
       margin-top: 10vh;
+      text-decoration-line: none;
+      font-family: $fontfamilyRegular;
       @include padGap;
       @include centre;
     }
@@ -629,6 +631,7 @@ h2 {
 
       &__button {
         margin-top: 2vh;
+        text-decoration: none;
       }
     }
   }
