@@ -10,9 +10,14 @@
             <li>Savoie</li>
           </div>
           <div class="container__track__item__image">
-            <img src="../assets/visuel_acceuil/work.svg" alt="" />
-            <img src="../assets/visuel_acceuil/teaching.svg" alt="" />
-            <img src="../assets/visuel_acceuil/location.svg" alt="" />
+            <img src="@/assets/visuel_formation/icon/goal (1).png" alt="" />
+            <img src="@/assets/visuel_formation/icon/laptop-red.png" alt="" />
+            <img
+              src="@/assets/visuel_formation/icon/online-marketing-red.png"
+              alt=""
+            />
+            <img src="@/assets/visuel_formation/icon/red-ep.png" alt="" />
+            <img src="@/assets/visuel_formation/icon/red-pc.png" alt="" />
           </div>
         </div>
       </aside>
@@ -219,16 +224,22 @@ h2 {
         justify-content: space-around;
         margin-top: 4vh;
         @include padGap;
+        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(17.4px);
+        background: rgba(203, 203, 203, 0.73);
+        border-radius: 16px;
+        border: $mainColor solid 1px;
+        width: 90%;
 
         img {
-          width: 10vw;
-          height: 10vh;
+          width: 40px;
+          height: 50px;
           border: solide 2px red($color: #000000);
         }
 
         & :nth-child(3) {
-          width: 20vw;
-          height: 7vh;
+          width: 40px;
+          height: 50px;
         }
       }
     }
@@ -309,15 +320,15 @@ h2 {
             background: $mainColor;
             border: $mainColor;
           }
+        }
 
-          &__butt {
-            background-color: $mainColor;
-            color: white;
-            width: 20vw;
-            border-radius: 16px;
-            @include padGap;
-            @include centre;
-          }
+        &__butt {
+          background-color: $mainColor;
+          color: white;
+          width: 50%;
+          border-radius: 16px;
+          @include padGap;
+          @include centre;
         }
       }
 
@@ -466,11 +477,15 @@ h2 {
         &__image {
           // border: solid 2px yellow;
 
-          width: 100%;
+          img {
+            width: 40px;
+            height: 50px;
+            border: solide 2px red($color: #000000);
+          }
 
           & :nth-child(3) {
-            width: 10vw;
-            height: 7vh;
+            width: 40px;
+            height: 50px;
           }
         }
       }
@@ -510,11 +525,30 @@ h2 {
             width: 100%;
             height: 50%;
           }
+
+          &__butt {
+            background-color: $mainColor;
+            color: white;
+            width: 20vw;
+            border-radius: 16px;
+            @include padGap;
+            @include centre;
+          }
         }
 
         &__blox2 {
           border: 1px solid $mainColor;
         }
+      }
+
+      &__button {
+        background-color: $mainColor;
+        color: white;
+        width: 90%;
+        border-radius: 16px;
+        margin-top: 10vh;
+        @include padGap;
+        @include centre;
       }
     }
   }
@@ -550,6 +584,8 @@ h2 {
     &__track2 {
       &__bloxNpic {
         &__blox {
+          display: flex;
+          flex-direction: row;
           border: 1px solid $mainColor;
           width: 90%;
           height: 70vh;
@@ -570,6 +606,8 @@ h2 {
             img {
               border-radius: 16px 0px 0px 16px;
               align-self: flex-start;
+              width: 100%;
+              height: 100%;
             }
           }
 
