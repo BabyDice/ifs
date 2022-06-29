@@ -56,7 +56,7 @@
                 id="envoyer"
               />
             </div>
-            <div class="contact__container__children__frms__field__msg">
+            <div class="contact__container__children__frms__field__nom-mail">
               <label for="message">Message : </label>
               <textarea
                 name="message"
@@ -100,7 +100,7 @@
   &__container {
     width: 100%;
     height: 100%;
-    background-color: red;
+    // background-color: red;
     padding: 50px;
 
     &__children {
@@ -124,14 +124,27 @@
       }
 
       &__frms {
-        width: 50%;
-        height: 100%;
-
+        width: 100%;
         &__field {
           border-radius: 15px;
           background-color: $lastColor;
+          height: 515px;
+
+          &__nom-mail {
+            width: 100%;
+            display: flex;
+            // flex-direction: column;
+          }
         }
       }
+    }
+  }
+
+  &__ifrm {
+    iframe {
+      width: 90%;
+      border-radius: 20px;
+      margin: auto;
     }
   }
 }
