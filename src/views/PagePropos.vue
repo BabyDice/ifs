@@ -5,7 +5,7 @@
         <img src="../assets/Camoulax/Amandine/cadre.png" alt="" />
       </div>
       <div class="container__text">
-        <h1>Amandine Lorenzo</h1>
+        <h2>Amandine Lorenzo</h2>
         <p>
           <strong>Metier: </strong> Assistante de direction/formatrice
           bureautique/Gérante.<br />
@@ -23,9 +23,8 @@
     <h2>Bienveillance - Ecoute - Esprit d’equipe</h2>
   </div>
 </template>
-<!-- ______________________________________SCSS__________________________________________ -->
+<!-- _____________________________________SCSS_________________________________________ -->
 <style lang="scss" scoped>
-@import "../variables";
 .container {
   background-image: url("../assets/Camoulax/composant/cube.png");
   height: 720px;
@@ -33,7 +32,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
   @media (min-width: $tablette-screen) {
     background-image: url("../assets/Camoulax/composant/cube.png");
     height: 272px;
@@ -51,10 +49,11 @@
     border-radius: 20px;
   }
   @media (min-width: $desktop-screen) {
-    height: 272px;
-    width: 722px;
+    height: 380px;
+    width: 860px;
+    border: blue solid 5px;
+    border-radius: 20px;
   }
-
   &__img {
     height: 47vh;
     width: 80%;
@@ -66,7 +65,6 @@
       margin: auto;
       border-radius: 20px;
       border: 3px solid #dd214c;
-
       @media (min-width: $tablette-screen) {
         height: 66%;
         margin: auto;
@@ -76,7 +74,6 @@
       }
     }
   }
-
   &__text {
     height: 33vh;
     width: 78%;
@@ -84,7 +81,6 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-
     @media (min-width: $tablette-screen) {
       height: 26vh;
       width: 290%;
@@ -92,12 +88,11 @@
       justify-content: right;
       align-items: end;
     }
-    h1 {
+    h2 {
       text-align: center;
       font-size: 1.8rem;
       color: #dd214c;
       font-family: Poppins;
-
       @media (min-width: $tablette-screen) {
         text-align: center;
         font-size: 1.8rem;
@@ -111,7 +106,6 @@
       font-family: Poppins;
       margin: auto;
       width: 94%;
-
       @media (min-width: $tablette-screen) {
         font-size: 0.8rem;
         color: #000000;
@@ -142,7 +136,6 @@
       justify-content: center;
       font-family: poppins;
       box-shadow: 3px 3px 9px 1px rgb(255 255 255 / 39%);
-
       @media (min-width: $tablette-screen) {
         background-color: #dd214c;
         border-radius: 20px;
