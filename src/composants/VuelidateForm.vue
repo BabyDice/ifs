@@ -44,13 +44,13 @@
         </div>
         <div class="form__btn">
           <button
-            class="button"
+            class="button btn"
             type="submit"
             :disabled="submitStatus === 'PENDING'"
           >
             Envoyer
           </button>
-          <button class="button" type="reset">Annuler</button>
+          <button class="button btn" type="reset">Annuler</button>
         </div>
         <p class="typo__p" v-if="submitStatus === 'OK'">
           Merci pour votre envoie!
@@ -71,13 +71,19 @@
     border-radius: 20px;
     display: flex;
     height: auto;
-    width: 80%;
-    background: #f8f8f8;
+    width: 50%;
+    background: $secondColor;
     margin: auto;
 
     .typo__p {
       font-size: 16px;
       font-family: $fontfamilyMedium;
+    }
+
+    .error {
+      font-size: 16px;
+      font-family: $fontfamilyMedium;
+      color: $mainColor;
     }
 
     &__group {
@@ -94,11 +100,11 @@
       }
 
       input {
-        line-height: 10vh;
+        line-height: 6vh;
         padding: 2%;
         border-radius: 15px;
         border: none;
-        background: rgba(210, 210, 210, 0.16);
+        background: $secondColor;
         border: 1px solid #000000;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
       }
@@ -107,9 +113,9 @@
         border: none;
         border-radius: 15px;
         padding: 2%;
-        background: rgba(210, 210, 210, 0.16);
         border: 1px solid #000000;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        background: $secondColor;
       }
     }
 
@@ -123,10 +129,14 @@
         border: none;
         border-radius: 15px;
         line-height: 6vh;
-        background: rgba(210, 210, 210, 0.16);
+        background: $secondColor;
         border: 1px solid #000000;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
         margin-bottom: 5%;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: $mainColor;
       }
     }
   }
