@@ -19,6 +19,47 @@
             <img src="@/assets/visuel_formation/icon/red-ep.png" alt="" />
             <img src="@/assets/visuel_formation/icon/red-pc.png" alt="" />
           </div>
+          <div class="container__track__item__moovingTxt">
+            <ul>
+              <li>
+                <div class="container__track__item__moovingTxt__container">
+                  SUBSTANTIAL GAINFUL ACTIVITY<br />
+                  <span>Are you making more than <strong>$1,260?</strong></span>
+                </div>
+              </li>
+              <li>
+                <div class="container__track__item__moovingTxt__container">
+                  SEVERE?<br />
+                  <span
+                    >Do you have
+                    <strong>Objective Medical Evidence?</strong></span
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="container__track__item__moovingTxt__container">
+                  MEETS LESTING<br />
+                  <span
+                    >Are you properly matched to your work description?</span
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="container__track__item__moovingTxt__container">
+                  PRESENT RELATIVE WORK<br />
+                  <span
+                    >Are you properly matched to your work description?</span
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="container__track__item__moovingTxt__container">
+                  OTHER WORK<br />
+                  <span>Can a Vocational Expert help you find other work?</span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </aside>
       <aside class="container__track2">
@@ -207,6 +248,7 @@ h2 {
     @include centre;
 
     &__item {
+      @include padGap;
       width: 100%;
 
       &__content {
@@ -242,6 +284,137 @@ h2 {
           height: 50px;
         }
       }
+
+      &__moovingTxt {
+        //background-color: pink;
+        min-height: 80px;
+        margin-top: 3vh;
+        overflow: hidden;
+        padding: 10px;
+        position: relative;
+        width: 600px;
+
+        ul {
+          list-style: none;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 9000px;
+          transition: left 0.2s linear;
+          -moz-transition: left 0.2s linear;
+          -o-transition: left 0.2s linear;
+          -webkit-transition: left 0.2s linear;
+          margin-left: -25px;
+
+          li {
+            font-family: $fontfamilyRegular;
+            float: left;
+            position: relative;
+            width: 600px;
+            display: inline-block;
+            height: 200px;
+
+            /* Content */
+          }
+        }
+
+        &__container {
+          color: $mainColor;
+          font-size: 1.8em;
+          font-weight: 900;
+          line-height: 1.1;
+          margin: 0 auto;
+          max-width: 550px;
+          min-height: 180px;
+          padding: 0;
+          text-align: center;
+
+          span {
+            color: black;
+            display: inline-block;
+            font-size: 70%;
+            font-weight: 300;
+            line-height: 1.2;
+          }
+        }
+      }
+
+      /*** target hooks ****/
+
+      @keyframes slide-animation {
+        0% {
+          opacity: 0;
+        }
+
+        2% {
+          opacity: 1;
+        }
+
+        20% {
+          left: 0px;
+          opacity: 1;
+        }
+
+        22.5% {
+          opacity: 0.6;
+        }
+
+        25% {
+          left: -600px;
+          opacity: 1;
+        }
+
+        45% {
+          left: -600px;
+          opacity: 1;
+        }
+
+        47.5% {
+          opacity: 0.6;
+        }
+
+        50% {
+          left: -1200px;
+          opacity: 1;
+        }
+
+        70% {
+          left: -1200px;
+          opacity: 1;
+        }
+
+        72.5% {
+          opacity: 0.6;
+        }
+
+        75% {
+          left: -1800px;
+          opacity: 1;
+        }
+
+        95% {
+          opacity: 1;
+        }
+
+        98% {
+          left: -1800px;
+          opacity: 0;
+        }
+
+        100% {
+          left: 0px;
+          opacity: 0;
+        }
+      }
+
+      &__moovingTxt ul {
+        animation: slide-animation 20s infinite;
+      }
+
+      &__moovingTxt ul:hover {
+        animation-play-state: paused;
+        animation-play-state: paused;
+      }
     }
   }
 
@@ -249,7 +422,7 @@ h2 {
     display: flex;
     flex-direction: column;
     // border: 3px solid royalblue;
-    margin-top: 5vh;
+    margin-top: 2vh;
 
     @include padGap;
     @include centre;
