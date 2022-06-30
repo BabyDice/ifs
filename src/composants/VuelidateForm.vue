@@ -5,15 +5,23 @@
         <p class="typo__p" v-if="submitStatus === 'ERROR'">
           Veuillez remplir les champs obligatoires.
         </p>
-        <label class="form__group__label">Name</label>
-        <input class="form__group__input" v-model.trim="$v.name.$model" />
+        <label class="form__group__label">Nom</label>
+        <input
+          class="form__group__input"
+          v-model.trim="$v.name.$model"
+          placeholder="Nom"
+        />
         <div class="error" v-if="!$v.name.required">Votre nom est attendu</div>
         <div class="error" v-if="!$v.name.minLength">
           Votre Nom doit contenir {{ $v.name.$params.minLength.min }} lettres
           minimum.
         </div>
         <label class="form__group__label">Mail</label>
-        <input class="form__group__input" v-model.trim="$v.mail.$model" />
+        <input
+          class="form__group__input"
+          v-model.trim="$v.mail.$model"
+          placeholder="Email"
+        />
         <div class="error" v-if="!$v.mail.required">
           Votre email est attendu
         </div>
@@ -25,6 +33,7 @@
           class="form__msg__input"
           v-model.trim="$v.msg.$model"
           rows="10px"
+          placeholder="Message"
         ></textarea>
         <div class="error" v-if="!$v.msg.required">
           Votre message est attendu
@@ -56,11 +65,12 @@
 <style lang="scss">
 @import "../_variablesscss";
 .formulaire {
+  margin: auto;
   .form {
     border: 1px solid black;
     border-radius: 20px;
     display: flex;
-    height: 850px;
+    height: auto;
     width: 80%;
     background: #f8f8f8;
     margin: auto;
@@ -80,6 +90,7 @@
         display: flex;
         font-family: $fontfamilyMedium;
         font-size: 16px;
+        margin-top: 5%;
       }
 
       input {
@@ -115,6 +126,7 @@
         background: rgba(210, 210, 210, 0.16);
         border: 1px solid #000000;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        margin-bottom: 5%;
       }
     }
   }

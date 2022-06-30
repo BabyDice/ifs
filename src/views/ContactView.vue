@@ -1,30 +1,41 @@
+<script>
+import VuelidateForm from "@/composants/VuelidateForm.vue";
+export default {
+  name: "ContactView",
+  components: { VuelidateForm },
+};
+</script>
+
 <template>
   <div class="contact">
     <div class="contact__title">
       <h1>Contact</h1>
     </div>
+    <div class="contact__composants">
+      <VuelidateForm />
+    </div>
     <div class="contact__container">
       <div class="contact__container__children">
         <div class="contact__container__children__img-p">
           <img
-            src="@/assets/logo.png"
+            src="@/assets/contactform/Wireframe/Vectorimgss.png"
             alt="picto-gps"
-            width="50px"
-            height="50px"
+            width="60px"
+            height="70px"
           />
           <p>45, place du commerce 73 230 SAINT ALBAN LEYSSE</p>
           <img
-            src="@/assets/logo.png"
+            src="@/assets/contactform/Wireframe/Vectorimgss-3.png"
             alt="picto-gps"
-            width="50px"
-            height="50px"
+            width="60px"
+            height="80px"
           />
           <p>06 17 03 34 30</p>
           <img
             src="@/assets/logo.png"
             alt="picto-gps"
-            width="50px"
-            height="50px"
+            width="60px"
+            height="70px"
           />
           <p>a.lorenzo@ifs73.fr</p>
         </div>
@@ -103,8 +114,3 @@
 @media (min-width: $desktop) {
 }
 </style>
-<script>
-export default {
-  name: "ContactView",
-};
-</script>
