@@ -16,6 +16,7 @@
 @mixin bloxCentre {
   text-align: center;
   align-items: center;
+  text-align: center;
 }
 
 @mixin iconTxt {
@@ -32,6 +33,14 @@
   flex-direction: row;
 }
 
+@mixin whiteGradient {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+@mixin borderMain {
+  border: 1px solid $mainColor;
+}
+$radius-24: 24px;
 $mainColor: #dd214c;
 $fontfamilyMedium: "Poppins", sans-serif;
 $fontfamilyRegular: "Poppins", sans-serif;

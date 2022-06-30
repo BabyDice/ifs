@@ -14,6 +14,11 @@
             <img src="../assets/visuel_acceuil/teaching.svg" alt="" />
             <img src="../assets/visuel_acceuil/location.svg" alt="" />
           </div>
+          <div class="container__track__item__picTxt">
+            <p>Formation bureautique</p>
+            <p>Formation inter et intra entreprise sur mesure</p>
+            <p>Chambery</p>
+          </div>
         </div>
       </aside>
       <aside class="container__track2">
@@ -103,17 +108,68 @@
         </div>
 
         <h2>Il Nous font Confiance</h2>
-        <div class="container__track2__slider">
-          <div class="container__track2__slider__trak">
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
-            <div class="container__track2__slider__trak__slide"></div>
+        <div class="container__track2__wrapper">
+          <div class="container__track2__wrapper__slider">
+            <div class="container__track2__wrapper__slider__slide">
+              <img src="@/assets/visuel_acceuil/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
+              <img
+                src="@/assets/visuel_acceuil/logo/logo_challes_les-eaux.png"
+                alt=""
+              />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
+              <img src="@/assets/visuel_acceuil/logo/logo_ciat.png" alt="" />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
+              <img
+                src="@/assets/visuel_acceuil/logo/logo_ecole_aries.png"
+                alt=""
+              />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
+              <img src="@/assets/visuel_acceuil/logo/logo_egc.jpg" alt="" />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
+              <img src="@/assets/visuel_acceuil/logo/logo_esgi.jpg" alt="" />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
+              <img
+                src="@/assets/visuel_acceuil/logo/logo_euro_meta.png"
+                alt=""
+              />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
+              <img
+                src="@/assets/visuel_acceuil/logo/logo_gobolins_ecole.png"
+                alt=""
+              />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
+              <img
+                src="@/assets/visuel_acceuil/logo/logp_photo_watt.jpg"
+                alt=""
+              />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
+              <img src="@/assets/visuel_acceuil/logo/logo_ingeos.jpg" alt="" />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
+              <img src="@/assets/visuel_acceuil/logo/logo_inseec.png" alt="" />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
+              <img src="@/assets/visuel_acceuil/logo/logo_aec.png" alt="" />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
+              <img
+                src="@/assets/visuel_acceuil/logo/logo_challes_les-eaux.png"
+                alt=""
+              />
+            </div>
+            <div class="container__track2__wrapper__slider__slide">
+              <img src="@/assets/visuel_acceuil/logo/logo_ciat.png" alt="" />
+            </div>
           </div>
         </div>
       </aside>
@@ -159,7 +215,7 @@ h2 {
     @include centre;
 
     &__item {
-      width: 100%;
+      @include padGap;
 
       &__content {
         display: flex;
@@ -172,16 +228,30 @@ h2 {
       &__image {
         // border: solid 2px yellow;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row;
         justify-content: space-around;
         margin-top: 4vh;
-        @include padGap;
+        width: 100%;
 
         img {
-          width: 5vw;
-          height: 5vh;
-          border: solide 2px red($color: #000000);
+          width: 3rem;
+          height: 3rem;
+          border: solid 2px red($color: #000000);
         }
+
+        &:nth-child(3) {
+          align-self: flex-end;
+        }
+      }
+
+      &__picTxt {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        font-family: $fontfamilyMedium;
+        font-size: smaller;
+
+        // border: solid 2px blue;
       }
     }
   }
@@ -266,6 +336,70 @@ h2 {
       margin-top: 2vh;
       @include padGap;
       @include centre;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-1200px);
+      }
+    }
+
+    &__wrapper {
+      background: white;
+      width: 90%;
+      height: 80px;
+      border-radius: $radius-24;
+      position: relative;
+      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+      @include centre;
+      overflow: hidden;
+      margin: auto;
+
+      &::before,
+      &::after {
+        height: 150px;
+        width: 50px;
+        position: absolute;
+        content: "";
+        @include whiteGradient;
+        z-index: 2;
+      }
+
+      &::before {
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        top: 0;
+        right: 0;
+        transform: rotateZ(180deg);
+      }
+
+      &__slider {
+        margin: 10px;
+        width: calc(100px * 28);
+        display: flex;
+        justify-content: space-between;
+        @include centre;
+        gap: 16px;
+        animation: scroll 60s linear infinite;
+
+        &__slide {
+          height: 5vh;
+          width: 100px;
+          @include centre;
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
@@ -406,7 +540,7 @@ h2 {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1516px) {
   h1 {
     font-weight: bold;
     font-family: $fontfamilyRegular;
@@ -445,6 +579,35 @@ h2 {
           align-self: center;
           font-family: $fontfamilyRegular;
           width: 25vw;
+        }
+
+        &__image {
+          // border: solid 2px yellow;
+          display: flex;
+          flex-flow: row;
+          justify-content: space-around;
+          margin-top: 4vh;
+          width: 100%;
+
+          img {
+            width: 3rem;
+            height: 3rem;
+            border: solid 2px red($color: #000000);
+          }
+
+          &:nth-child(3) {
+            align-self: flex-end;
+          }
+        }
+
+        &__picTxt {
+          display: flex;
+          flex-flow: row;
+          justify-content: space-around;
+          font-family: $fontfamilyMedium;
+          font-size: smaller;
+          width: 100%;
+          // border: solid 2px blue;
         }
       }
     }
