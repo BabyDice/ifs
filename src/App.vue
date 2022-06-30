@@ -27,6 +27,7 @@ export default {
 }
 
 #app {
+  background-image: url("@/assets/background-cloud/top.png");
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -42,7 +43,7 @@ nav {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #ffffff;
     }
   }
 }

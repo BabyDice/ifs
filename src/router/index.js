@@ -25,7 +25,7 @@ const routes = [
   },
   {
     path: "/bureau",
-    name: "bureau",
+    name: "bureauView",
     component: () => import("@/views/BureautiqueView.vue"),
   },
   {
