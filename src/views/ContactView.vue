@@ -57,7 +57,7 @@ export default {
   &__title {
     font-family: $fontfamilyMedium;
     font-size: 24px;
-    margin-top: 5%;
+    margin: 5% auto;
   }
 
   &__container {
@@ -78,6 +78,8 @@ export default {
         width: 100%;
         justify-content: center;
         margin: auto;
+        color: $fontfamilyMedium;
+        font-size: 24px;
         @media screen and (min-width: 390px) {
           flex-direction: column;
         }
