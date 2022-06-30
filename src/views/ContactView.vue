@@ -28,46 +28,6 @@
           />
           <p>a.lorenzo@ifs73.fr</p>
         </div>
-        <form
-          action="#"
-          method="post"
-          class="contact__container__children__frms"
-        >
-          <fieldset class="contact__container__children__frms__field">
-            <div class="contact__container__children__frms__field__nom-mail">
-              <label for="nom">Nom : </label>
-              <input
-                type="text"
-                name="nom"
-                id="nom"
-                placeholder="Entrer votre Nom"
-              />
-              <label for="email">Email : </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Entrer votre Email"
-              />
-              <input
-                type="submit"
-                value="Envoyer"
-                name="envoyer"
-                id="envoyer"
-              />
-            </div>
-            <div class="contact__container__children__frms__field__nom-mail">
-              <label for="message">Message : </label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-              ></textarea>
-              <input type="reset" value="Annuler" name="annuler" id="annuler" />
-            </div>
-          </fieldset>
-        </form>
       </div>
     </div>
     <div class="contact__ifrm">
@@ -122,27 +82,12 @@
           padding: 5%;
         }
       }
-
-      &__frms {
-        width: 100%;
-        &__field {
-          border-radius: 15px;
-          background-color: $lastColor;
-          height: 515px;
-
-          &__nom-mail {
-            width: 100%;
-            display: flex;
-            // flex-direction: column;
-          }
-        }
-      }
     }
   }
 
   &__ifrm {
     iframe {
-      width: 90%;
+      width: 80%;
       border-radius: 20px;
       margin: auto;
     }
