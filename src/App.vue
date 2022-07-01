@@ -1,3 +1,15 @@
+<script>
+import NavFooter from "@/components/NavFooter.vue";
+import Nav from "@/components/NavBar.vue";
+export default {
+  name: "App",
+  components: {
+    NavFooter,
+    Nav,
+  },
+};
+</script>
+
 <template>
   <div id="app">
     <nav>
