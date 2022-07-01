@@ -22,15 +22,9 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 /* Declarations Couleurs */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-$mainColor: #dd214c;
-$navColor: #f4f4f4;
-$fontfamilyMedium: "Poppins", sans-serif;
-$fontfamilyRegular: "Poppins", sans-serif;
-
+@import "@/_variablesscss";
 .nav {
   width: 100%;
   height: 180px;
@@ -63,7 +57,7 @@ $fontfamilyRegular: "Poppins", sans-serif;
   @media screen and (max-width: 495px) {
     .nav {
       height: 200px;
-      background-color: aqua !important;
+      // background-color: aqua;
 
       &__main {
         width: 100%;

@@ -1,6 +1,16 @@
+<script>
+import Vue from "vue";
+new Vue({
+  el: "footer",
+  data: {
+    footer: false,
+  },
+});
+</script>
+
 <template>
-  <div class="footer">
-    <footer class="footer__main">
+  <div class="footer" id="footer">
+    <footer class="footer__main" v-show="!footer">
       <div class="footer__main__children">
         <h2 class="footer__main__children__title">Mentions Légales</h2>
       </div>
@@ -16,11 +26,11 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 /* Declarations Couleurs */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-$mainColor: #dd214c;
+@import "../_variablesscss";
 $fontfamilyMedium: "Poppins", sans-serif;
 $fontfamilyRegular: "Poppins", sans-serif;
 
@@ -82,7 +92,7 @@ $fontfamilyRegular: "Poppins", sans-serif;
       align-items: center;
       flex-direction: column;
       background-color: $mainColor;
-      height: 100vh;
+      height: 500px;
 
       &__children__liste {
         width: 100%;
