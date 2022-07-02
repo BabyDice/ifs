@@ -12,10 +12,7 @@
           <div class="container__track__item__image">
             <img src="@/assets/visuel_formation/icon/goal (1).png" alt="" />
             <img src="@/assets/visuel_formation/icon/laptop-red.png" alt="" />
-            <img
-              src="@/assets/visuel_formation/icon/online-marketing-red.png"
-              alt=""
-            />
+            <img src="@/assets/visuel_formation/icon/online-marketing-red.png" alt="" />
             <img src="@/assets/visuel_formation/icon/red-ep.png" alt="" />
             <img src="@/assets/visuel_formation/icon/red-pc.png" alt="" />
           </div>
@@ -30,26 +27,20 @@
               <li>
                 <div class="container__track__item__moovingTxt__container">
                   SEVERE?<br />
-                  <span
-                    >Do you have
-                    <strong>Objective Medical Evidence?</strong></span
-                  >
+                  <span>Do you have
+                    <strong>Objective Medical Evidence?</strong></span>
                 </div>
               </li>
               <li>
                 <div class="container__track__item__moovingTxt__container">
                   MEETS LESTING<br />
-                  <span
-                    >Are you properly matched to your work description?</span
-                  >
+                  <span>Are you properly matched to your work description?</span>
                 </div>
               </li>
               <li>
                 <div class="container__track__item__moovingTxt__container">
                   PRESENT RELATIVE WORK<br />
-                  <span
-                    >Are you properly matched to your work description?</span
-                  >
+                  <span>Are you properly matched to your work description?</span>
                 </div>
               </li>
               <li>
@@ -67,10 +58,7 @@
           <div class="container__track2__bloxNpic__blox">
             <div class="container__track2__bloxNpic__blox__visu">
               <span>
-                <img
-                  src="../assets/visuel_formation/colleagues-working-together-on-project.jpg"
-                  alt=""
-                />
+                <img src="../assets/visuel_formation/colleagues-working-together-on-project.jpg" alt="" />
               </span>
             </div>
             <div class="container__track2__bloxNpic__blox__txt">
@@ -87,10 +75,7 @@
                 programme de formation entièrement personnalisé en fonction de
                 vos acquis et de vos objectifs.
               </p>
-              <button
-                type="submit"
-                class="container__track2__bloxNpic__blox__butt"
-              >
+              <button type="submit" class="container__track2__bloxNpic__blox__butt">
                 Contactez - Moi
               </button>
             </div>
@@ -141,19 +126,13 @@
               <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_formation/logo/logo_challes_les-eaux.png"
-                alt=""
-              />
+              <img src="@/assets/visuel_formation/logo/logo_challes_les-eaux.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_formation/logo/logo_ciat.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_formation/logo/logo_ecole_aries.png"
-                alt=""
-              />
+              <img src="@/assets/visuel_formation/logo/logo_ecole_aries.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_formation/logo/logo_egc.jpg" alt="" />
@@ -162,43 +141,25 @@
               <img src="@/assets/visuel_formation/logo/logo_esgi.jpg" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_formation/logo/logo_euro_meta.png"
-                alt=""
-              />
+              <img src="@/assets/visuel_formation/logo/logo_euro_meta.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_formation/logo/logo_gobolins_ecole.png"
-                alt=""
-              />
+              <img src="@/assets/visuel_formation/logo/logo_gobolins_ecole.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_formation/logo/logp_photo_watt.jpg"
-                alt=""
-              />
+              <img src="@/assets/visuel_formation/logo/logp_photo_watt.jpg" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_formation/logo/logo_ingeos.jpg"
-                alt=""
-              />
+              <img src="@/assets/visuel_formation/logo/logo_ingeos.jpg" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_formation/logo/logo_inseec.png"
-                alt=""
-              />
+              <img src="@/assets/visuel_formation/logo/logo_inseec.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_formation/logo/logo_challes_les-eaux.png"
-                alt=""
-              />
+              <img src="@/assets/visuel_formation/logo/logo_challes_les-eaux.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_formation/logo/logo_ciat.png" alt="" />
@@ -250,6 +211,7 @@ h2 {
     &__item {
       @include padGap;
       width: 100%;
+      justify-content: center;
 
       &__content {
         display: flex;
@@ -292,7 +254,8 @@ h2 {
         overflow: hidden;
         padding: 10px;
         position: relative;
-        width: 600px;
+        width: 90%;
+        border: solid 2px red;
 
         ul {
           list-style: none;
@@ -305,17 +268,6 @@ h2 {
           -o-transition: left 0.2s linear;
           -webkit-transition: left 0.2s linear;
           margin-left: -25px;
-
-          li {
-            font-family: $fontfamilyRegular;
-            float: left;
-            position: relative;
-            width: 600px;
-            display: inline-block;
-            height: 200px;
-
-            /* Content */
-          }
         }
 
         &__container {
@@ -328,6 +280,7 @@ h2 {
           min-height: 180px;
           padding: 0;
           text-align: center;
+          border: solid 2px orange;
 
           span {
             color: black;
@@ -335,6 +288,7 @@ h2 {
             font-size: 70%;
             font-weight: 300;
             line-height: 1.2;
+            border: solid 2px blue;
           }
         }
       }
@@ -360,12 +314,12 @@ h2 {
         }
 
         25% {
-          left: -600px;
+          transform: translateX(-600px);
           opacity: 1;
         }
 
         45% {
-          left: -600px;
+          transform: translateX(-600px);
           opacity: 1;
         }
 
@@ -374,12 +328,12 @@ h2 {
         }
 
         50% {
-          left: -1200px;
+          transform: translateX(-1200px);
           opacity: 1;
         }
 
         70% {
-          left: -1200px;
+          transform: translateX(-1200px);
           opacity: 1;
         }
 
@@ -388,7 +342,7 @@ h2 {
         }
 
         75% {
-          left: -1800px;
+          transform: translateX(-1800px);
           opacity: 1;
         }
 
@@ -397,12 +351,12 @@ h2 {
         }
 
         98% {
-          left: -1800px;
+          transform: translateX(-1800px);
           opacity: 0;
         }
 
         100% {
-          left: 0px;
+          transform: translateX(0px);
           opacity: 0;
         }
       }
@@ -547,13 +501,17 @@ h2 {
     &__button {
       background-color: $mainColor;
       color: white;
-      width: 90%;
+      width: 50%;
       border-radius: 16px;
       margin-top: 10vh;
       text-decoration-line: none;
       font-family: $fontfamilyRegular;
       @include padGap;
       @include centre;
+
+      a {
+        text-decoration: none;
+      }
     }
 
     @keyframes scroll {
@@ -715,16 +673,6 @@ h2 {
         &__blox2 {
           border: 1px solid $mainColor;
         }
-      }
-
-      &__button {
-        background-color: $mainColor;
-        color: white;
-        width: 90%;
-        border-radius: 16px;
-        margin-top: 10vh;
-        @include padGap;
-        @include centre;
       }
     }
   }

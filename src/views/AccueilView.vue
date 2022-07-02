@@ -9,15 +9,19 @@
             <li>Annecy</li>
             <li>Savoie</li>
           </div>
-          <div class="container__track__item__image">
-            <img src="../assets/visuel_acceuil/work.svg" alt="" />
-            <img src="../assets/visuel_acceuil/teaching.svg" alt="" />
-            <img src="../assets/visuel_acceuil/location.svg" alt="" />
-          </div>
           <div class="container__track__item__picTxt">
-            <p>Formation bureautique</p>
-            <p>Formation inter et intra entreprise sur mesure</p>
-            <p>Chambery</p>
+            <div class="container__track__item__picTxt__contenu">
+              <img src="../assets/visuel_acceuil/work.svg" alt="" />
+              <p>Formation bureautique</p>
+            </div>
+            <div class="container__track__item__picTxt__contenu">
+              <img src="../assets/visuel_acceuil/teaching.svg" alt="" />
+              <p>Formation inter et intra entreprise sur mesure</p>
+            </div>
+            <div class="container__track__item__picTxt__contenu">
+              <img src="../assets/visuel_acceuil/location.svg" alt="" />
+              <p>Chambery</p>
+            </div>
           </div>
         </div>
       </aside>
@@ -46,43 +50,25 @@
         <button type="submit" class="container__track2__button">
           En Savoir Plus
         </button>
-        <div class="container__track2__image2">
-          <img
-            class="container__track2__image2__pic"
-            src="../assets/visuel_acceuil/honet.svg"
-            alt=""
-            width="64"
-          />
-          <img
-            class="container__track2__image2__pic"
-            src="../assets/visuel_acceuil/phone.svg"
-            alt=""
-            width="64"
-          />
-        </div>
-        <div class="container__track2__txt">
-          <p>Proximité</p>
-          <p>Ecoute</p>
-        </div>
-        <div class="container__track2__image2">
-          <img
-            class="container__track2__image2__pic"
-            src="../assets/visuel_acceuil/trust.svg"
-            alt=""
-            width="64"
-          />
+        <aside class="container__track2__image2">
+          <div class="container__track2__image2__contenu">
+            <img src="../assets/visuel_acceuil/honet.svg" alt="" width="64" />
+            <p>Proximité</p>
+          </div>
+          <div class="container__track2__image2__contenu">
+            <img src="../assets/visuel_acceuil/phone.svg" alt="" width="64" />
+            <p>Ecoute</p>
+          </div>
+          <div class="container__track2__image2__contenu">
+            <img src="../assets/visuel_acceuil/trust.svg" alt="" width="64" />
+            <p>Sur Mesure</p>
+          </div>
 
-          <img
-            class="container__track2__image2__pic"
-            src="../assets/visuel_acceuil/smile.svg"
-            alt=""
-            width="64"
-          />
-        </div>
-        <div class="container__track2__txt">
-          <p>Sur Mesure</p>
-          <p>Plaisante</p>
-        </div>
+          <div class="container__track2__image2__contenu">
+            <img src="../assets/visuel_acceuil/smile.svg" alt="" width="64" />
+            <p>Plaisante</p>
+          </div>
+        </aside>
       </aside>
       <aside class="container__track2">
         <h2>Formations marketing communication commercial</h2>
@@ -225,33 +211,31 @@ h2 {
         // border: solid 2px green;
       }
 
-      &__image {
-        // border: solid 2px yellow;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        margin-top: 4vh;
-        width: 100%;
-
-        img {
-          width: 3rem;
-          height: 3rem;
-          border: solid 2px red($color: #000000);
-        }
-
-        &:nth-child(3) {
-          align-self: flex-end;
-        }
-      }
-
       &__picTxt {
         display: flex;
         flex-flow: row;
         justify-content: space-around;
         font-family: $fontfamilyMedium;
         font-size: smaller;
+        @include padGap;
 
         // border: solid 2px blue;
+
+        &__contenu {
+          // border: solid 2px yellow;
+          display: flex;
+          flex-flow: column;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 4vh;
+          width: 100%;
+
+          img {
+            width: 3rem;
+            height: 3rem;
+            border: solid 2px red($color: #000000);
+          }
+        }
       }
     }
   }
@@ -274,17 +258,24 @@ h2 {
     }
 
     &__image2 {
-      // border: solid 2px yellow;
       display: flex;
+      flex-direction: row;
       justify-content: space-around;
-      flex-flow: nowrap;
-      margin-top: 4vh;
       width: 100%;
-      @include padGap;
 
-      &__pic2 {
-        width: 64px;
-        height: 64px;
+      &__contenu {
+        // border: solid 2px yellow;
+        display: flex;
+
+        flex-flow: column;
+        margin-top: 4vh;
+        width: 100%;
+        @include padGap;
+
+        img {
+          width: 64px;
+          height: 64px;
+        }
       }
     }
 
@@ -319,12 +310,20 @@ h2 {
         width: 20vw;
         height: 20vh;
         display: none;
+
+        img {
+          object-fit: cover;
+        }
       }
 
       &__picture2 {
         width: 20vw;
-        height: 20vh;
+        height: 40vh;
         display: none;
+
+        img {
+          object-fit: cover;
+        }
       }
     }
 
@@ -357,7 +356,8 @@ h2 {
       box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
       @include centre;
       overflow: hidden;
-      margin: auto;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
 
       &::before,
       &::after {
@@ -631,17 +631,25 @@ h2 {
       }
 
       &__image2 {
-        // border: solid 2px yellow;
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
-        flex-flow: nowrap;
-        margin-top: 4vh;
         width: 100%;
-        @include padGap;
 
-        img {
-          width: 5rem;
-          height: 5rem;
+        &__contenu {
+          // border: solid 2px yellow;
+          display: flex;
+          align-items: center;
+
+          flex-flow: column;
+          margin-top: 4vh;
+          width: 100%;
+          @include padGap;
+
+          img {
+            width: 64px;
+            height: 64px;
+          }
         }
       }
 

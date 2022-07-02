@@ -13,7 +13,10 @@
             <div class="container__track__item__imageTxt__picture">
               <img src="@/assets/visuel_formation/icon/goal (1).png" alt="" />
 
-              <img src="@/assets/visuel_formation/icon/online-marketing-red.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/icon/online-marketing-red.png"
+                alt=""
+              />
             </div>
             <div class="container__track__item__imageTxt__sousTxt">
               <p>Marketing</p>
@@ -31,20 +34,26 @@
               <li>
                 <div class="container__track__item__moovingTxt__container">
                   SEVERE?<br />
-                  <span>Do you have
-                    <strong>Objective Medical Evidence?</strong></span>
+                  <span
+                    >Do you have
+                    <strong>Objective Medical Evidence?</strong></span
+                  >
                 </div>
               </li>
               <li>
                 <div class="container__track__item__moovingTxt__container">
                   MEETS LESTING<br />
-                  <span>Are you properly matched to your work description?</span>
+                  <span
+                    >Are you properly matched to your work description?</span
+                  >
                 </div>
               </li>
               <li>
                 <div class="container__track__item__moovingTxt__container">
                   PRESENT RELATIVE WORK<br />
-                  <span>Are you properly matched to your work description?</span>
+                  <span
+                    >Are you properly matched to your work description?</span
+                  >
                 </div>
               </li>
               <li>
@@ -83,7 +92,10 @@
                 dans vos locaux, individuellement ou en groupe de 6 personnes
                 maximum.
               </p>
-              <button type="submit" class="container__track2__bloxNpic__blox__butt">
+              <button
+                type="submit"
+                class="container__track2__bloxNpic__blox__butt"
+              >
                 Contactez - Moi
               </button>
             </div>
