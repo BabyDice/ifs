@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="container">
+    <main class="container">
       <aside class="container__track">
         <div class="container__track__item">
           <h1>Formation en marketing et bureautique</h1>
@@ -159,7 +159,7 @@
           </div>
         </div>
       </aside>
-    </section>
+    </main>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section class="container">
-      <aside class="container__track">
+    <main class="container">
+      <section class="container__track">
         <div class="container__track__item">
           <h1>Formation</h1>
           <div class="container__track__item__content">
@@ -12,14 +12,13 @@
           <div class="container__track__item__imageTxt">
             <div class="container__track__item__imageTxt__picture">
               <img src="@/assets/visuel_formation/icon/goal (1).png" alt="" />
-
+              <p>Marketing</p>
+            </div>
+            <div class="container__track__item__imageTxt__picture">
               <img
                 src="@/assets/visuel_formation/icon/online-marketing-red.png"
                 alt=""
               />
-            </div>
-            <div class="container__track__item__imageTxt__sousTxt">
-              <p>Marketing</p>
               <p>Formation sur mesure</p>
             </div>
           </div>
@@ -65,8 +64,8 @@
             </ul>
           </div>
         </div>
-      </aside>
-      <aside class="container__track2">
+      </section>
+      <section class="container__track2">
         <div class="container__track2__bloxNpic">
           <div class="container__track2__bloxNpic__blox">
             <div class="container__track2__bloxNpic__blox__txt">
@@ -104,8 +103,8 @@
         <button type="submit" class="container__track2__button">
           Cathalogue Formation
         </button>
-      </aside>
-      <aside class="container__track2">
+      </section>
+      <section class="container__track2">
         <div class="container__track2__bloxNpic">
           <div class="container__track2__bloxNpic__blox2">
             <img src="@/assets/visuel_bureautique/excel.svg" alt="" />
@@ -113,8 +112,8 @@
             <img src="@/assets/visuel_bureautique/powerpoint.svg" alt="" />
           </div>
         </div>
-      </aside>
-    </section>
+      </section>
+    </main>
   </div>
 </template>
 
@@ -173,9 +172,8 @@ h2 {
       &__imageTxt {
         // border: solid 2px yellow;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row;
         justify-content: space-around;
-        align-self: center;
         margin-top: 4vh;
         @include padGap;
         box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
@@ -183,25 +181,20 @@ h2 {
         background: rgba(203, 203, 203, 0.73);
         border-radius: 16px;
         border: $mainColor solid 1px;
-        min-width: 70vw;
+        width: 95%;
 
         &__picture {
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
+          align-items: center;
           justify-content: space-around;
           width: 100%;
+          @include padGap;
 
           img {
             width: 3rem;
             height: 50px;
           }
-        }
-
-        &__sousTxt {
-          display: flex;
-          justify-content: space-around;
-          flex-flow: row;
-          width: 100%;
         }
       }
 

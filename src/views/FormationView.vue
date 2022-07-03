@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section class="container">
-      <aside class="container__track">
+    <main class="container">
+      <section class="container__track">
         <div class="container__track__item">
           <h1>Formation</h1>
           <div class="container__track__item__content">
@@ -10,55 +10,102 @@
             <li>Savoie</li>
           </div>
           <div class="container__track__item__image">
-            <img src="@/assets/visuel_formation/icon/goal (1).png" alt="" />
-            <img src="@/assets/visuel_formation/icon/laptop-red.png" alt="" />
-            <img src="@/assets/visuel_formation/icon/online-marketing-red.png" alt="" />
-            <img src="@/assets/visuel_formation/icon/red-ep.png" alt="" />
-            <img src="@/assets/visuel_formation/icon/red-pc.png" alt="" />
+            <div class="container__track__item__image__content">
+              <img src="@/assets/visuel_formation/icon/goal (1).png" alt="" />
+              <p>Création d’entreprise</p>
+            </div>
+            <div class="container__track__item__image__content">
+              <img src="@/assets/visuel_formation/icon/laptop-red.png" alt="" />
+              <p>Marketing</p>
+            </div>
+            <div class="container__track__item__image__content">
+              <img
+                src="@/assets/visuel_formation/icon/online-marketing-red.png"
+                alt=""
+              />
+              <p>Communication</p>
+            </div>
+            <div class="container__track__item__image__content">
+              <img src="@/assets/visuel_formation/icon/red-ep.png" alt="" />
+              <p>Commercial</p>
+            </div>
+            <div class="container__track__item__image__content">
+              <img src="@/assets/visuel_formation/icon/red-pc.png" alt="" />
+              <p>Bureautique</p>
+            </div>
           </div>
-          <div class="container__track__item__moovingTxt">
-            <ul>
-              <li>
-                <div class="container__track__item__moovingTxt__container">
+          <article class="container__track__item__moovingTxt">
+            <div class="container__track__item__moovingTxt__main">
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   SUBSTANTIAL GAINFUL ACTIVITY<br />
                   <span>Are you making more than <strong>$1,260?</strong></span>
                 </div>
-              </li>
-              <li>
-                <div class="container__track__item__moovingTxt__container">
+              </aside>
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   SEVERE?<br />
-                  <span>Do you have
-                    <strong>Objective Medical Evidence?</strong></span>
+                  <span
+                    >Do you have
+                    <strong>Objective Medical Evidence?</strong></span
+                  >
                 </div>
-              </li>
-              <li>
-                <div class="container__track__item__moovingTxt__container">
+              </aside>
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   MEETS LESTING<br />
-                  <span>Are you properly matched to your work description?</span>
+                  <span
+                    >Are you properly matched to your work description?</span
+                  >
                 </div>
-              </li>
-              <li>
-                <div class="container__track__item__moovingTxt__container">
+              </aside>
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   PRESENT RELATIVE WORK<br />
-                  <span>Are you properly matched to your work description?</span>
+                  <span
+                    >Are you properly matched to your work description?</span
+                  >
                 </div>
-              </li>
-              <li>
-                <div class="container__track__item__moovingTxt__container">
+              </aside>
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   OTHER WORK<br />
                   <span>Can a Vocational Expert help you find other work?</span>
                 </div>
-              </li>
-            </ul>
-          </div>
+              </aside>
+            </div>
+          </article>
         </div>
-      </aside>
-      <aside class="container__track2">
+      </section>
+      <section class="container__track2">
         <div class="container__track2__bloxNpic">
           <div class="container__track2__bloxNpic__blox">
             <div class="container__track2__bloxNpic__blox__visu">
               <span>
-                <img src="../assets/visuel_formation/colleagues-working-together-on-project.jpg" alt="" />
+                <img
+                  src="../assets/visuel_formation/colleagues-working-together-on-project.jpg"
+                  alt=""
+                />
               </span>
             </div>
             <div class="container__track2__bloxNpic__blox__txt">
@@ -75,7 +122,10 @@
                 programme de formation entièrement personnalisé en fonction de
                 vos acquis et de vos objectifs.
               </p>
-              <button type="submit" class="container__track2__bloxNpic__blox__butt">
+              <button
+                type="submit"
+                class="container__track2__bloxNpic__blox__butt"
+              >
                 Contactez - Moi
               </button>
             </div>
@@ -84,8 +134,8 @@
         <button type="submit" class="container__track2__button">
           <router-link to="/bureau">Cathalogue Formation</router-link>
         </button>
-      </aside>
-      <aside class="container__track2">
+      </section>
+      <section class="container__track2">
         <div class="container__track2__bloxNpic">
           <div class="container__track2__bloxNpic__blox2">
             <h2>Public Ciblé</h2>
@@ -126,13 +176,19 @@
               <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_challes_les-eaux.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_challes_les-eaux.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_formation/logo/logo_ciat.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_ecole_aries.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_ecole_aries.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_formation/logo/logo_egc.jpg" alt="" />
@@ -141,33 +197,51 @@
               <img src="@/assets/visuel_formation/logo/logo_esgi.jpg" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_euro_meta.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_euro_meta.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_gobolins_ecole.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_gobolins_ecole.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logp_photo_watt.jpg" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logp_photo_watt.jpg"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_ingeos.jpg" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_ingeos.jpg"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_inseec.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_inseec.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_challes_les-eaux.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_challes_les-eaux.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_formation/logo/logo_ciat.png" alt="" />
             </div>
           </div>
         </div>
-      </aside>
-    </section>
+      </section>
+    </main>
   </div>
 </template>
 
@@ -211,20 +285,23 @@ h2 {
     &__item {
       @include padGap;
       width: 100%;
-      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       &__content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         font-family: $fontfamilyRegular;
+        width: 100%;
         // border: solid 2px green;
       }
 
       &__image {
         // border: solid 2px yellow;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column;
         justify-content: space-around;
         margin-top: 4vh;
         @include padGap;
@@ -233,31 +310,32 @@ h2 {
         background: rgba(203, 203, 203, 0.73);
         border-radius: 16px;
         border: $mainColor solid 1px;
-        width: 90%;
+        width: 95%;
+        overflow: hidden;
 
-        img {
-          width: 40px;
-          height: 50px;
-          border: solide 2px red($color: #000000);
+        &__content {
+          display: flex;
+          flex-flow: column;
+          @include padGap;
+          align-items: center;
         }
 
-        & :nth-child(3) {
-          width: 40px;
-          height: 50px;
+        img {
+          width: 20px;
+          height: 30px;
+          border: solide 2px red($color: #000000);
         }
       }
 
       &__moovingTxt {
         //background-color: pink;
         min-height: 80px;
-        margin-top: 3vh;
         overflow: hidden;
         padding: 10px;
         position: relative;
-        width: 90%;
-        border: solid 2px red;
+        width: 600px;
 
-        ul {
+        &__main {
           list-style: none;
           position: absolute;
           left: 0px;
@@ -268,36 +346,53 @@ h2 {
           -o-transition: left 0.2s linear;
           -webkit-transition: left 0.2s linear;
           margin-left: -25px;
-        }
+          animation: slide-animation 20s infinite;
 
-        &__container {
-          color: $mainColor;
-          font-size: 1.8em;
-          font-weight: 900;
-          line-height: 1.1;
-          margin: 0 auto;
-          max-width: 550px;
-          min-height: 180px;
-          padding: 0;
-          text-align: center;
-          border: solid 2px orange;
+          &__container {
+            font-family: "Montserrat", sans-serif;
+            position: relative;
+            width: 600px;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+            height: 200px;
 
-          span {
-            color: black;
-            display: inline-block;
-            font-size: 70%;
-            font-weight: 300;
-            line-height: 1.2;
-            border: solid 2px blue;
+            &__content {
+              color: $mainColor;
+              font-size: 1.8em;
+              font-weight: 900;
+              line-height: 1.1;
+              margin: 0 auto;
+              min-height: 180px;
+              padding: 0;
+              text-align: center;
+
+              span {
+                color: black;
+                display: inline-block;
+                font-size: 70%;
+                font-weight: 300;
+                line-height: 1.2;
+              }
+            }
+          }
+
+          &__main:hover {
+            -moz-animation-play-state: paused;
+            -webkit-animation-play-state: paused;
           }
         }
       }
 
+      /* Content */
+
       /*** target hooks ****/
 
-      @keyframes slide-animation {
+      @-webkit-keyframes slide-animation {
         0% {
-          opacity: 0;
+          opacity: 1;
         }
 
         2% {
@@ -309,40 +404,27 @@ h2 {
           opacity: 1;
         }
 
-        22.5% {
-          opacity: 0.6;
-        }
-
         25% {
-          transform: translateX(-600px);
-          opacity: 1;
+          left: -600px;
         }
 
         45% {
-          transform: translateX(-600px);
+          left: -600px;
           opacity: 1;
         }
 
-        47.5% {
-          opacity: 0.6;
-        }
-
         50% {
-          transform: translateX(-1200px);
+          left: -1197px;
           opacity: 1;
         }
 
         70% {
-          transform: translateX(-1200px);
+          left: -1200px;
           opacity: 1;
         }
 
-        72.5% {
-          opacity: 0.6;
-        }
-
         75% {
-          transform: translateX(-1800px);
+          left: -1800px;
           opacity: 1;
         }
 
@@ -351,23 +433,14 @@ h2 {
         }
 
         98% {
-          transform: translateX(-1800px);
+          left: -1800px;
           opacity: 0;
         }
 
         100% {
-          transform: translateX(0px);
+          left: 0px;
           opacity: 0;
         }
-      }
-
-      &__moovingTxt ul {
-        animation: slide-animation 20s infinite;
-      }
-
-      &__moovingTxt ul:hover {
-        animation-play-state: paused;
-        animation-play-state: paused;
       }
     }
   }
@@ -610,16 +683,20 @@ h2 {
 
         &__image {
           // border: solid 2px yellow;
+          display: flex;
+          flex-flow: row;
 
-          img {
-            width: 40px;
-            height: 50px;
-            border: solide 2px red($color: #000000);
+          &__content {
+            display: flex;
+            flex-flow: column;
+            @include padGap;
+            align-items: center;
           }
 
-          & :nth-child(3) {
-            width: 40px;
-            height: 50px;
+          img {
+            width: 20px;
+            height: 30px;
+            border: solide 2px red($color: #000000);
           }
         }
       }
