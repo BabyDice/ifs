@@ -1,5 +1,5 @@
 <script>
-import VuelidateForm from "@/composants/VuelidateForm.vue";
+import VuelidateForm from "@/components/VuelidateForm.vue";
 export default {
   name: "ContactView",
   components: { VuelidateForm },
