@@ -80,13 +80,7 @@ export default {
         margin: auto;
         color: $fontfamilyMedium;
         font-size: 24px;
-        @media screen and (min-width: 390px) {
-          flex-direction: column;
-        }
-        // @media (min-width: $tablette) {
-        //   flex-direction: row;
-        // }
-
+        flex-direction: column;
         img {
           margin-bottom: 5%;
           height: 6rem;
