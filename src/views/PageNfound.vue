@@ -21,7 +21,7 @@ body {
   background-size: 280%;
   position: fixed;
   background-position: 240%;
-  background-image: url("@/assets/Camoulax/fond1.png");
+  background-image: url("@/assets/Camoulax/campinf/fond1.png");
 
   @media (min-width: $tablette-screen) {
     display: flex;
