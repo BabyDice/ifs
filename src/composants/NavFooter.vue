@@ -28,11 +28,11 @@ new Vue({
 
 <style lang="scss" scoped>
 /* Declarations Couleurs */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import "../_variablesscss";
-$fontfamilyMedium: "Poppins", sans-serif;
-$fontfamilyRegular: "Poppins", sans-serif;
+
+#footer {
+  background-image: url("@/assets/fond-footer.png");
+}
 
 .footer {
   width: 100%;
