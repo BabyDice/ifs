@@ -1,0 +1,46 @@
+@mixin padGap {
+  padding: 16px;
+  gap: 16px;
+}
+
+@mixin newPadGap {
+  padding: 54px;
+  gap: 54px;
+}
+
+@mixin centre {
+  text-align: center;
+  align-items: center;
+}
+
+@mixin bloxCentre {
+  text-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin iconTxt {
+  flex-flow: row-wrap;
+}
+
+@mixin logo {
+  width: 4.5vh;
+  height: 4.5vh;
+}
+
+@mixin horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin whiteGradient {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+@mixin borderMain {
+  border: 1px solid $mainColor;
+}
+$radius-24: 24px;
+$mainColor: #dd214c;
+$fontfamilyMedium: "Poppins", sans-serif;
+$fontfamilyRegular: "Poppins", sans-serif;

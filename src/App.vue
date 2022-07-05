@@ -1,21 +1,20 @@
 <script>
-import Footer from "@/components/NavFooter.vue";
+import NavFooter from "@/components/NavFooter.vue";
 import Nav from "@/components/NavBar.vue";
 export default {
   name: "App",
   components: {
-    "app-footer": Footer,
-    "app-nav": Nav,
+    NavFooter,
+    Nav,
   },
 };
 </script>
 
 <template>
   <div id="app">
-    <app-nav></app-nav>
-
+    <Nav />
     <router-view />
-    <app-footer></app-footer>
+    <NavFooter />
   </div>
 </template>
 
@@ -44,7 +43,7 @@ nav {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #ffffff;
+      color: #dd214c;
     }
   }
 }
