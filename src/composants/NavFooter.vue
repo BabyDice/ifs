@@ -1,6 +1,16 @@
+<script>
+import Vue from "vue";
+new Vue({
+  el: "footer",
+  data: {
+    footer: false,
+  },
+});
+</script>
+
 <template>
-  <div class="footer">
-    <footer class="footer__main">
+  <div class="footer" id="footer">
+    <footer class="footer__main" v-show="!footer">
       <div class="footer__main__children">
         <h2 class="footer__main__children__title">Mentions Légales</h2>
       </div>
@@ -23,9 +33,11 @@
 $mainColor: #dd214c;
 $fontfamilyMedium: "Poppins", sans-serif;
 $fontfamilyRegular: "Poppins", sans-serif;
+
 .footer {
   width: 100%;
   height: 158px;
+
   &__main {
     display: flex;
     align-items: start;
@@ -33,14 +45,17 @@ $fontfamilyRegular: "Poppins", sans-serif;
     border-radius: 20px 20px 0 0;
     width: 100%;
     height: 100%;
+
     &__children {
       flex: 2;
       margin: 20px;
+
       &__title {
         color: white;
         font-size: 20px;
         font-family: $fontfamilyMedium;
       }
+
       &__liste {
         color: white;
         font-family: $fontfamilyRegular;
@@ -50,6 +65,7 @@ $fontfamilyRegular: "Poppins", sans-serif;
         justify-content: start;
         padding: 15px;
       }
+
       &__img {
         width: 96px;
         height: 96px;
@@ -57,23 +73,27 @@ $fontfamilyRegular: "Poppins", sans-serif;
       }
     }
   }
+
   @media screen and (max-width: 495px) {
     &__main {
       align-items: center;
       flex-direction: column;
       background-color: $mainColor;
       height: 100vh;
+
       &__children__liste {
         width: 100%;
       }
     }
   }
+
   @media screen and (max-width: 1024px) {
     &__main {
       align-items: center;
       flex-direction: column;
       background-color: $mainColor;
       height: 100vh;
+
       &__children__liste {
         width: 100%;
       }

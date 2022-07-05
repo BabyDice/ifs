@@ -42,11 +42,8 @@
             </p>
           </div>
           <div>
-            <img
-              src="@/assets/visuel_acceuil/teaching.png"
-              alt="Illustration d'une femme qui donne une leçon"
-              class="container__track2__bloxNpic__picture"
-            />
+            <img src="@/assets/visuel_acceuil/teaching.png" alt="Illustration d'une femme qui donne une leçon"
+              class="container__track2__bloxNpic__picture" />
           </div>
         </div>
         <button type="submit" class="container__track2__button">
@@ -89,11 +86,8 @@
             </p>
           </div>
           <div>
-            <img
-              src="../assets/visuel_acceuil/online-courses.png"
-              class="container__track2__bloxNpic__picture2"
-              alt="Illustration d'une femme qui donne une leçon"
-            />
+            <img src="../assets/visuel_acceuil/online-courses.png" class="container__track2__bloxNpic__picture2"
+              alt="Illustration d'une femme qui donne une leçon" />
           </div>
         </div>
 
@@ -104,19 +98,13 @@
               <img src="@/assets/visuel_acceuil/logo/logo_aec.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_acceuil/logo/logo_challes_les-eaux.png"
-                alt=""
-              />
+              <img src="@/assets/visuel_acceuil/logo/logo_challes_les-eaux.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_acceuil/logo/logo_ciat.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_acceuil/logo/logo_ecole_aries.png"
-                alt=""
-              />
+              <img src="@/assets/visuel_acceuil/logo/logo_ecole_aries.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_acceuil/logo/logo_egc.jpg" alt="" />
@@ -125,22 +113,13 @@
               <img src="@/assets/visuel_acceuil/logo/logo_esgi.jpg" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_acceuil/logo/logo_euro_meta.png"
-                alt=""
-              />
+              <img src="@/assets/visuel_acceuil/logo/logo_euro_meta.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_acceuil/logo/logo_gobolins_ecole.png"
-                alt=""
-              />
+              <img src="@/assets/visuel_acceuil/logo/logo_gobolins_ecole.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_acceuil/logo/logp_photo_watt.jpg"
-                alt=""
-              />
+              <img src="@/assets/visuel_acceuil/logo/logp_photo_watt.jpg" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_acceuil/logo/logo_ingeos.jpg" alt="" />
@@ -152,16 +131,10 @@
               <img src="@/assets/visuel_acceuil/logo/logo_aec.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_acceuil/logo/logo_challes_les-eaux.png"
-                alt=""
-              />
+              <img src="@/assets/visuel_acceuil/logo/logo_challes_les-eaux.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img
-                src="@/assets/visuel_acceuil/logo/logo_ciat.png"
-                alt="Illustration d'un homme qui donne un cour "
-              />
+              <img src="@/assets/visuel_acceuil/logo/logo_ciat.png" alt="Illustration d'un homme qui donne un cour " />
             </div>
           </div>
         </div>
