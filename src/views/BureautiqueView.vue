@@ -95,14 +95,11 @@
                 type="submit"
                 class="container__track2__bloxNpic__blox__butt"
               >
-                Contactez - Moi
+                <router-link to="contact">Contactez - Moi</router-link>
               </button>
             </div>
           </div>
         </div>
-        <button type="submit" class="container__track2__button">
-          Cathalogue Formation
-        </button>
       </section>
       <section class="container__track2">
         <div class="container__track2__bloxNpic">
@@ -263,11 +260,11 @@ h2 {
 
       @keyframes slide-animation {
         0% {
-          opacity: 0;
+          opacity: 0.1;
         }
 
         2% {
-          opacity: 1;
+          opacity: 0.8;
         }
 
         20% {
@@ -413,6 +410,11 @@ h2 {
           border-radius: 16px;
           @include padGap;
           @include centre;
+          text-decoration: none;
+
+          router-link {
+            text-decoration: none;
+          }
         }
       }
 
@@ -436,16 +438,6 @@ h2 {
           height: 60px;
         }
       }
-    }
-
-    &__button {
-      background-color: $mainColor;
-      color: white;
-      width: 90%;
-      border-radius: 16px;
-      margin-top: 10vh;
-      @include padGap;
-      @include centre;
     }
   }
 }

@@ -41,11 +41,13 @@
               Ipsum sur un texte générique comme 'Du texte. Du texte. D
             </p>
           </div>
-          <img
-            src="../assets/visuel_acceuil/teaching.png"
-            class="container__track2__bloxNpic__picture"
-            alt="Illustration d'une femme qui donne une leçon"
-          />
+          <div>
+            <img
+              src="@/assets/visuel_acceuil/teaching.png"
+              alt="Illustration d'une femme qui donne une leçon"
+              class="container__track2__bloxNpic__picture"
+            />
+          </div>
         </div>
         <button type="submit" class="container__track2__button">
           En Savoir Plus
@@ -86,11 +88,13 @@
               Ipsum sur un texte générique comme 'Du texte. Du texte. D
             </p>
           </div>
-          <img
-            src="../assets/visuel_acceuil/online-courses.png"
-            class="container__track2__bloxNpic__picture2"
-            alt="Illustration d'une femme qui donne une leçon"
-          />
+          <div>
+            <img
+              src="../assets/visuel_acceuil/online-courses.png"
+              class="container__track2__bloxNpic__picture2"
+              alt="Illustration d'une femme qui donne une leçon"
+            />
+          </div>
         </div>
 
         <h2>Il Nous font Confiance</h2>
@@ -154,11 +158,15 @@
               />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_acceuil/logo/logo_ciat.png" alt="" />
+              <img
+                src="@/assets/visuel_acceuil/logo/logo_ciat.png"
+                alt="Illustration d'un homme qui donne un cour "
+              />
             </div>
           </div>
         </div>
       </aside>
+      <VueRecaptcha />
     </main>
   </div>
 </template>
@@ -219,6 +227,10 @@ h2 {
         font-size: smaller;
         @include padGap;
 
+        p {
+          margin-top: 2vh;
+        }
+
         // border: solid 2px blue;
 
         &__contenu {
@@ -276,6 +288,10 @@ h2 {
           width: 64px;
           height: 64px;
         }
+
+        p {
+          margin-top: 2vh;
+        }
       }
     }
 
@@ -307,9 +323,9 @@ h2 {
       }
 
       &__picture {
-        width: 20vw;
-        height: 20vh;
-        display: none;
+        display: flex;
+        width: 40vw;
+        height: 30vh;
 
         img {
           object-fit: cover;
@@ -656,13 +672,13 @@ h2 {
       &__bloxNpic {
         display: flex;
         flex-direction: row;
-        justify-content: space-arounds;
         width: 100%;
+        justify-content: space-evenly;
 
         &__blox {
           display: flex;
           flex-direction: row;
-          justify-content: space-around;
+
           box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
           backdrop-filter: blur(17.4px);
           background: rgba(203, 203, 203, 0.73);
@@ -679,15 +695,17 @@ h2 {
         }
 
         &__picture {
-          width: 30vw;
-          height: 40vh;
-          display: unset;
+          width: 20vw;
+          height: 30vh;
+
+          img {
+            object-fit: cover;
+          }
         }
 
         &__picture2 {
           width: 25vw;
-          height: 23vh;
-          display: unset;
+          height: 30vh;
         }
       }
 
@@ -705,4 +723,6 @@ h2 {
 
 <script>
 export default { name: "AcceuilVue" };
+
+import VueRecaptcha from "@/components/CapChat.vue";
 </script>

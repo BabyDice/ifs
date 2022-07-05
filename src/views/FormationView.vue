@@ -126,7 +126,7 @@
                 type="submit"
                 class="container__track2__bloxNpic__blox__butt"
               >
-                Contactez - Moi
+                <router-link to="contact">Contactez - Moi</router-link>
               </button>
             </div>
           </div>
