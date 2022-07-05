@@ -15,3 +15,11 @@ export default {
     ></vue-recaptcha>
   </div>
 </template>
+
+<style>
+.main {
+  border: red solid 2px;
+  width: 20vw;
+  height: 20vw;
+}
+</style>

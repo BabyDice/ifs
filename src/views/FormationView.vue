@@ -19,7 +19,10 @@
               <p>Marketing</p>
             </div>
             <div class="container__track__item__image__content">
-              <img src="@/assets/visuel_formation/icon/online-marketing-red.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/icon/online-marketing-red.png"
+                alt=""
+              />
               <p>Communication</p>
             </div>
             <div class="container__track__item__image__content">
@@ -33,33 +36,59 @@
           </div>
           <article class="container__track__item__moovingTxt">
             <div class="container__track__item__moovingTxt__main">
-              <aside class="container__track__item__moovingTxt__main__container">
-                <div class="container__track__item__moovingTxt__main__container__content">
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   SUBSTANTIAL GAINFUL ACTIVITY<br />
                   <span>Are you making more than <strong>$1,260?</strong></span>
                 </div>
               </aside>
-              <aside class="container__track__item__moovingTxt__main__container">
-                <div class="container__track__item__moovingTxt__main__container__content">
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   SEVERE?<br />
-                  <span>Do you have
-                    <strong>Objective Medical Evidence?</strong></span>
+                  <span
+                    >Do you have
+                    <strong>Objective Medical Evidence?</strong></span
+                  >
                 </div>
               </aside>
-              <aside class="container__track__item__moovingTxt__main__container">
-                <div class="container__track__item__moovingTxt__main__container__content">
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   MEETS LESTING<br />
-                  <span>Are you properly matched to your work description?</span>
+                  <span
+                    >Are you properly matched to your work description?</span
+                  >
                 </div>
               </aside>
-              <aside class="container__track__item__moovingTxt__main__container">
-                <div class="container__track__item__moovingTxt__main__container__content">
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   PRESENT RELATIVE WORK<br />
-                  <span>Are you properly matched to your work description?</span>
+                  <span
+                    >Are you properly matched to your work description?</span
+                  >
                 </div>
               </aside>
-              <aside class="container__track__item__moovingTxt__main__container">
-                <div class="container__track__item__moovingTxt__main__container__content">
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   OTHER WORK<br />
                   <span>Can a Vocational Expert help you find other work?</span>
                 </div>
@@ -73,7 +102,10 @@
           <div class="container__track2__bloxNpic__blox">
             <div class="container__track2__bloxNpic__blox__visu">
               <span>
-                <img src="../assets/visuel_formation/colleagues-working-together-on-project.jpg" alt="" />
+                <img
+                  src="../assets/visuel_formation/colleagues-working-together-on-project.jpg"
+                  alt=""
+                />
               </span>
             </div>
             <div class="container__track2__bloxNpic__blox__txt">
@@ -90,7 +122,10 @@
                 programme de formation entièrement personnalisé en fonction de
                 vos acquis et de vos objectifs.
               </p>
-              <button type="submit" class="container__track2__bloxNpic__blox__butt">
+              <button
+                type="submit"
+                class="container__track2__bloxNpic__blox__butt"
+              >
                 <router-link to="contact">Contactez - Moi</router-link>
               </button>
             </div>
@@ -141,13 +176,19 @@
               <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_challes_les-eaux.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_challes_les-eaux.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_formation/logo/logo_ciat.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_ecole_aries.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_ecole_aries.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_formation/logo/logo_egc.jpg" alt="" />
@@ -156,25 +197,43 @@
               <img src="@/assets/visuel_formation/logo/logo_esgi.jpg" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_euro_meta.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_euro_meta.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_gobolins_ecole.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_gobolins_ecole.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logp_photo_watt.jpg" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logp_photo_watt.jpg"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_ingeos.jpg" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_ingeos.jpg"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_inseec.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_inseec.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_formation/logo/logo_aec.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_formation/logo/logo_challes_les-eaux.png" alt="" />
+              <img
+                src="@/assets/visuel_formation/logo/logo_challes_les-eaux.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_formation/logo/logo_ciat.png" alt="" />

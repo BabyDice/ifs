@@ -42,8 +42,11 @@
             </p>
           </div>
           <div>
-            <img src="@/assets/visuel_acceuil/teaching.png" alt="Illustration d'une femme qui donne une leçon"
-              class="container__track2__bloxNpic__picture" />
+            <img
+              src="@/assets/visuel_acceuil/teaching.png"
+              alt="Illustration d'une femme qui donne une leçon"
+              class="container__track2__bloxNpic__picture"
+            />
           </div>
         </div>
         <button type="submit" class="container__track2__button">
@@ -86,8 +89,11 @@
             </p>
           </div>
           <div>
-            <img src="../assets/visuel_acceuil/online-courses.png" class="container__track2__bloxNpic__picture2"
-              alt="Illustration d'une femme qui donne une leçon" />
+            <img
+              src="../assets/visuel_acceuil/online-courses.png"
+              class="container__track2__bloxNpic__picture2"
+              alt="Illustration d'une femme qui donne une leçon"
+            />
           </div>
         </div>
 
@@ -98,13 +104,19 @@
               <img src="@/assets/visuel_acceuil/logo/logo_aec.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_acceuil/logo/logo_challes_les-eaux.png" alt="" />
+              <img
+                src="@/assets/visuel_acceuil/logo/logo_challes_les-eaux.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_acceuil/logo/logo_ciat.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_acceuil/logo/logo_ecole_aries.png" alt="" />
+              <img
+                src="@/assets/visuel_acceuil/logo/logo_ecole_aries.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_acceuil/logo/logo_egc.jpg" alt="" />
@@ -113,13 +125,22 @@
               <img src="@/assets/visuel_acceuil/logo/logo_esgi.jpg" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_acceuil/logo/logo_euro_meta.png" alt="" />
+              <img
+                src="@/assets/visuel_acceuil/logo/logo_euro_meta.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_acceuil/logo/logo_gobolins_ecole.png" alt="" />
+              <img
+                src="@/assets/visuel_acceuil/logo/logo_gobolins_ecole.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_acceuil/logo/logp_photo_watt.jpg" alt="" />
+              <img
+                src="@/assets/visuel_acceuil/logo/logp_photo_watt.jpg"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
               <img src="@/assets/visuel_acceuil/logo/logo_ingeos.jpg" alt="" />
@@ -131,10 +152,16 @@
               <img src="@/assets/visuel_acceuil/logo/logo_aec.png" alt="" />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_acceuil/logo/logo_challes_les-eaux.png" alt="" />
+              <img
+                src="@/assets/visuel_acceuil/logo/logo_challes_les-eaux.png"
+                alt=""
+              />
             </div>
             <div class="container__track2__wrapper__slider__slide">
-              <img src="@/assets/visuel_acceuil/logo/logo_ciat.png" alt="Illustration d'un homme qui donne un cour " />
+              <img
+                src="@/assets/visuel_acceuil/logo/logo_ciat.png"
+                alt="Illustration d'un homme qui donne un cour "
+              />
             </div>
           </div>
         </div>
@@ -145,7 +172,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import "../_variable.scss";
+@import "@/_variable.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
@@ -291,14 +318,20 @@ h2 {
         height: 30vh;
         margin-top: 2vh;
         @include padGap;
-        @include bloxCentre;
+        display: flex;
+        align-items: center;
         font-family: $fontfamilyRegular;
+
+        p {
+          margin: auto;
+        }
       }
 
       &__picture {
         display: flex;
         width: 40vw;
         height: 30vh;
+        display: none;
 
         img {
           object-fit: cover;
@@ -651,6 +684,7 @@ h2 {
         &__blox {
           display: flex;
           flex-direction: row;
+          align-content: center;
 
           box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
           backdrop-filter: blur(17.4px);
@@ -662,7 +696,6 @@ h2 {
           height: 25vh;
           margin-top: 1vh;
           @include padGap;
-          @include centre;
           font-family: $fontfamilyRegular;
           border: solid #dd214c 2px;
         }
@@ -697,5 +730,5 @@ h2 {
 <script>
 export default { name: "AcceuilVue" };
 
-import VueRecaptcha from "@/components/CapChat.vue";
+// import VueRecaptcha from "@/components/CapChat.vue";
 </script>

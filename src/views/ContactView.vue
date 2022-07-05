@@ -1,8 +1,9 @@
 <script>
-import VuelidateForm from "@/composants/VuelidateForm.vue";
+import VuelidateForm from "@/components/VuelidateForm.vue";
+import { VueRecaptcha } from "@/components/CapChat.vue";
 export default {
   name: "ContactView",
-  components: { VuelidateForm },
+  components: { VuelidateForm, VueRecaptcha },
 };
 </script>
 
@@ -34,6 +35,7 @@ export default {
       </div>
     </div>
     <hr />
+    <VueRecaptcha />
     <div class="contact__ifrm">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2789.3573539729937!2d5.868390915778069!3d45.64364492947238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b09ca39fa5545%3A0x7eeb651ba68a5980!2sINSEEC%20Campus%20Chamb%C3%A9ry%20Savoie!5e0!3m2!1sfr!2sfr!4v1655992931813!5m2!1sfr!2sfr"
@@ -47,7 +49,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import "@/_variablesscss";
+@import "@/_variable.scss";
+@import "@/__variablesscss.scss";
+
 .contact {
   width: 100%;
   height: 100%;
@@ -58,6 +62,7 @@ export default {
     font-family: $fontfamilyMedium;
     font-size: 24px;
     margin: 5% auto;
+    color: $mainColor;
   }
 
   &__container {
@@ -81,6 +86,7 @@ export default {
         color: $fontfamilyMedium;
         font-size: 24px;
         flex-direction: column;
+
         img {
           margin-bottom: 5%;
           height: 6rem;
@@ -101,6 +107,7 @@ export default {
 
   &__ifrm {
     margin-bottom: 5%;
+
     iframe {
       width: 50%;
       border-radius: 20px;
