@@ -979,6 +979,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@finpo/vue2-recaptcha-invisible@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@finpo/vue2-recaptcha-invisible/-/vue2-recaptcha-invisible-1.2.0.tgz#c92f10079ccb454000c35508070d1eac0dfce76e"
+  integrity sha512-I6SBqYghcgAyA5BhOpvcE5JELfeaxgYWvDpB5dXG0lSOIQ0z8fjazNY6Oo9X2HrYE1CUis28ySQCtANPf22mFA==
+
 "@hapi/hoek@^9.0.0":
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.3.0.tgz#8368869dcb735be2e7f5cb7647de78e167a251fb"
@@ -1085,6 +1090,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@nuxtjs/recaptcha@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/recaptcha/-/recaptcha-1.1.1.tgz#21f9dcd53d7b869b570ab4829404df1200ed26de"
+  integrity sha512-maHqf6x6EgfRm7lvjK7nTwle/17cRzMkeFDWPGdcdKjDnAjuli7Mei5qPG0CFZX1zG9ohIEv+0QEs7fgudyLrg==
 
 "@polka/url@^1.0.0-next.20":
   version "1.0.0-next.21"

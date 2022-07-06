@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <template>
   <div class="formulaire">
     <form @submit.prevent="submit" ref="form" class="form">
@@ -204,5 +203,3 @@ export default {
   },
 };
 </script>
-=======
->>>>>>> a2feb93b3b3858381264b1d1b6138c86aca7738f

@@ -1,15 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <div>Vous etes sur la page Accueil</div>
-</template>
-
-<style></style>
-
-<script>
-export default {
-  name: "AccueilView",
-};
-=======
   <div>
     <main class="container">
       <aside class="container__track">
@@ -183,7 +172,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import "../_variable.scss";
+@import "@/_variable.scss";
+@import "@/__variablesscss.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
@@ -734,7 +724,4 @@ h2 {
 
 <script>
 export default { name: "AcceuilVue" };
-
-import VueRecaptcha from "@/components/CapChat.vue";
->>>>>>> a2feb93b3b3858381264b1d1b6138c86aca7738f
 </script>

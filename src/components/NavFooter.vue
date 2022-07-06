@@ -28,7 +28,8 @@ new Vue({
 
 <style lang="scss" scoped>
 /* Declarations Couleurs */
-@import "../_variablesscss";
+@import "@/_variable.scss";
+@import "@/__variablesscss.scss";
 
 #footer {
   background-image: url("@/assets/fond-footer.png");
