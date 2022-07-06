@@ -1,15 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <div>Vous etes sur la page Accueil</div>
-</template>
-
-<style></style>
-
-<script>
-export default {
-  name: "AccueilView",
-};
-=======
   <div>
     <main class="container">
       <aside class="container__track">
@@ -733,8 +722,7 @@ h2 {
 </style>
 
 <script>
-export default { name: "AcceuilVue" };
-
-import VueRecaptcha from "@/components/CapChat.vue";
->>>>>>> a2feb93b3b3858381264b1d1b6138c86aca7738f
+export default {
+  name: "AcceuilVue",
+};
 </script>

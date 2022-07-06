@@ -838,9 +838,5 @@ h2 {
 </style>
 
 <script>
-<<<<<<< HEAD
 export default { name: "FormationView" };
-=======
-export default { name: "FormationVue" };
->>>>>>> a2feb93b3b3858381264b1d1b6138c86aca7738f
 </script>
