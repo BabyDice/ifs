@@ -3,18 +3,15 @@
     <nav class="nav__main">
       <ul class="nav__main__children">
         <li class="nav__main__children__flex">
-          <router-link to="/" class="nav-link">Accueil</router-link>
+          <router-link :to="{ name: 'accueil' }" class="nav-link"
+            >Accueil</router-link
+          >
         </li>
         <li class="nav__main__children__flex">
           <router-link to="/formation" class="nav-link">Formation</router-link>
         </li>
         <li class="nav__main__children__flex">
           <img src="#" alt="Logo ifs78" />
-          <img
-            src="../assets/visuel_acceuil/logo_final.svg"
-            alt="Logo ifs78"
-            class="nav__main__children__flex__logo"
-          />
         </li>
         <li class="nav__main__children__flex">
           <router-link to="/propos" class="nav-link">A propos</router-link>

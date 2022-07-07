@@ -723,5 +723,7 @@ h2 {
 </style>
 
 <script>
-export default { name: "AcceuilVue" };
+export default {
+  name: "AcceuilVue",
+};
 </script>
