@@ -11,7 +11,11 @@
           <router-link to="/formation" class="nav-link">Formation</router-link>
         </li>
         <li class="nav__main__children__flex">
-          <img src="#" alt="Logo ifs78" />
+          <img
+            src="../assets/navbar/logo_final_ifs78.svg"
+            alt="Logo ifs78"
+            height="80px"
+          />
         </li>
         <li class="nav__main__children__flex">
           <router-link to="/propos" class="nav-link">A propos</router-link>
