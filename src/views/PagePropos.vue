@@ -58,14 +58,14 @@
 }
 // _______________________________________________Container___________________________________________________________
 .container {
-  background-image: url("../assets/Camoulax/composant/cube.png");
+  background-image: url("../assets/Camoulax/composant/cubeOp.png");
   height: 720px;
   width: 548px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   @media (min-width: $tablette-screen) {
-    background-image: url("../assets/Camoulax/composant/cube.png");
+    background-image: url("../assets/Camoulax/composant/cubeOp.png");
     height: 272px;
     width: 722px;
     background-position: center;
@@ -85,6 +85,7 @@
     border: #dd214c solid 2px;
     border-radius: 20px;
     margin-left: 24vw;
+    background-image: url("../assets/Camoulax/composant/cubeOp.png");
   }
   // _______________________________________________Image___________________________________________________________
   &__img {
