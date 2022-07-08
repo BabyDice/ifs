@@ -52,6 +52,15 @@
           </button>
           <button class="button btn" type="reset">Annuler</button>
         </div>
+        <div class="form__captchat">
+          <vue-recaptcha
+            sitekey="6Lflw8MgAAAAAN3unp976MK_cL-FbypmUnGaqSZY"
+            ref="recaptcha"
+            theme="dark"
+            loadRecaptchaScript="true"
+            @verify="checkOut"
+          />
+        </div>
         <p class="typo__p" v-if="submitStatus === 'OK'">
           Merci pour votre envoie!
         </p>
@@ -64,8 +73,10 @@
 
 <style lang="scss">
 @import "../_variablesscss";
+
 .formulaire {
   margin: auto;
+
   .form {
     border: 1px solid black;
     border-radius: 20px;
@@ -92,6 +103,7 @@
       margin: auto;
       width: 80%;
       gap: 24px;
+
       label {
         display: flex;
         font-family: $fontfamilyMedium;
@@ -121,6 +133,7 @@
 
     &__btn {
       display: flex;
+
       justify-content: space-around;
       gap: 24px;
 
@@ -135,9 +148,18 @@
         margin-bottom: 5%;
         cursor: pointer;
       }
+
       .btn:hover {
         background-color: $mainColor;
       }
+    }
+
+    &__captchat {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 16px;
     }
   }
 }
@@ -146,8 +168,11 @@
 <script>
 import { required, minLength, email } from "vuelidate/lib/validators";
 import emailjs from "@emailjs/browser";
+// import { VueRecaptcha } from "@/components/CapChat.vue";
+import { VueRecaptcha } from "vue-recaptcha";
 
 export default {
+  components: { VueRecaptcha },
   data() {
     return {
       name: "",
@@ -200,6 +225,17 @@ export default {
         }, 500);
       }
     },
+
+    onEvent() {
+      // when you need a reCAPTCHA challenge
+      this.$refs.recaptcha.execute();
+    },
+  },
+
+  checkOut(reponse) {
+    if (reponse) {
+      this.form.robot;
+    }
   },
 };
 </script>

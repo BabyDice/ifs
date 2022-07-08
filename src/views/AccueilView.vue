@@ -185,6 +185,7 @@
 h1 {
   font-weight: bold;
   font-family: $fontfamilyRegular;
+  color: #000;
   @include centre;
 }
 
@@ -216,6 +217,7 @@ h2 {
         flex-direction: row;
         justify-content: space-between;
         font-family: $fontfamilyRegular;
+        color: #000;
         // border: solid 2px green;
       }
 
@@ -226,10 +228,6 @@ h2 {
         font-family: $fontfamilyMedium;
         font-size: smaller;
         @include padGap;
-
-        p {
-          margin-top: 2vh;
-        }
 
         // border: solid 2px blue;
 
@@ -245,7 +243,13 @@ h2 {
           img {
             width: 3rem;
             height: 3rem;
-            border: solid 2px red($color: #000000);
+          }
+
+          p {
+            margin-top: 2vh;
+            color: #000;
+            font-weight: 500;
+            font-size: medium;
           }
         }
       }
@@ -267,6 +271,7 @@ h2 {
       justify-content: space-between;
       font-family: $fontfamilyRegular;
       width: 100%;
+      color: #000;
     }
 
     &__image2 {
@@ -278,7 +283,7 @@ h2 {
       &__contenu {
         // border: solid 2px yellow;
         display: flex;
-
+        align-items: center;
         flex-flow: column;
         margin-top: 4vh;
         width: 100%;

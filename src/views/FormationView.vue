@@ -260,6 +260,7 @@ h1 {
   font-weight: bold;
   font-family: $fontfamilyRegular;
   @include centre;
+  color: #000;
 }
 
 h2 {
@@ -295,6 +296,7 @@ h2 {
         justify-content: space-between;
         font-family: $fontfamilyRegular;
         width: 100%;
+        color: #000;
         // border: solid 2px green;
       }
 
@@ -318,6 +320,7 @@ h2 {
           flex-flow: column;
           @include padGap;
           align-items: center;
+          color: #000;
         }
 
         img {
@@ -334,6 +337,7 @@ h2 {
         padding: 10px;
         position: relative;
         width: 600px;
+        font-family: $fontfamilyRegular;
 
         &__main {
           list-style: none;
@@ -349,7 +353,6 @@ h2 {
           animation: slide-animation 20s infinite;
 
           &__container {
-            font-family: "Montserrat", sans-serif;
             position: relative;
             width: 600px;
             float: left;
@@ -375,6 +378,7 @@ h2 {
                 font-size: 70%;
                 font-weight: 300;
                 line-height: 1.2;
+                margin: 0 auto;
               }
             }
           }
@@ -475,7 +479,7 @@ h2 {
         justify-content: space-around;
         box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(17.4px);
-        background: rgba(203, 203, 203, 0.73);
+        background: rgba(248, 238, 219, 0.456);
         border-radius: 16px;
         -webkit-backdrop-filter: blur(17.4px);
         border: 1px solid rgba(203, 203, 203, 0.36);
@@ -539,7 +543,7 @@ h2 {
         justify-content: space-around;
         box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(17.4px);
-        background: rgba(203, 203, 203, 0.73);
+        background: rgba(163, 159, 149, 0.456);
         border-radius: 16px;
         -webkit-backdrop-filter: blur(17.4px);
         border: 1px solid rgba(203, 203, 203, 0.36);
