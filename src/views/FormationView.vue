@@ -34,47 +34,67 @@
               <p>Bureautique</p>
             </div>
           </div>
-          <div class="container__track__item__moovingTxt">
-            <ul>
-              <li>
-                <div class="container__track__item__moovingTxt__cont">
+          <article class="container__track__item__moovingTxt">
+            <div class="container__track__item__moovingTxt__main">
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   SUBSTANTIAL GAINFUL ACTIVITY<br />
                   <span>Are you making more than <strong>$1,260?</strong></span>
                 </div>
-              </li>
-              <li>
-                <div class="container__track__item__moovingTxt__cont">
+              </aside>
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   SEVERE?<br />
                   <span
                     >Do you have
                     <strong>Objective Medical Evidence?</strong></span
                   >
                 </div>
-              </li>
-              <li>
-                <div class="container__track__item__moovingTxt__cont">
+              </aside>
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   MEETS LESTING<br />
                   <span
                     >Are you properly matched to your work description?</span
                   >
                 </div>
-              </li>
-              <li>
-                <div class="container__track__item__moovingTxt__cont">
+              </aside>
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   PRESENT RELATIVE WORK<br />
                   <span
                     >Are you properly matched to your work description?</span
                   >
                 </div>
-              </li>
-              <li>
-                <div class="container__track__item__moovingTxt__cont">
+              </aside>
+              <aside
+                class="container__track__item__moovingTxt__main__container"
+              >
+                <div
+                  class="container__track__item__moovingTxt__main__container__content"
+                >
                   OTHER WORK<br />
                   <span>Can a Vocational Expert help you find other work?</span>
                 </div>
-              </li>
-            </ul>
-          </div>
+              </aside>
+            </div>
+          </article>
         </div>
       </section>
       <section class="container__track2">
@@ -145,6 +165,25 @@
                 (cet enregistrement ne vaut pas agrément de l'Etat).
               </p>
             </div>
+          </div>
+        </div>
+
+        <div class="container__track2__compteur">
+          <div class="container__track2__compteur__global">
+            <p>Performance</p>
+            <div class="container__track2__compteur__global__counter">%</div>
+          </div>
+          <div class="container__track2__compteur__global">
+            <p>Satisfaction</p>
+            <div class="container__track2__compteur__global__counter">%</div>
+          </div>
+          <div class="container__track2__compteur__global">
+            <p>Recommandation</p>
+            <div class="container__track2__compteur__global__counter">%</div>
+          </div>
+          <div class="container__track2__compteur__global">
+            <p>Stagiaires</p>
+            <div class="container__track2__compteur__global__counter">%</div>
           </div>
         </div>
 
@@ -230,6 +269,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
 @media (min-width: 370px) {
   * {
     margin: 0;
@@ -313,16 +358,15 @@
         }
 
         &__moovingTxt {
-          // background-color: pink;
+          //background-color: pink;
           min-height: 80px;
           margin: auto;
           overflow: hidden;
           padding: 10px;
           position: relative;
-          width: 600px;
-          margin-top: 5vh;
+          width: 90%;
 
-          ul {
+          &__main {
             list-style: none;
             position: absolute;
             left: 0px;
@@ -332,56 +376,57 @@
             -moz-transition: left 0.2s linear;
             -o-transition: left 0.2s linear;
             -webkit-transition: left 0.2s linear;
-            animation: slide-animation 20s infinite;
 
-            li {
-              font-family: $fontfamilyMedium;
-              float: inline-start;
+            animation: slide-animation 20s infinite;
+            overflow: hidden;
+
+            &__container {
+              font-family: "Montserrat", sans-serif;
+              float: left;
               position: relative;
-              width: 500px;
-              // border: solid 3px black;
+              width: 600px;
               display: inline-block;
               height: 200px;
 
-              /* Content */
+              &__content {
+                color: $mainColor;
+                font-size: 1.8em;
+                font-weight: 900;
+                line-height: 1.1;
+                margin: 0 auto;
+                max-width: 550px;
+                min-height: 180px;
+                padding: 0;
+                text-align: center;
+
+                span {
+                  color: black;
+                  display: inline-block;
+                  font-size: 70%;
+                  font-weight: 300;
+                  line-height: 1.2;
+                }
+              }
             }
           }
 
-          ul:hover {
-            animation-play-state: paused;
-            animation-play-state: paused;
-          }
-
-          &__cont {
-            color: $mainColor;
-            font-size: 1.8em;
-            font-weight: 900;
-            line-height: 1.1;
-            margin: 0 auto;
-            max-width: 550px;
-            min-height: 180px;
-            padding: 0;
-            text-align: center;
-
-            span {
-              color: black;
-              display: inline-block;
-              font-size: 70%;
-              font-weight: 300;
-              line-height: 1.2;
-            }
+          &__main:hover {
+            -moz-animation-play-state: paused;
+            -webkit-animation-play-state: paused;
           }
         }
 
+        /* Content */
+
         /*** target hooks ****/
 
-        @keyframes slide-animation {
+        @-webkit-keyframes slide-animation {
           0% {
-            opacity: 0.1;
+            opacity: 0;
           }
 
           2% {
-            opacity: 0.8;
+            opacity: 1;
           }
 
           20% {
@@ -567,6 +612,54 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+          }
+        }
+      }
+
+      &__compteur {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #dd214c;
+        font-family: $fontfamilyMedium;
+        width: 100%;
+
+        gap: 16px;
+
+        &__global {
+          width: 21%;
+          height: 100%;
+
+          &__counter {
+            animation: compteur 5s;
+            counter-reset: num var(--num);
+            padding: 2rem;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 5px;
+            width: 100%;
+          }
+
+          &__counter::after {
+            content: counter(num);
+          }
+
+          p {
+            text-align: center;
+            font-family: $fontfamilyMedium;
+            font-size: small;
+            font-weight: bold;
+          }
+        }
+
+        @keyframes counter {
+          from {
+            --num: 0;
+          }
+
+          to {
+            --num: 100;
           }
         }
       }

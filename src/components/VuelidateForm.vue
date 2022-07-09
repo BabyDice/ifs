@@ -240,7 +240,7 @@ export default {
 
   checkOut(reponse) {
     if (reponse) {
-      this.form.robot;
+      this.form.robot = true;
     }
   },
 };
