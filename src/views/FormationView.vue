@@ -34,67 +34,47 @@
               <p>Bureautique</p>
             </div>
           </div>
-          <article class="container__track__item__moovingTxt">
-            <div class="container__track__item__moovingTxt__main">
-              <aside
-                class="container__track__item__moovingTxt__main__container"
-              >
-                <div
-                  class="container__track__item__moovingTxt__main__container__content"
-                >
+          <div class="container__track__item__moovingTxt">
+            <ul>
+              <li>
+                <div class="container__track__item__moovingTxt__cont">
                   SUBSTANTIAL GAINFUL ACTIVITY<br />
                   <span>Are you making more than <strong>$1,260?</strong></span>
                 </div>
-              </aside>
-              <aside
-                class="container__track__item__moovingTxt__main__container"
-              >
-                <div
-                  class="container__track__item__moovingTxt__main__container__content"
-                >
+              </li>
+              <li>
+                <div class="container__track__item__moovingTxt__cont">
                   SEVERE?<br />
                   <span
                     >Do you have
                     <strong>Objective Medical Evidence?</strong></span
                   >
                 </div>
-              </aside>
-              <aside
-                class="container__track__item__moovingTxt__main__container"
-              >
-                <div
-                  class="container__track__item__moovingTxt__main__container__content"
-                >
+              </li>
+              <li>
+                <div class="container__track__item__moovingTxt__cont">
                   MEETS LESTING<br />
                   <span
                     >Are you properly matched to your work description?</span
                   >
                 </div>
-              </aside>
-              <aside
-                class="container__track__item__moovingTxt__main__container"
-              >
-                <div
-                  class="container__track__item__moovingTxt__main__container__content"
-                >
+              </li>
+              <li>
+                <div class="container__track__item__moovingTxt__cont">
                   PRESENT RELATIVE WORK<br />
                   <span
                     >Are you properly matched to your work description?</span
                   >
                 </div>
-              </aside>
-              <aside
-                class="container__track__item__moovingTxt__main__container"
-              >
-                <div
-                  class="container__track__item__moovingTxt__main__container__content"
-                >
+              </li>
+              <li>
+                <div class="container__track__item__moovingTxt__cont">
                   OTHER WORK<br />
                   <span>Can a Vocational Expert help you find other work?</span>
                 </div>
-              </aside>
-            </div>
-          </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="container__track2">
@@ -250,272 +230,329 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@media (min-width: 370px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-h1 {
-  font-weight: bold;
-  font-family: $fontfamilyRegular;
-  @include centre;
-  color: #000;
-}
-
-h2 {
-  font-weight: bold;
-  color: $mainColor;
-  @include centre;
-  font-family: $fontfamilyRegular;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  // border: 3px solid red;
-  height: 100%;
-  @include padGap;
-
-  &__track {
-    display: flex;
-    flex-direction: row;
-    @include padGap;
+  h1 {
+    font-weight: bold;
+    font-family: $fontfamilyRegular;
     @include centre;
+    color: #000;
+  }
 
-    &__item {
-      @include padGap;
-      width: 100%;
+  h2 {
+    font-weight: bold;
+    color: $mainColor;
+    @include centre;
+    font-family: $fontfamilyRegular;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    // border: 3px solid red;
+    height: 100%;
+    @include padGap;
+
+    &__track {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      @include padGap;
       align-items: center;
+      justify-content: center;
 
-      &__content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        font-family: $fontfamilyRegular;
-        width: 100%;
-        color: #000;
-        // border: solid 2px green;
-      }
-
-      &__image {
-        // border: solid 2px yellow;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-around;
-        margin-top: 4vh;
+      &__item {
         @include padGap;
-        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(17.4px);
-        background: rgba(203, 203, 203, 0.73);
-        border-radius: 16px;
-        border: $mainColor solid 1px;
-        width: 95%;
-        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         &__content {
           display: flex;
-          flex-flow: column;
-          @include padGap;
-          align-items: center;
+          flex-direction: row;
+          justify-content: space-around;
+          font-family: $fontfamilyRegular;
+          width: 100%;
           color: #000;
+          // border: solid 2px green;
         }
 
-        img {
-          width: 20px;
-          height: 30px;
-          border: solide 2px red($color: #000000);
-        }
-      }
+        &__image {
+          // border: solid 2px yellow;
+          display: flex;
+          flex-flow: column;
+          justify-content: space-around;
+          margin-top: 4vh;
+          @include padGap;
+          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(17.4px);
+          background: rgba(203, 203, 203, 0.73);
+          border-radius: 16px;
+          border: $mainColor solid 1px;
+          width: 95%;
+          overflow: hidden;
 
-      &__moovingTxt {
-        //background-color: pink;
-        min-height: 80px;
-        overflow: hidden;
-        padding: 10px;
-        position: relative;
-        width: 600px;
-        font-family: $fontfamilyRegular;
-
-        &__main {
-          list-style: none;
-          position: absolute;
-          left: 0px;
-          top: 0px;
-          width: 9000px;
-          transition: left 0.2s linear;
-          -moz-transition: left 0.2s linear;
-          -o-transition: left 0.2s linear;
-          -webkit-transition: left 0.2s linear;
-          margin-left: -25px;
-          animation: slide-animation 20s infinite;
-
-          &__container {
-            position: relative;
-            width: 600px;
-            float: left;
+          &__content {
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            text-align: center;
-            height: 200px;
+            flex-flow: column;
+            @include padGap;
+            align-items: center;
+            color: #000;
+          }
 
-            &__content {
-              color: $mainColor;
-              font-size: 1.8em;
-              font-weight: 900;
-              line-height: 1.1;
-              margin: 0 auto;
-              min-height: 180px;
-              padding: 0;
-              text-align: center;
+          img {
+            width: 20px;
+            height: 30px;
+            border: solid 2px red($color: #000000);
+          }
+        }
 
-              span {
-                color: black;
-                display: inline-block;
-                font-size: 70%;
-                font-weight: 300;
-                line-height: 1.2;
-                margin: 0 auto;
-              }
+        &__moovingTxt {
+          // background-color: pink;
+          min-height: 80px;
+          margin: auto;
+          overflow: hidden;
+          padding: 10px;
+          position: relative;
+          width: 600px;
+          margin-top: 5vh;
+
+          ul {
+            list-style: none;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 9000px;
+            transition: left 0.2s linear;
+            -moz-transition: left 0.2s linear;
+            -o-transition: left 0.2s linear;
+            -webkit-transition: left 0.2s linear;
+            animation: slide-animation 20s infinite;
+
+            li {
+              font-family: $fontfamilyMedium;
+              float: inline-start;
+              position: relative;
+              width: 500px;
+              // border: solid 3px black;
+              display: inline-block;
+              height: 200px;
+
+              /* Content */
             }
           }
 
-          &__main:hover {
-            -moz-animation-play-state: paused;
-            -webkit-animation-play-state: paused;
+          ul:hover {
+            animation-play-state: paused;
+            animation-play-state: paused;
+          }
+
+          &__cont {
+            color: $mainColor;
+            font-size: 1.8em;
+            font-weight: 900;
+            line-height: 1.1;
+            margin: 0 auto;
+            max-width: 550px;
+            min-height: 180px;
+            padding: 0;
+            text-align: center;
+
+            span {
+              color: black;
+              display: inline-block;
+              font-size: 70%;
+              font-weight: 300;
+              line-height: 1.2;
+            }
+          }
+        }
+
+        /*** target hooks ****/
+
+        @keyframes slide-animation {
+          0% {
+            opacity: 0.1;
+          }
+
+          2% {
+            opacity: 0.8;
+          }
+
+          20% {
+            left: 0px;
+            opacity: 1;
+          }
+
+          22.5% {
+            opacity: 0.6;
+          }
+
+          25% {
+            left: -600px;
+            opacity: 1;
+          }
+
+          45% {
+            left: -600px;
+            opacity: 1;
+          }
+
+          47.5% {
+            opacity: 0.6;
+          }
+
+          50% {
+            left: -1200px;
+            opacity: 1;
+          }
+
+          70% {
+            left: -1200px;
+            opacity: 1;
+          }
+
+          72.5% {
+            opacity: 0.6;
+          }
+
+          75% {
+            left: -1800px;
+            opacity: 1;
+          }
+
+          95% {
+            opacity: 1;
+          }
+
+          98% {
+            left: -1800px;
+            opacity: 0;
+          }
+
+          100% {
+            left: 0px;
+            opacity: 0;
           }
         }
       }
-
-      /* Content */
-
-      /*** target hooks ****/
-
-      @-webkit-keyframes slide-animation {
-        0% {
-          opacity: 1;
-        }
-
-        2% {
-          opacity: 1;
-        }
-
-        20% {
-          left: 0px;
-          opacity: 1;
-        }
-
-        25% {
-          left: -600px;
-        }
-
-        45% {
-          left: -600px;
-          opacity: 1;
-        }
-
-        50% {
-          left: -1197px;
-          opacity: 1;
-        }
-
-        70% {
-          left: -1200px;
-          opacity: 1;
-        }
-
-        75% {
-          left: -1800px;
-          opacity: 1;
-        }
-
-        95% {
-          opacity: 1;
-        }
-
-        98% {
-          left: -1800px;
-          opacity: 0;
-        }
-
-        100% {
-          left: 0px;
-          opacity: 0;
-        }
-      }
-    }
-  }
-
-  &__track2 {
-    display: flex;
-    flex-direction: column;
-    // border: 3px solid royalblue;
-    margin-top: 2vh;
-
-    @include padGap;
-    @include centre;
-
-    &__image2 {
-      // border: solid 2px yellow;
-      display: flex;
-      justify-content: space-around;
-      flex-flow: nowrap;
-      margin-top: 4vh;
-      width: 100%;
-      @include padGap;
     }
 
-    &__bloxNpic {
+    &__track2 {
       display: flex;
-      justify-content: center;
-      @include padGap;
+      flex-direction: column;
+      // border: 3px solid royalblue;
+      margin-top: 2vh;
 
-      &__blox {
+      @include padGap;
+      @include centre;
+
+      &__image2 {
+        // border: solid 2px yellow;
         display: flex;
-        flex-direction: column;
         justify-content: space-around;
-        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(17.4px);
-        background: rgba(248, 238, 219, 0.456);
-        border-radius: 16px;
-        -webkit-backdrop-filter: blur(17.4px);
-        border: 1px solid rgba(203, 203, 203, 0.36);
-        width: 90%;
+        flex-flow: nowrap;
+        margin-top: 4vh;
+        width: 100%;
+        @include padGap;
+      }
 
-        margin-top: 2vh;
-        @include bloxCentre;
-        font-family: $fontfamilyRegular;
+      &__bloxNpic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include padGap;
 
-        &__visu {
-          display: flex;
-          border-radius: 16px;
-          height: 100%;
-          width: 100%;
-          border-radius: 16px 16px 0px 0px;
-          @include borderMain;
-
-          img {
-            height: 100%;
-            width: 100%;
-            border-radius: 16px;
-            border-radius: 16px 16px 0px 0px;
-            object-fit: cover;
-          }
-        }
-
-        &__txt {
+        &__blox {
           display: flex;
           flex-direction: column;
           justify-content: space-around;
+          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(17.4px);
+          background: rgba(248, 238, 219, 0.456);
+          border-radius: 16px;
+          -webkit-backdrop-filter: blur(17.4px);
+          border: 1px solid rgba(203, 203, 203, 0.36);
+          width: 90%;
+
+          margin-top: 2vh;
           @include bloxCentre;
+          font-family: $fontfamilyRegular;
+
+          &__visu {
+            display: flex;
+            border-radius: 16px;
+            height: 100%;
+            width: 100%;
+            border-radius: 16px 16px 0px 0px;
+            @include borderMain;
+            border: 1px solid red($color: #000000);
+
+            img {
+              height: 100%;
+              width: 100%;
+              border-radius: 16px;
+              border-radius: 16px 16px 0px 0px;
+              object-fit: cover;
+            }
+          }
+
+          &__txt {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            @include bloxCentre;
+            @include padGap;
+
+            h2 {
+              font-weight: bold;
+              color: $mainColor;
+              font-family: $fontfamilyRegular;
+            }
+
+            hr {
+              height: 3px;
+              width: 90%;
+              background: $mainColor;
+              border: $mainColor;
+            }
+          }
+
+          &__butt {
+            background-color: $mainColor;
+            color: white;
+            width: 50%;
+            border-radius: 16px;
+            @include padGap;
+            @include centre;
+          }
+        }
+
+        &__blox2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(17.4px);
+          background: rgba(163, 159, 149, 0.456);
+          border-radius: 16px;
+          -webkit-backdrop-filter: blur(17.4px);
+          border: 1px solid rgba(203, 203, 203, 0.36);
+          width: 90%;
+          margin-top: 2vh;
           @include padGap;
+          @include bloxCentre;
+          font-family: $fontfamilyRegular;
 
           h2 {
             font-weight: bold;
             color: $mainColor;
+            @include centre;
             font-family: $fontfamilyRegular;
           }
 
@@ -525,131 +562,91 @@ h2 {
             background: $mainColor;
             border: $mainColor;
           }
-        }
 
-        &__butt {
-          background-color: $mainColor;
-          color: white;
-          width: 50%;
-          border-radius: 16px;
-          @include padGap;
-          @include centre;
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
         }
       }
 
-      &__blox2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(17.4px);
-        background: rgba(163, 159, 149, 0.456);
+      &__button {
+        background-color: $mainColor;
+        color: white;
+        width: 50%;
         border-radius: 16px;
-        -webkit-backdrop-filter: blur(17.4px);
-        border: 1px solid rgba(203, 203, 203, 0.36);
-        width: 90%;
-        margin-top: 2vh;
-        @include padGap;
-        @include bloxCentre;
+        margin-top: 10vh;
+        text-decoration-line: none;
         font-family: $fontfamilyRegular;
-
-        h2 {
-          font-weight: bold;
-          color: $mainColor;
-          @include centre;
-          font-family: $fontfamilyRegular;
-        }
-
-        hr {
-          height: 3px;
-          width: 90%;
-          background: $mainColor;
-          border: $mainColor;
-        }
-
-        div {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        }
-      }
-    }
-
-    &__button {
-      background-color: $mainColor;
-      color: white;
-      width: 50%;
-      border-radius: 16px;
-      margin-top: 10vh;
-      text-decoration-line: none;
-      font-family: $fontfamilyRegular;
-      @include padGap;
-      @include centre;
-
-      a {
-        text-decoration: none;
-      }
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-
-      100% {
-        transform: translateX(-1200px);
-      }
-    }
-
-    &__wrapper {
-      background: white;
-      width: 90%;
-      height: 80px;
-      border-radius: $radius-24;
-      position: relative;
-      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-      @include centre;
-      overflow: hidden;
-      margin: auto;
-
-      &::before,
-      &::after {
-        height: 150px;
-        width: 50px;
-        position: absolute;
-        content: "";
-        @include whiteGradient;
-        z-index: 2;
-      }
-
-      &::before {
-        top: 0;
-        left: 0;
-      }
-
-      &::after {
-        top: 0;
-        right: 0;
-        transform: rotateZ(180deg);
-      }
-
-      &__slider {
-        margin: 10px;
-        width: calc(100px * 28);
-        display: flex;
-        justify-content: space-between;
+        @include padGap;
         @include centre;
-        gap: 16px;
-        animation: scroll 60s linear infinite;
 
-        &__slide {
-          height: 5vh;
-          width: 100px;
+        a {
+          text-decoration: none;
+        }
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-1200px);
+        }
+      }
+
+      &__wrapper {
+        background: white;
+        width: 90%;
+        height: 80px;
+        border-radius: $radius-24;
+        position: relative;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+        @include centre;
+        overflow: hidden;
+        margin: auto;
+
+        &::before,
+        &::after {
+          height: 150px;
+          width: 50px;
+          position: absolute;
+          content: "";
+          @include whiteGradient;
+          z-index: 2;
+        }
+
+        &::before {
+          top: 0;
+          left: 0;
+        }
+
+        &::after {
+          top: 0;
+          right: 0;
+          transform: rotateZ(180deg);
+        }
+
+        &__slider {
+          margin: 10px;
+          width: calc(100px * 28);
+          display: flex;
+          justify-content: space-between;
           @include centre;
+          gap: 16px;
+          animation: scroll 60s linear infinite;
 
-          img {
-            height: 100%;
-            width: 100%;
+          &__slide {
+            height: 5vh;
+            width: 100px;
+            @include centre;
+
+            img {
+              height: 100%;
+              width: 100%;
+            }
           }
         }
       }

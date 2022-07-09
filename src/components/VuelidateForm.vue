@@ -52,15 +52,7 @@
           </button>
           <button class="button btn" type="reset">Annuler</button>
         </div>
-        <div class="form__captchat">
-          <vue-recaptcha
-            sitekey="6Lflw8MgAAAAAN3unp976MK_cL-FbypmUnGaqSZY"
-            ref="recaptcha"
-            theme="dark"
-            loadRecaptchaScript="true"
-            @verify="checkOut"
-          />
-        </div>
+
         <p class="typo__p" v-if="submitStatus === 'OK'">
           Merci pour votre envoie!
         </p>
@@ -68,6 +60,15 @@
 
       <p class="typo__p" v-if="submitStatus === 'PENDING'">Envoie...</p>
     </form>
+    <div class="form__captchat">
+      <vue-recaptcha
+        sitekey="6Lflw8MgAAAAAN3unp976MK_cL-FbypmUnGaqSZY"
+        ref="recaptcha"
+        theme="dark"
+        loadRecaptchaScript="true"
+        @verify="checkOut"
+      />
+    </div>
   </div>
 </template>
 
@@ -160,6 +161,11 @@
       justify-content: center;
       gap: 16px;
       padding: 16px;
+      width: 100%;
+
+      vue-recaptcha {
+        width: 90%;
+      }
     }
   }
 }

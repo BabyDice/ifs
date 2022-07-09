@@ -166,7 +166,6 @@
           </div>
         </div>
       </aside>
-      <VueRecaptcha />
     </main>
   </div>
 </template>
@@ -182,248 +181,255 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-weight: bold;
-  font-family: $fontfamilyRegular;
-  color: #000;
-  @include centre;
-}
-
-h2 {
-  font-weight: bold;
-  color: $mainColor;
-  @include centre;
-  font-family: $fontfamilyRegular;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  // border: 3px solid red;
-  height: 100%;
-  @include padGap;
-
-  &__track {
-    display: flex;
-    flex-direction: row;
-    @include padGap;
+@media (min-width: 370px) {
+  h1 {
+    font-weight: bold;
+    font-family: $fontfamilyRegular;
+    color: #000;
     @include centre;
+  }
 
-    &__item {
+  h2 {
+    font-weight: bold;
+    color: $mainColor;
+    @include centre;
+    font-family: $fontfamilyRegular;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    // border: 3px solid red;
+    height: 100%;
+    @include padGap;
+
+    &__track {
+      display: flex;
+      flex-direction: row;
       @include padGap;
+      align-items: center;
+      justify-content: center;
 
-      &__content {
+      &__item {
+        @include padGap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__content {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          font-family: $fontfamilyRegular;
+          color: #000;
+          width: 90%;
+          // border: solid 2px green;
+        }
+
+        &__picTxt {
+          display: flex;
+          flex-flow: row;
+          justify-content: space-between;
+          font-family: $fontfamilyMedium;
+          font-size: smaller;
+          @include padGap;
+
+          // border: solid 2px blue;
+
+          &__contenu {
+            // border: solid 2px yellow;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 4vh;
+            width: 100%;
+
+            img {
+              width: 3rem;
+              height: 3rem;
+            }
+
+            p {
+              margin-top: 2vh;
+              color: #000;
+              font-weight: 500;
+              font-size: medium;
+            }
+          }
+        }
+      }
+    }
+
+    &__track2 {
+      display: flex;
+      flex-direction: column;
+      // border: 3px solid royalblue;
+      margin-top: 5vh;
+
+      @include padGap;
+      @include centre;
+
+      &__content2 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         font-family: $fontfamilyRegular;
+        width: 100%;
         color: #000;
-        // border: solid 2px green;
       }
 
-      &__picTxt {
+      &__image2 {
         display: flex;
-        flex-flow: row;
+        flex-direction: row;
         justify-content: space-around;
-        font-family: $fontfamilyMedium;
-        font-size: smaller;
-        @include padGap;
-
-        // border: solid 2px blue;
+        width: 100%;
 
         &__contenu {
           // border: solid 2px yellow;
           display: flex;
-          flex-flow: column;
-          justify-content: space-around;
           align-items: center;
+          flex-flow: column;
           margin-top: 4vh;
           width: 100%;
+          @include padGap;
 
           img {
-            width: 3rem;
-            height: 3rem;
+            width: 64px;
+            height: 64px;
           }
 
           p {
             margin-top: 2vh;
-            color: #000;
-            font-weight: 500;
-            font-size: medium;
           }
         }
       }
-    }
-  }
 
-  &__track2 {
-    display: flex;
-    flex-direction: column;
-    // border: 3px solid royalblue;
-    margin-top: 5vh;
-
-    @include padGap;
-    @include centre;
-
-    &__content2 {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      font-family: $fontfamilyRegular;
-      width: 100%;
-      color: #000;
-    }
-
-    &__image2 {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 100%;
-
-      &__contenu {
-        // border: solid 2px yellow;
+      &__txt {
         display: flex;
-        align-items: center;
-        flex-flow: column;
-        margin-top: 4vh;
+        flex-direction: row;
+        justify-content: space-around;
         width: 100%;
+      }
+
+      &__bloxNpic {
+        display: flex;
+        justify-content: center;
         @include padGap;
 
-        img {
-          width: 64px;
-          height: 64px;
-        }
-
-        p {
+        &__blox {
+          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(17.4px);
+          background: rgba(203, 203, 203, 0.73);
+          border-radius: 16px;
+          -webkit-backdrop-filter: blur(17.4px);
+          border: 1px solid rgba(203, 203, 203, 0.36);
+          width: 90%;
+          height: 30vh;
           margin-top: 2vh;
+          @include padGap;
+          display: flex;
+          align-items: center;
+          font-family: $fontfamilyRegular;
+
+          p {
+            margin: auto;
+          }
         }
-      }
-    }
 
-    &__txt {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 100%;
-    }
-
-    &__bloxNpic {
-      display: flex;
-      justify-content: center;
-      @include padGap;
-
-      &__blox {
-        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(17.4px);
-        background: rgba(203, 203, 203, 0.73);
-        border-radius: 16px;
-        -webkit-backdrop-filter: blur(17.4px);
-        border: 1px solid rgba(203, 203, 203, 0.36);
-        width: 90%;
-        height: 30vh;
-        margin-top: 2vh;
-        @include padGap;
-        display: flex;
-        align-items: center;
-        font-family: $fontfamilyRegular;
-
-        p {
-          margin: auto;
-        }
-      }
-
-      &__picture {
-        display: flex;
-        width: 40vw;
-        height: 30vh;
-        display: none;
-
-        img {
-          object-fit: cover;
-        }
-      }
-
-      &__picture2 {
-        width: 20vw;
-        height: 40vh;
-        display: none;
-
-        img {
-          object-fit: cover;
-        }
-      }
-    }
-
-    &__button {
-      background-color: $mainColor;
-      color: white;
-      width: 90%;
-      border-radius: 16px;
-      margin-top: 2vh;
-      @include padGap;
-      @include centre;
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-
-      100% {
-        transform: translateX(-1200px);
-      }
-    }
-
-    &__wrapper {
-      background: white;
-      width: 90%;
-      height: 80px;
-      border-radius: $radius-24;
-      position: relative;
-      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-      @include centre;
-      overflow: hidden;
-      margin-top: 5vh;
-      margin-bottom: 5vh;
-
-      &::before,
-      &::after {
-        height: 150px;
-        width: 50px;
-        position: absolute;
-        content: "";
-        @include whiteGradient;
-        z-index: 2;
-      }
-
-      &::before {
-        top: 0;
-        left: 0;
-      }
-
-      &::after {
-        top: 0;
-        right: 0;
-        transform: rotateZ(180deg);
-      }
-
-      &__slider {
-        margin: 10px;
-        width: calc(100px * 28);
-        display: flex;
-        justify-content: space-between;
-        @include centre;
-        gap: 16px;
-        animation: scroll 60s linear infinite;
-
-        &__slide {
-          height: 5vh;
-          width: 100px;
-          @include centre;
+        &__picture {
+          display: flex;
+          width: 40vw;
+          height: 30vh;
+          display: none;
 
           img {
-            height: 100%;
-            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        &__picture2 {
+          width: 20vw;
+          height: 40vh;
+          display: none;
+
+          img {
+            object-fit: cover;
+          }
+        }
+      }
+
+      &__button {
+        background-color: $mainColor;
+        color: white;
+        width: 90%;
+        border-radius: 16px;
+        margin-top: 2vh;
+        @include padGap;
+        @include centre;
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-1200px);
+        }
+      }
+
+      &__wrapper {
+        background: white;
+        width: 90%;
+        height: 80px;
+        border-radius: $radius-24;
+        position: relative;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+        @include centre;
+        overflow: hidden;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+        &::before,
+        &::after {
+          height: 150px;
+          width: 50px;
+          position: absolute;
+          content: "";
+          @include whiteGradient;
+          z-index: 2;
+        }
+
+        &::before {
+          top: 0;
+          left: 0;
+        }
+
+        &::after {
+          top: 0;
+          right: 0;
+          transform: rotateZ(180deg);
+        }
+
+        &__slider {
+          margin: 10px;
+          width: calc(100px * 28);
+          display: flex;
+          justify-content: space-between;
+          @include centre;
+          gap: 16px;
+          animation: scroll 60s linear infinite;
+
+          &__slide {
+            height: 5vh;
+            width: 100px;
+            @include centre;
+
+            img {
+              height: 100%;
+              width: 100%;
+            }
           }
         }
       }

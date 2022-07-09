@@ -125,317 +125,319 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-weight: bold;
-  font-family: $fontfamilyRegular;
-  @include centre;
-}
-
-h2 {
-  font-weight: bold;
-  color: $mainColor;
-  @include centre;
-  font-family: $fontfamilyRegular;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  // border: 3px solid red;
-  height: 100%;
-  @include padGap;
-
-  &__track {
-    display: flex;
-    flex-direction: row;
-    @include padGap;
+@media (min-width: 370px) {
+  h1 {
+    font-weight: bold;
+    font-family: $fontfamilyRegular;
     @include centre;
-
-    &__item {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-
-      &__content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        font-family: $fontfamilyRegular;
-        // border: solid 2px green;
-        @include padGap;
-      }
-
-      &__imageTxt {
-        // border: solid 2px yellow;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        margin-top: 4vh;
-        @include padGap;
-        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(17.4px);
-        background: rgba(203, 203, 203, 0.73);
-        border-radius: 16px;
-        border: $mainColor solid 1px;
-        width: 95%;
-
-        &__picture {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          width: 100%;
-          @include padGap;
-
-          img {
-            width: 3rem;
-            height: 50px;
-          }
-        }
-      }
-
-      &__moovingTxt {
-        // background-color: pink;
-        min-height: 80px;
-        margin: auto;
-        overflow: hidden;
-
-        position: relative;
-        width: 90%;
-        margin-top: 5vh;
-
-        ul {
-          list-style: none;
-          position: absolute;
-          left: 0px;
-          top: 0px;
-          width: 9000px;
-          transition: left 0.2s linear;
-          -moz-transition: left 0.2s linear;
-          -o-transition: left 0.2s linear;
-          -webkit-transition: left 0.2s linear;
-          animation: slide-animation 20s infinite;
-
-          li {
-            font-family: $fontfamilyMedium;
-            float: inline-start;
-            position: relative;
-            width: 500px;
-            // border: solid 3px black;
-            display: inline-block;
-            height: 200px;
-
-            /* Content */
-          }
-        }
-
-        ul:hover {
-          animation-play-state: paused;
-          animation-play-state: paused;
-        }
-
-        &__container {
-          color: $mainColor;
-          font-size: 1.8em;
-          font-weight: 900;
-          line-height: 1.1;
-          margin: 0 auto;
-          max-width: 550px;
-          min-height: 180px;
-          padding: 0;
-          text-align: center;
-
-          span {
-            color: black;
-            display: inline-block;
-            font-size: 70%;
-            font-weight: 300;
-            line-height: 1.2;
-          }
-        }
-      }
-
-      /*** target hooks ****/
-
-      @keyframes slide-animation {
-        0% {
-          opacity: 0.1;
-        }
-
-        2% {
-          opacity: 0.8;
-        }
-
-        20% {
-          left: 0px;
-          opacity: 1;
-        }
-
-        22.5% {
-          opacity: 0.6;
-        }
-
-        25% {
-          left: -600px;
-          opacity: 1;
-        }
-
-        45% {
-          left: -600px;
-          opacity: 1;
-        }
-
-        47.5% {
-          opacity: 0.6;
-        }
-
-        50% {
-          left: -1200px;
-          opacity: 1;
-        }
-
-        70% {
-          left: -1200px;
-          opacity: 1;
-        }
-
-        72.5% {
-          opacity: 0.6;
-        }
-
-        75% {
-          left: -1800px;
-          opacity: 1;
-        }
-
-        95% {
-          opacity: 1;
-        }
-
-        98% {
-          left: -1800px;
-          opacity: 0;
-        }
-
-        100% {
-          left: 0px;
-          opacity: 0;
-        }
-      }
-    }
   }
 
-  &__track2 {
+  h2 {
+    font-weight: bold;
+    color: $mainColor;
+    @include centre;
+    font-family: $fontfamilyRegular;
+  }
+
+  .container {
     display: flex;
     flex-direction: column;
-    // border: 3px solid royalblue;
-    margin-top: 5vh;
-
+    // border: 3px solid red;
+    height: 100%;
     @include padGap;
-    @include centre;
 
-    &__image2 {
-      // border: solid 2px yellow;
+    &__track {
       display: flex;
-      justify-content: space-around;
-      flex-flow: nowrap;
-      margin-top: 4vh;
-      width: 100%;
+      flex-direction: row;
       @include padGap;
-    }
+      @include centre;
 
-    &__bloxNpic {
-      display: flex;
-      justify-content: center;
-      @include padGap;
-
-      &__blox {
+      &__item {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(17.4px);
-        background: rgba(203, 203, 203, 0.73);
-        border-radius: 16px;
-        -webkit-backdrop-filter: blur(17.4px);
-        border: 1px solid rgba(203, 203, 203, 0.36);
-        width: 90%;
 
-        margin-top: 2vh;
-        @include bloxCentre;
-        font-family: $fontfamilyRegular;
-
-        &__visu {
+        &__content {
           display: flex;
-          border-radius: 16px;
-          height: 100%;
-          width: 100%;
-          border-radius: 16px 16px 0px 0px;
-          @include borderMain;
-
-          img {
-            height: 100%;
-            width: 100%;
-            border-radius: 16px;
-            border-radius: 16px 16px 0px 0px;
-          }
+          flex-direction: row;
+          justify-content: space-between;
+          font-family: $fontfamilyRegular;
+          // border: solid 2px green;
+          @include padGap;
         }
 
-        &__txt {
+        &__imageTxt {
+          // border: solid 2px yellow;
           display: flex;
-          flex-direction: column;
+          flex-flow: row;
           justify-content: space-around;
-          @include bloxCentre;
+          margin-top: 4vh;
           @include padGap;
+          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(17.4px);
+          background: rgba(203, 203, 203, 0.73);
+          border-radius: 16px;
+          border: $mainColor solid 1px;
+          width: 95%;
 
-          h2 {
-            font-weight: bold;
-            color: $mainColor;
-            font-family: $fontfamilyRegular;
-          }
+          &__picture {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            @include padGap;
 
-          hr {
-            height: 3px;
-            width: 90%;
-            background: $mainColor;
-            border: $mainColor;
+            img {
+              width: 3rem;
+              height: 50px;
+            }
           }
         }
 
-        &__butt {
-          background-color: $mainColor;
-          color: white;
-          width: 50%;
-          border-radius: 16px;
-          @include padGap;
-          @include centre;
-          text-decoration: none;
+        &__moovingTxt {
+          // background-color: pink;
+          min-height: 80px;
+          margin: auto;
+          overflow: hidden;
 
-          router-link {
-            text-decoration: none;
+          position: relative;
+          width: 90%;
+          margin-top: 5vh;
+
+          ul {
+            list-style: none;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 9000px;
+            transition: left 0.2s linear;
+            -moz-transition: left 0.2s linear;
+            -o-transition: left 0.2s linear;
+            -webkit-transition: left 0.2s linear;
+            animation: slide-animation 20s infinite;
+
+            li {
+              font-family: $fontfamilyMedium;
+              float: inline-start;
+              position: relative;
+              width: 500px;
+              // border: solid 3px black;
+              display: inline-block;
+              height: 200px;
+
+              /* Content */
+            }
+          }
+
+          ul:hover {
+            animation-play-state: paused;
+            animation-play-state: paused;
+          }
+
+          &__container {
+            color: $mainColor;
+            font-size: 1.8em;
+            font-weight: 900;
+            line-height: 1.1;
+            margin: 0 auto;
+            max-width: 550px;
+            min-height: 180px;
+            padding: 0;
+            text-align: center;
+
+            span {
+              color: black;
+              display: inline-block;
+              font-size: 70%;
+              font-weight: 300;
+              line-height: 1.2;
+            }
+          }
+        }
+
+        /*** target hooks ****/
+
+        @keyframes slide-animation {
+          0% {
+            opacity: 0.1;
+          }
+
+          2% {
+            opacity: 0.8;
+          }
+
+          20% {
+            left: 0px;
+            opacity: 1;
+          }
+
+          22.5% {
+            opacity: 0.6;
+          }
+
+          25% {
+            left: -600px;
+            opacity: 1;
+          }
+
+          45% {
+            left: -600px;
+            opacity: 1;
+          }
+
+          47.5% {
+            opacity: 0.6;
+          }
+
+          50% {
+            left: -1200px;
+            opacity: 1;
+          }
+
+          70% {
+            left: -1200px;
+            opacity: 1;
+          }
+
+          72.5% {
+            opacity: 0.6;
+          }
+
+          75% {
+            left: -1800px;
+            opacity: 1;
+          }
+
+          95% {
+            opacity: 1;
+          }
+
+          98% {
+            left: -1800px;
+            opacity: 0;
+          }
+
+          100% {
+            left: 0px;
+            opacity: 0;
           }
         }
       }
+    }
 
-      &__blox2 {
+    &__track2 {
+      display: flex;
+      flex-direction: column;
+      // border: 3px solid royalblue;
+      margin-top: 5vh;
+
+      @include padGap;
+      @include centre;
+
+      &__image2 {
+        // border: solid 2px yellow;
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
-        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(17.4px);
-        background: rgba(203, 203, 203, 0.73);
-        border-radius: 16px;
-        -webkit-backdrop-filter: blur(17.4px);
-        border: 1px solid rgba(203, 203, 203, 0.36);
+        flex-flow: nowrap;
+        margin-top: 4vh;
+        width: 100%;
         @include padGap;
-        @include bloxCentre;
-        font-family: $fontfamilyRegular;
-        width: 70vw;
+      }
 
-        img {
-          width: 70px;
-          height: 60px;
+      &__bloxNpic {
+        display: flex;
+        justify-content: center;
+        @include padGap;
+
+        &__blox {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(17.4px);
+          background: rgba(203, 203, 203, 0.73);
+          border-radius: 16px;
+          -webkit-backdrop-filter: blur(17.4px);
+          border: 1px solid rgba(203, 203, 203, 0.36);
+          width: 90%;
+
+          margin-top: 2vh;
+          @include bloxCentre;
+          font-family: $fontfamilyRegular;
+
+          &__visu {
+            display: flex;
+            border-radius: 16px;
+            height: 100%;
+            width: 100%;
+            border-radius: 16px 16px 0px 0px;
+            @include borderMain;
+
+            img {
+              height: 100%;
+              width: 100%;
+              border-radius: 16px;
+              border-radius: 16px 16px 0px 0px;
+            }
+          }
+
+          &__txt {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            @include bloxCentre;
+            @include padGap;
+
+            h2 {
+              font-weight: bold;
+              color: $mainColor;
+              font-family: $fontfamilyRegular;
+            }
+
+            hr {
+              height: 3px;
+              width: 90%;
+              background: $mainColor;
+              border: $mainColor;
+            }
+          }
+
+          &__butt {
+            background-color: $mainColor;
+            color: white;
+            width: 50%;
+            border-radius: 16px;
+            @include padGap;
+            @include centre;
+            text-decoration: none;
+
+            router-link {
+              text-decoration: none;
+            }
+          }
+        }
+
+        &__blox2 {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(17.4px);
+          background: rgba(203, 203, 203, 0.73);
+          border-radius: 16px;
+          -webkit-backdrop-filter: blur(17.4px);
+          border: 1px solid rgba(203, 203, 203, 0.36);
+          @include padGap;
+          @include bloxCentre;
+          font-family: $fontfamilyRegular;
+          width: 70vw;
+
+          img {
+            width: 70px;
+            height: 60px;
+          }
         }
       }
     }
