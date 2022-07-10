@@ -38,6 +38,11 @@ const routes = [
     name: "propos",
     component: () => import("@/views/ProposView.vue"),
   },
+  {
+    path: "/condition",
+    name: "condition",
+    component: () => import("@/views/ConditionGeneral.vue"),
+  },
 ];
 
 const router = new VueRouter({

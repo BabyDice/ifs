@@ -40,10 +40,16 @@
 @mixin borderMain {
   border: 1px solid $mainColor;
 }
-$radius-24: 24px;
+
 $mainColor: #dd214c;
 $fontfamilyMedium: "Poppins", sans-serif;
 $fontfamilyRegular: "Poppins", sans-serif;
 
-@mixin num {
-}
+$box-shadow-left: -10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+$box-shadow-right: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+$box-shadow-bottom: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+
+$gap-4: 4rem;
+
+$radius-12: 12px;
+$radius-24: 24px;

@@ -466,7 +466,7 @@
 // REsPONSIVE
 //
 
-@media (min-width: 810px) {
+@media (min-width: 768px) {
   h1 {
     font-weight: bold;
     font-family: $fontfamilyRegular;
@@ -605,7 +605,7 @@
   }
 }
 
-@media (min-width: 1516px) {
+@media (min-width: 1024px) {
   h1 {
     font-weight: bold;
     font-family: $fontfamilyRegular;

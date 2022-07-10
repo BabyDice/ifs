@@ -15,6 +15,11 @@ new Vue({
         <h2 class="footer__main__children__title">Mentions Légales</h2>
       </div>
       <div class="footer__main__children">
+        <router-link to="/condition" class="footer__main__children__title"
+          >Condition General</router-link
+        >
+      </div>
+      <div class="footer__main__children">
         <h2 class="footer__main__children__title">Nous Connaître ?</h2>
         <li class="footer__main__children__liste">A Propos</li>
       </div>

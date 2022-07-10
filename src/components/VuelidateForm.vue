@@ -65,8 +65,8 @@
         sitekey="6Lflw8MgAAAAAN3unp976MK_cL-FbypmUnGaqSZY"
         ref="recaptcha"
         theme="dark"
-        loadRecaptchaScript="true"
-        @verify="checkOut"
+        :loadRecaptchaScript="true"
+        @verify="checkOut($event)"
       />
     </div>
   </div>
@@ -236,12 +236,15 @@ export default {
       // when you need a reCAPTCHA challenge
       this.$refs.recaptcha.execute();
     },
-  },
-
-  checkOut(reponse) {
-    if (reponse) {
-      this.form.robot = true;
-    }
+    // Methode de Verication Pour le captcha
+    checkOut(response) {
+      this.recaptcha = response;
+      if (response == true) {
+        console.log("Verify: " + response);
+      } else {
+        console.log("INCORRECT: " + response);
+      }
+    },
   },
 };
 </script>

@@ -364,7 +364,7 @@
           overflow: hidden;
           padding: 10px;
           position: relative;
-          width: 90%;
+          width: 600px;
 
           &__main {
             list-style: none;
@@ -751,7 +751,7 @@
 // REsPONSIVE
 //
 
-@media (min-width: 810px) {
+@media (min-width: 768px) {
   h1 {
     font-weight: bold;
     font-family: $fontfamilyRegular;
@@ -849,7 +849,7 @@
   }
 }
 
-@media (min-width: 1516px) {
+@media (min-width: 1024px) {
   h1 {
     font-weight: bold;
     font-family: $fontfamilyRegular;
