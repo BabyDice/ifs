@@ -41,10 +41,6 @@
   border: 1px solid $mainColor;
 }
 
-$mainColor: #dd214c;
-$fontfamilyMedium: "Poppins", sans-serif;
-$fontfamilyRegular: "Poppins", sans-serif;
-
 $box-shadow-left: -10px 10px 20px 0px rgba(0, 0, 0, 0.1);
 $box-shadow-right: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
 $box-shadow-bottom: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
@@ -53,3 +49,21 @@ $gap-4: 4rem;
 
 $radius-12: 12px;
 $radius-24: 24px;
+
+$tablette-screen: 768px;
+$desktop-screen: 1024px;
+
+/* Declaration Couleurs */
+$mainColor: #dd214c;
+$secondColor: #ffffff;
+$lastColor: #d2d2d2c4;
+
+/* Police */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+$fontfamilyMedium: "Poppins", sans-serif;
+$fontfamilyRegular: "Poppins", sans-serif;
+
+$desktop: 1024px;
+$tablette: 768px;
+$mobile: 425px;
