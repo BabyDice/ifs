@@ -365,6 +365,7 @@
           padding: 10px;
           position: relative;
           width: 600px;
+          display: none;
 
           &__main {
             list-style: none;
@@ -379,6 +380,7 @@
 
             animation: slide-animation 20s infinite;
             overflow: hidden;
+            display: none;
 
             &__container {
               font-family: "Montserrat", sans-serif;
@@ -387,6 +389,7 @@
               width: 600px;
               display: inline-block;
               height: 200px;
+              display: none;
 
               &__content {
                 color: $mainColor;
@@ -398,6 +401,7 @@
                 min-height: 180px;
                 padding: 0;
                 text-align: center;
+                display: none;
 
                 span {
                   color: black;
@@ -405,6 +409,7 @@
                   font-size: 70%;
                   font-weight: 300;
                   line-height: 1.2;
+                  display: none;
                 }
               }
             }
@@ -494,7 +499,8 @@
       // border: 3px solid royalblue;
       margin-top: 2vh;
 
-      @include padGap;
+      gap: 24;
+      padding: 24;
       @include centre;
 
       &__image2 {
@@ -623,6 +629,8 @@
         color: #dd214c;
         font-family: $fontfamilyMedium;
         width: 100%;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
 
         gap: 16px;
 
@@ -700,6 +708,9 @@
         @include centre;
         overflow: hidden;
         margin: auto;
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
 
         &::before,
         &::after {
@@ -791,6 +802,31 @@
             width: 20px;
             height: 30px;
             border: solide 2px red($color: #000000);
+          }
+        }
+
+        &__moovingTxt {
+          display: unset;
+
+          &__main {
+            display: unset;
+
+            &__container {
+              display: unset;
+
+              &__content {
+                display: unset;
+
+                span {
+                  display: unset;
+                }
+              }
+            }
+          }
+
+          &__main:hover {
+            -moz-animation-play-state: paused;
+            -webkit-animation-play-state: paused;
           }
         }
       }

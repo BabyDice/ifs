@@ -220,10 +220,12 @@
           //background-color: pink;
           min-height: 80px;
           margin: auto;
+          margin-top: 5vh;
           overflow: hidden;
           padding: 10px;
           position: relative;
-          width: 90%;
+          width: 600px;
+          display: none;
 
           &__main {
             list-style: none;
@@ -238,6 +240,7 @@
 
             animation: slide-animation 20s infinite;
             overflow: hidden;
+            display: none;
 
             &__container {
               font-family: "Montserrat", sans-serif;
@@ -246,17 +249,18 @@
               width: 600px;
               display: inline-block;
               height: 200px;
+              display: none;
 
               &__content {
                 color: $mainColor;
                 font-size: 1.8em;
                 font-weight: 900;
                 line-height: 1.1;
-                margin: 0 auto;
                 max-width: 550px;
                 min-height: 180px;
                 padding: 0;
                 text-align: center;
+                display: none;
 
                 span {
                   color: black;
@@ -264,6 +268,7 @@
                   font-size: 70%;
                   font-weight: 300;
                   line-height: 1.2;
+                  display: none;
                 }
               }
             }
@@ -381,7 +386,6 @@
           border: 1px solid rgba(203, 203, 203, 0.36);
           width: 90%;
 
-          margin-top: 2vh;
           @include bloxCentre;
           font-family: $fontfamilyRegular;
 
@@ -506,36 +510,27 @@
         }
 
         &__moovingTxt {
-          display: flex;
-          align-items: center;
-          min-height: 80px;
-          margin-top: 3vh;
-          overflow: hidden;
-          position: relative;
-          width: 600px;
+          display: unset;
 
-          ul {
-            list-style: none;
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            right: 0px;
-            width: calc(600px * 5);
-            transition: left 0.2s linear;
-            -moz-transition: left 0.2s linear;
-            -o-transition: left 0.2s linear;
-            -webkit-transition: left 0.2s linear;
+          &__main {
+            display: unset;
 
-            li {
-              font-family: $fontfamilyRegular;
-              float: inline-start;
-              position: relative;
-              width: 600px;
-              display: inline-block;
-              height: 200px;
+            &__container {
+              display: unset;
 
-              /* Content */
+              &__content {
+                display: unset;
+
+                span {
+                  display: unset;
+                }
+              }
             }
+          }
+
+          &__main:hover {
+            -moz-animation-play-state: paused;
+            -webkit-animation-play-state: paused;
           }
         }
       }
