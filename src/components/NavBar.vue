@@ -32,38 +32,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import "../_variable.scss";
 
-.nav {
-  width: 100%;
-  height: 10vh;
-  background-color: chocolate;
-  border-radius: 0 0 20px 20px;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(15px);
-
-  &__main {
+@media screen and (min-width: 390px) {
+  .nav {
     width: 100%;
-    height: 100%;
-    padding: 0;
+    background-color: chocolate;
+    border-radius: 0 0 20px 20px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
 
-    &__children {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      // background-color: aquamarine;
+    &__main {
+      width: 100%;
       height: 100%;
-      list-style: none;
+      padding: 0;
 
-      &__flex {
-        flex: 2;
+      &__children {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // background-color: aquamarine;
+        height: 100%;
+        list-style: none;
+        gap: 14px;
 
-        &__logo {
-          @include logo;
-        }
+        &__flex {
+          flex: 2;
 
-        .nav-link {
-          text-decoration: none;
-          font-family: $fontfamilyMedium;
+          &__logo {
+            @include logo;
+          }
+
+          .nav-link {
+            text-decoration: none;
+            font-family: $fontfamilyMedium;
+          }
         }
       }
     }

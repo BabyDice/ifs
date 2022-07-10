@@ -323,7 +323,7 @@
   margin-top: 10vh;
   margin-bottom: 10vh;
 
-  border-radius: 100%;
+  border-radius: 24px;
   box-shadow: $box-shadow-bottom;
 
   &__txt {

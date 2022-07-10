@@ -15,13 +15,18 @@ new Vue({
         <h2 class="footer__main__children__title">Mentions Légales</h2>
       </div>
       <div class="footer__main__children">
-        <router-link to="/condition" class="footer__main__children__title"
-          >Condition General</router-link
-        >
+        <h2>
+          <router-link to="/condition" class="footer__main__children__title"
+            >Condition General</router-link
+          >
+        </h2>
       </div>
       <div class="footer__main__children">
-        <h2 class="footer__main__children__title">Nous Connaître ?</h2>
-        <li class="footer__main__children__liste">A Propos</li>
+        <h2>
+          <router-link to="/propos" class="footer__main__children__title"
+            >Nous Connaître ?</router-link
+          >
+        </h2>
       </div>
       <div class="footer__main__children">
         <img src="@/assets/logo.png" class="footer__main__children__img" />
@@ -75,6 +80,9 @@ $fontfamilyRegular: "Poppins", sans-serif;
         width: 96px;
         height: 96px;
         margin: 5px;
+      }
+
+      h2 {
       }
     }
   }
