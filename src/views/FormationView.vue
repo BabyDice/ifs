@@ -178,7 +178,7 @@
             <div class="container__track2__compteur__global__counter">%</div>
           </div>
           <div class="container__track2__compteur__global">
-            <p>Recommandation</p>
+            <p>Référence</p>
             <div class="container__track2__compteur__global__counter">%</div>
           </div>
           <div class="container__track2__compteur__global">
@@ -632,7 +632,7 @@
         margin-bottom: 5vh;
         margin-top: 5vh;
 
-        gap: 16px;
+        gap: 24px;
 
         &__global {
           width: 21%;
@@ -660,15 +660,15 @@
             font-weight: bold;
           }
         }
+      }
 
-        @keyframes counter {
-          from {
-            --num: 0;
-          }
+      @keyframes counter {
+        from {
+          --num: 0;
+        }
 
-          to {
-            --num: 100;
-          }
+        to {
+          --num: 100;
         }
       }
 
@@ -955,6 +955,15 @@
           @include borderMain;
 
           height: 100vh;
+        }
+
+        &__compteur {
+          &__global {
+            p {
+              font-size: 3rem;
+              font-weight: bold;
+            }
+          }
         }
       }
 

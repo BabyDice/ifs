@@ -732,6 +732,7 @@
         width: 83%;
         border-radius: 16px;
         @include padGap;
+        border: none;
       }
     }
   }
