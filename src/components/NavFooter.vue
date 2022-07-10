@@ -29,8 +29,25 @@ new Vue({
         </h2>
       </div>
       <div class="footer__main__children">
-        <img src="@/assets/logo.png" class="footer__main__children__img" />
-        <img src="@/assets/logo.png" class="footer__main__children__img" />
+        <span class="footer__main__children__contain">
+          <a
+            href="https://www.linkedin.com/company/ifs73/about/"
+            target="blank"
+          >
+            <img
+              src="@/assets/visuel_footer/linkedin.svg"
+              class="footer__main__children__contain__img"
+            />
+          </a>
+        </span>
+        <span class="footer__main__children__contain">
+          <a href="https://www.facebook.com/ifs73/?fref=ts" target="blank">
+            <img
+              src="@/assets/visuel_footer/facebook.svg"
+              class="footer__main__children__contain__img"
+            />
+          </a>
+        </span>
       </div>
     </footer>
   </div>
@@ -59,6 +76,8 @@ $fontfamilyRegular: "Poppins", sans-serif;
     &__children {
       flex: 2;
       margin: 20px;
+      display: flex;
+      justify-content: center;
 
       &__title {
         color: white;
@@ -76,10 +95,15 @@ $fontfamilyRegular: "Poppins", sans-serif;
         padding: 15px;
       }
 
-      &__img {
-        width: 96px;
-        height: 96px;
-        margin: 5px;
+      &__contain {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &__img {
+          width: 3rem;
+          height: 5vh;
+        }
       }
 
       h2 {

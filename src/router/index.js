@@ -43,6 +43,10 @@ const routes = [
     name: "condition",
     component: () => import("@/views/ConditionGeneral.vue"),
   },
+  {
+    path: "https://www.linkedin.com/company/ifs73/about/",
+    name: "linkdin",
+  },
 ];
 
 const router = new VueRouter({
