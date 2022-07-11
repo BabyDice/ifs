@@ -268,7 +268,8 @@
       margin-top: 5vh;
 
       @include padGap;
-      @include centre;
+      align-items: center;
+      text-align: center;
 
       &__content2 {
         display: flex;
@@ -315,7 +316,8 @@
       &__bloxNpic {
         display: flex;
         justify-content: center;
-        @include padGap;
+        align-items: center;
+        // @include padGap;
 
         &__blox {
           box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
@@ -325,12 +327,13 @@
           -webkit-backdrop-filter: blur(17.4px);
           border: 1px solid rgba(203, 203, 203, 0.36);
           width: 90%;
-          height: 30vh;
+          height: 35vh;
           margin-top: 2vh;
           @include padGap;
           display: flex;
           align-items: center;
           font-family: $fontfamilyRegular;
+          align-self: center;
 
           p {
             margin: auto;
