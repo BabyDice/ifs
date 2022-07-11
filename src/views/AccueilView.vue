@@ -367,6 +367,7 @@
         margin-top: 2vh;
         @include padGap;
         @include centre;
+        border: none;
       }
 
       @keyframes scroll {

@@ -587,6 +587,7 @@
             border-radius: 16px;
             @include padGap;
             @include centre;
+            border: none;
 
             &__link {
               text-decoration: none;
@@ -692,6 +693,7 @@
         width: 50%;
         border-radius: 16px;
         margin-top: 10vh;
+        border: none;
 
         font-family: $fontfamilyRegular;
         @include padGap;

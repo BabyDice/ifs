@@ -213,28 +213,6 @@
   }
 }
 
-.valeur {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 15vh;
-
-  h3 {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-
-  @media (min-width: $tablette-screen) {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-
-    h3 {
-      font-size: 1.3rem;
-    }
-  }
-}
-
 // _______________________________________________Button___________________________________________________________
 .btn {
   background-color: #dd214c;
@@ -270,6 +248,34 @@
     display: flex;
     align-self: center;
     width: 16vw;
+  }
+}
+
+.valeur {
+  @media (min-width: $mobile) {
+    background-image: url("@/assets/visuel_Apropos/cubeOp.png");
+  }
+
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  @media (min-width: $tablette-screen) {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-image: none;
+
+    h3 {
+      font-size: 1.3rem;
+    }
   }
 }
 
