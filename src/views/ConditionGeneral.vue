@@ -274,7 +274,7 @@
           <p>
             En cas de réclamation, veuillez nous solliciter par écrit à
             l’adresse mail suivante :
-            <router-link class="router" to="/contact"
+            <router-link class="condition-general__txt__ammandine" to="/contact"
               >a.lorenzo@ifs73.fr</router-link
             >
           </p>
@@ -331,6 +331,16 @@
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
+
+    h2 {
+      align-self: flex-start;
+    }
+
+    &__ammandine {
+      color: $mainColor;
+      text-decoration: none;
+      text-decoration-style: none;
+    }
   }
 }
 
@@ -340,10 +350,6 @@ h1 {
 
 p {
   text-align: justify;
-}
-
-.router {
-  color: $mainColor;
 }
 
 @media (min-width: 768px) {

@@ -126,13 +126,19 @@
                 type="submit"
                 class="container__track2__bloxNpic__blox__butt"
               >
-                <router-link to="contact">Contactez - Moi</router-link>
+                <router-link
+                  to="contact"
+                  class="container__track2__bloxNpic__blox__butt__link"
+                  >Contactez - Moi
+                </router-link>
               </button>
             </div>
           </div>
         </div>
-        <button type="submit" class="container__track2__button">
-          <router-link to="/bureau">Cathalogue Formation</router-link>
+        <button type=" submit" class="container__track2__button">
+          <router-link to="/bureau" class="container__track2__button__link"
+            >Cathalogue Formation</router-link
+          >
         </button>
       </section>
       <section class="container__track2">
@@ -581,6 +587,14 @@
             border-radius: 16px;
             @include padGap;
             @include centre;
+
+            &__link {
+              text-decoration: none;
+              text-decoration-style: none;
+              text-decoration-color: none;
+              text-decoration-thickness: none;
+              color: $blanc;
+            }
           }
         }
 
@@ -590,7 +604,7 @@
           justify-content: space-around;
           box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
           backdrop-filter: blur(17.4px);
-          background: rgba(163, 159, 149, 0.456);
+          background: rgba(248, 238, 219, 0.456);
           border-radius: 16px;
           -webkit-backdrop-filter: blur(17.4px);
           border: 1px solid rgba(203, 203, 203, 0.36);
@@ -674,17 +688,21 @@
 
       &__button {
         background-color: $mainColor;
-        color: white;
+        color: $blanc;
         width: 50%;
         border-radius: 16px;
         margin-top: 10vh;
-        text-decoration-line: none;
+
         font-family: $fontfamilyRegular;
         @include padGap;
         @include centre;
 
-        a {
+        &__link {
           text-decoration: none;
+          text-decoration-style: none;
+          text-decoration-color: none;
+          text-decoration-thickness: none;
+          color: $blanc;
         }
       }
 
@@ -874,6 +892,7 @@
             border-radius: 16px;
             @include padGap;
             @include centre;
+            border: none;
           }
         }
 
@@ -970,6 +989,7 @@
       &__button {
         margin-top: 2vh;
         text-decoration: none;
+        border: none;
       }
     }
   }

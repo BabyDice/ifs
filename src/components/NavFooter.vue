@@ -54,6 +54,7 @@ new Vue({
 </template>
 
 <style lang="scss">
+@import "@/_variable.scss";
 /* Declarations Couleurs */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -80,9 +81,14 @@ $fontfamilyRegular: "Poppins", sans-serif;
       justify-content: center;
 
       &__title {
-        color: white;
         font-size: 20px;
         font-family: $fontfamilyMedium;
+
+        text-decoration: none;
+        text-decoration-style: none;
+        text-decoration-color: none;
+        text-decoration-thickness: none;
+        color: $blanc;
       }
 
       &__liste {
