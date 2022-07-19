@@ -115,7 +115,11 @@
                 type="submit"
                 class="container__track2__bloxNpic__blox__butt"
               >
-                <router-link to="contact">Contactez - Moi</router-link>
+                <router-link
+                  to="contact"
+                  class="container__track2__bloxNpic__blox__butt__link"
+                  >Contactez - Moi
+                </router-link>
               </button>
             </div>
           </div>
@@ -433,10 +437,14 @@
             border-radius: 16px;
             @include padGap;
             @include centre;
-            text-decoration: none;
+            border: none;
 
-            router-link {
+            &__link {
               text-decoration: none;
+              text-decoration-style: none;
+              text-decoration-color: none;
+              text-decoration-thickness: none;
+              color: $blanc;
             }
           }
         }
